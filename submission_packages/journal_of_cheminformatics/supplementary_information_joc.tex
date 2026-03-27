@@ -1,0 +1,192 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{lineno}
+
+\title{Supplementary Information\\Benchmarking Natural Polysaccharide Function Prediction with a Sparse Anchor and Core Structural Features}
+\author{[Author names to be inserted for submission]}
+\date{}
+
+\begin{document}
+\maketitle
+\doublespacing
+\linenumbers
+
+\section{Supplementary Note 1: Reproducibility Scope}
+
+This supplementary file records the exact benchmark definition, split layout, tuned-anchor configuration, final \texttt{poly-core v1} definition, additional sparse baselines, per-label behavior, and representative case studies used by the Journal of Cheminformatics submission draft. It is intentionally narrower than a full repository walkthrough. The purpose is to make the paper's final claim reproducible without mixing in earlier exploratory scaffolding.
+
+\section{Supplementary Note 2: Benchmark Definition and Statistics}
+
+The main supervised benchmark is derived from the merged real-data scaffold and filtered with three rules: keep only DoLPHiN records, remove the label \texttt{unknown}, and retain only labels with global frequency at least 20. The resulting benchmark contains 4,121 records and 18 retained labels. The filtered benchmark is sparse multi-label data rather than dense annotation, with an average of 1.56 labels per record and a median of 1.
+
+\begin{table}[h]
+\centering
+\caption{Filtered benchmark statistics.}
+\begin{tabular}{lc}
+\toprule
+Statistic & Value \\
+\midrule
+Records & 4,121 \\
+Retained labels & 18 \\
+Average labels per record & 1.56 \\
+Median labels per record & 1 \\
+Canonical representation missing rate & 0.0\% \\
+Monomer composition missing rate & 2.4\% \\
+Linkage missing rate & 80.9\% \\
+Branching missing rate & 0.0\% \\
+Modification missing rate & 100.0\% \\
+MW/range missing rate & 26.6\% \\
+Organism-source missing rate & 0.0\% \\
+DOI missing rate & 0.1\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The retained label vocabulary is: antiaging, anticoagulant, antidiabetic, antifatigue, antiinflammatory, antimicrobial, antiobesity, antioxidant, antiproliferative, antitumor, antiviral, cholesterol\_lowering, immunomodulatory, lipid\_lowering, microbiota\_regulation, neuroprotective, organ\_protective, and radioprotective.
+
+\section{Supplementary Note 3: Weak-Supervision Interpretation}
+
+The benchmark should not be interpreted as a fully observed true-negative dataset. Labels are inherited from what has been reported in the literature, so a missing function label is closer to \texttt{unreported} than to \texttt{confirmed absent}. The task is therefore best read as weakly supervised multi-label prediction with positive-and-unlabeled characteristics. This is why the main paper treats macro-F1 and exact match as comparative benchmark metrics under a fixed protocol rather than as absolute measures of biological truth.
+
+\section{Supplementary Note 4: Split Layout and Protocol}
+
+The revised submission uses two deterministic split protocols.
+
+\begin{table}[h]
+\centering
+\caption{Partition sizes for the two reported split protocols.}
+\begin{tabular}{lccc}
+\toprule
+Split & Train & Valid & Test \\
+\midrule
+Random & 2472 & 824 & 825 \\
+DOI-grouped & 2474 & 831 & 816 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The DOI-grouped split was checked to ensure that the same DOI never appears in more than one partition. Validation is used for development and test is reported once for the final frozen comparison.
+
+\section{Supplementary Note 5: Tuned Sparse Anchor}
+
+The primary comparison anchor is one-vs-rest logistic regression over count-vectorized feature text. The final tuned configuration uses the \texttt{liblinear} solver, \texttt{C = 16.0}, \texttt{class\_weight = balanced}, \texttt{min\_df = 1}, and an uncapped vocabulary. On the fixed training split this yields a vocabulary of 6,255 tokens. The tuned anchor reaches macro-F1 0.2610 and exact match 0.2606 on the random test split.
+
+\section{Supplementary Note 6: Final \texttt{poly-core v1} Representation}
+
+The final method keeps only three structured token families:
+
+\begin{enumerate}
+\item molecular-weight buckets,
+\item branching-presence tokens,
+\item residue-set tokens.
+\end{enumerate}
+
+These tokens are derived from the fields \texttt{canonical\_representation}, \texttt{monomer\_composition}, \texttt{linkage}, \texttt{branching}, and \texttt{mw\_or\_range}. The final model does not use evidence-proxy tokens, completeness weighting, source-kingdom tokens, modification tokens, or composition-count tokens.
+
+\section{Supplementary Note 7: Stage 3 Evolution}
+
+\begin{table}[h]
+\centering
+\caption{Stage 3 method evolution under the tuned logistic backbone.}
+\begin{tabular}{lc}
+\toprule
+Configuration & Macro-F1 \\
+\midrule
+Tuned logistic anchor & 0.2610 \\
+Evidence-aware v1 (full) & 0.2579 \\
+Weight-only variant & 0.2595 \\
+Feature-only variant (poly + evidence tokens) & 0.2582 \\
+Poly-feature-only v1 & 0.2654 \\
+Poly-core v1 & 0.2678 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This trajectory makes the negative result explicit: the original evidence-aware direction did not survive controlled testing, and the useful signal concentrated in a smaller structure-oriented subset.
+
+\section{Supplementary Note 8: Main Ablation Findings}
+
+\begin{table}[h]
+\centering
+\caption{Ablation summary around \texttt{poly-feature-only v1}.}
+\begin{tabular}{lcc}
+\toprule
+Ablation & Macro-F1 & Delta vs.\ reference \\
+\midrule
+Remove MW & 0.2461 & -0.0193 \\
+Remove branching & 0.2598 & -0.0056 \\
+Remove modification & 0.2619 & -0.0035 \\
+Remove residue & 0.2533 & -0.0121 \\
+Remove source kingdom & 0.2621 & -0.0033 \\
+Remove composition terms & 0.2669 & +0.0015 \\
+Poly-core v1 & 0.2678 & +0.0024 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The strongest positive contributors are molecular-weight and residue-set features. Branching is beneficial but smaller in effect. Modification and source-kingdom tokens are weak, and composition-count terms are mildly harmful.
+
+\section{Supplementary Note 9: Additional Simple Sparse Baselines}
+
+\begin{table}[h]
+\centering
+\caption{Additional sparse baselines on the random test split.}
+\begin{tabular}{lcc}
+\toprule
+Method & Macro-F1 & Exact Match \\
+\midrule
+Tuned logistic & 0.2610 & 0.2606 \\
+Poly-core v1 & 0.2678 & 0.2570 \\
+TF-IDF + logistic & 0.2514 & 0.2897 \\
+TF-IDF + linear SVM & 0.2521 & 0.2921 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Additional sparse baselines on the DOI-grouped test split.}
+\begin{tabular}{lcc}
+\toprule
+Method & Macro-F1 & Exact Match \\
+\midrule
+Tuned logistic & 0.1250 & 0.1164 \\
+Poly-core v1 & 0.1140 & 0.1066 \\
+TF-IDF + logistic & 0.1247 & 0.1605 \\
+TF-IDF + linear SVM & 0.1248 & 0.1630 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These baselines reinforce that multiple sparse models are competitive and that metric choice materially changes ranking.
+
+\section{Supplementary Note 10: Per-Label Analysis}
+
+Under the random split, the macro-F1 gain of \texttt{poly-core v1} is label-concentrated rather than uniform. The largest positive deltas appear on \textit{antimicrobial}, \textit{neuroprotective}, \textit{microbiota\_regulation}, and \textit{organ\_protective}, while labels such as \textit{anticoagulant} and \textit{lipid\_lowering} decline. Under the DOI-grouped split, degradation is more visible and includes a substantial drop for \textit{antiaging}. This supports the paper's narrower conclusion that the augmentation is informative but not robustly general across labels.
+
+\section{Supplementary Note 11: Case Studies and Error Analysis}
+
+Representative random-split improvements include records \texttt{dolphin::36019}, \texttt{dolphin::33416}, and \texttt{dolphin::34576}, where the structured augmentation either recovers a missing label or prunes an extra false positive. A representative random-split failure is \texttt{dolphin::37102}, where the augmentation suppresses a previously correct antioxidant prediction.
+
+Grouped-split degradation is illustrated by records such as \texttt{dolphin::36764} and \texttt{dolphin::34975}, where the tuned logistic anchor remains correct but \texttt{poly-core v1} drops a true label. At the same time, grouped-split local gains still exist, for example \texttt{dolphin::36637}. The method is therefore inconsistent rather than uniformly bad under grouped splitting.
+
+These cases support four error categories: useful local corrections, over-pruning, grouped-split fragility, and parser-sensitive behavior.
+
+\section{Supplementary Note 12: Artifact Pointers}
+
+Main artifacts used by the manuscript:
+
+\begin{itemize}
+\item benchmark dataset: \texttt{data\_processed/dataset\_publishable\_supervised\_v1.jsonl}
+\item random split: \texttt{data\_processed/splits\_publishable\_supervised\_v2/random\_split.json}
+\item DOI-grouped split: \texttt{data\_processed/splits\_publishable\_supervised\_v2/doi\_grouped\_split.json}
+\item tuned logistic summary: \texttt{experiments/stage2\_tuning/results/logistic/count\_c16\_balanced\_summary.json}
+\item poly-core summary: \texttt{experiments/stage4\_ablation/results/poly\_core\_v1\_summary.json}
+\end{itemize}
+
+\end{document}

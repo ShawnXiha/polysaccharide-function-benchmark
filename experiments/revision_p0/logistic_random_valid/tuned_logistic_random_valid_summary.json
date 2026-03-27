@@ -1,0 +1,73 @@
+{
+  "tag": "tuned_logistic_random_valid",
+  "dataset": "data_processed\\dataset_publishable_supervised_v1.jsonl",
+  "split": "data_processed\\splits_publishable_supervised_v2\\random_split.json",
+  "config": {
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "eval_split": "valid",
+    "c": 16.0,
+    "min_df": 1,
+    "max_features": 0,
+    "binary": false,
+    "class_weight": "balanced"
+  },
+  "summary": {
+    "runs": [
+      {
+        "path": "experiments\\revision_p0\\logistic_random_valid\\tuned_logistic_random_valid_seed11.json",
+        "macro_f1": 0.3142991649539283,
+        "exact_match_ratio": 0.2949029126213592,
+        "vectorizer_vocab_size": 6255,
+        "config": {
+          "eval_split": "valid",
+          "seed": 11,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced"
+        }
+      },
+      {
+        "path": "experiments\\revision_p0\\logistic_random_valid\\tuned_logistic_random_valid_seed22.json",
+        "macro_f1": 0.3142991649539283,
+        "exact_match_ratio": 0.2949029126213592,
+        "vectorizer_vocab_size": 6255,
+        "config": {
+          "eval_split": "valid",
+          "seed": 22,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced"
+        }
+      },
+      {
+        "path": "experiments\\revision_p0\\logistic_random_valid\\tuned_logistic_random_valid_seed33.json",
+        "macro_f1": 0.3142991649539283,
+        "exact_match_ratio": 0.2949029126213592,
+        "vectorizer_vocab_size": 6255,
+        "config": {
+          "eval_split": "valid",
+          "seed": 33,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced"
+        }
+      }
+    ],
+    "macro_f1_mean": 0.3142991649539283,
+    "macro_f1_std": 0.0,
+    "macro_f1_rel_std": 0.0,
+    "exact_match_mean": 0.2949029126213592,
+    "exact_match_std": 0.0,
+    "exact_match_rel_std": 0.0
+  }
+}

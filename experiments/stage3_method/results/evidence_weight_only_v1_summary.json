@@ -1,0 +1,88 @@
+{
+  "tag": "evidence_weight_only_v1",
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_publishable_supervised_v1.jsonl",
+  "split": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\splits_publishable_supervised_v1\\random_split.json",
+  "config": {
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "c": 16.0,
+    "min_df": 1,
+    "max_features": 0,
+    "binary": false,
+    "class_weight": "balanced",
+    "use_poly_features": false,
+    "use_evidence_features": false,
+    "use_sample_weight": true,
+    "method": "evidence_aware_logistic_v1"
+  },
+  "summary": {
+    "runs": [
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage3_method\\results\\evidence_weight_only_v1_seed11.json",
+        "macro_f1": 0.2595391306794354,
+        "exact_match_ratio": 0.2593939393939394,
+        "vectorizer_vocab_size": 6255,
+        "sample_weight_mean": 1.1999296116504854,
+        "config": {
+          "seed": 11,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced",
+          "use_poly_features": false,
+          "use_evidence_features": false,
+          "use_sample_weight": true,
+          "method": "evidence_aware_logistic_v1"
+        }
+      },
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage3_method\\results\\evidence_weight_only_v1_seed22.json",
+        "macro_f1": 0.2595391306794354,
+        "exact_match_ratio": 0.2593939393939394,
+        "vectorizer_vocab_size": 6255,
+        "sample_weight_mean": 1.1999296116504854,
+        "config": {
+          "seed": 22,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced",
+          "use_poly_features": false,
+          "use_evidence_features": false,
+          "use_sample_weight": true,
+          "method": "evidence_aware_logistic_v1"
+        }
+      },
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage3_method\\results\\evidence_weight_only_v1_seed33.json",
+        "macro_f1": 0.2595391306794354,
+        "exact_match_ratio": 0.2593939393939394,
+        "vectorizer_vocab_size": 6255,
+        "sample_weight_mean": 1.1999296116504854,
+        "config": {
+          "seed": 33,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced",
+          "use_poly_features": false,
+          "use_evidence_features": false,
+          "use_sample_weight": true,
+          "method": "evidence_aware_logistic_v1"
+        }
+      }
+    ],
+    "macro_f1_mean": 0.2595391306794354,
+    "macro_f1_std": 0.0,
+    "macro_f1_rel_std": 0.0,
+    "exact_match_mean": 0.2593939393939394,
+    "exact_match_std": 0.0,
+    "exact_match_rel_std": 0.0
+  }
+}

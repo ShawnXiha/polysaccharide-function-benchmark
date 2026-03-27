@@ -1,0 +1,44 @@
+{
+  "dataset": "data_processed\\dataset_publishable_supervised_v1.jsonl",
+  "split": "data_processed\\splits_publishable_supervised_v2\\doi_grouped_split.json",
+  "config": {
+    "eval_split": "valid",
+    "seed": 33,
+    "c": 16.0,
+    "min_df": 1,
+    "max_features": 0,
+    "binary": false,
+    "class_weight": "balanced"
+  },
+  "results": [
+    {
+      "split_name": "default",
+      "eval_split": "valid",
+      "num_train": 2474,
+      "num_test": 831,
+      "labels": [
+        "antiaging",
+        "anticoagulant",
+        "antidiabetic",
+        "antifatigue",
+        "antiinflammatory",
+        "antimicrobial",
+        "antiobesity",
+        "antioxidant",
+        "antiproliferative",
+        "antitumor",
+        "antiviral",
+        "cholesterol_lowering",
+        "immunomodulatory",
+        "lipid_lowering",
+        "microbiota_regulation",
+        "neuroprotective",
+        "organ_protective",
+        "radioprotective"
+      ],
+      "vectorizer_vocab_size": 5887,
+      "macro_f1": 0.11886554356277942,
+      "exact_match_ratio": 0.1444043321299639
+    }
+  ]
+}

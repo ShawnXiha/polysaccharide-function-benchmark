@@ -1,0 +1,9 @@
+model_family: graph
+models:
+  - gcn
+  - gin
+  - sweetnet_style
+graph_features:
+  - repeating_unit
+  - branching
+  - modification

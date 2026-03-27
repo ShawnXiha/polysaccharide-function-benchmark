@@ -1,0 +1,69 @@
+{
+  "tag": "count_c2_min1",
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_publishable_supervised_v1.jsonl",
+  "split": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\splits_publishable_supervised_v1\\random_split.json",
+  "config": {
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "c": 2.0,
+    "min_df": 1,
+    "max_features": 0,
+    "binary": false,
+    "class_weight": "none"
+  },
+  "summary": {
+    "runs": [
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage2_tuning\\results\\logistic\\count_c2_min1_seed11.json",
+        "macro_f1": 0.1745039316382634,
+        "exact_match_ratio": 0.2812121212121212,
+        "vectorizer_vocab_size": 6255,
+        "config": {
+          "seed": 11,
+          "c": 2.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "none"
+        }
+      },
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage2_tuning\\results\\logistic\\count_c2_min1_seed22.json",
+        "macro_f1": 0.1745039316382634,
+        "exact_match_ratio": 0.2812121212121212,
+        "vectorizer_vocab_size": 6255,
+        "config": {
+          "seed": 22,
+          "c": 2.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "none"
+        }
+      },
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage2_tuning\\results\\logistic\\count_c2_min1_seed33.json",
+        "macro_f1": 0.1745039316382634,
+        "exact_match_ratio": 0.2812121212121212,
+        "vectorizer_vocab_size": 6255,
+        "config": {
+          "seed": 33,
+          "c": 2.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "none"
+        }
+      }
+    ],
+    "macro_f1_mean": 0.1745039316382634,
+    "macro_f1_std": 0.0,
+    "macro_f1_rel_std": 0.0,
+    "exact_match_mean": 0.2812121212121212,
+    "exact_match_std": 0.0,
+    "exact_match_rel_std": 0.0
+  }
+}

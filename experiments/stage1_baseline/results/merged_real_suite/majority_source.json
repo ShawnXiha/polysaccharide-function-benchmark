@@ -1,0 +1,26 @@
+{
+  "dataset": "data_processed\\dataset_v0_real.jsonl",
+  "split": "data_processed\\splits_real\\leave_one_source_out.json",
+  "results": [
+    {
+      "split_name": "CSDB",
+      "num_train": 5078,
+      "num_test": 453,
+      "majority_labels": [
+        "antioxidant"
+      ],
+      "macro_f1": 0.0,
+      "exact_match_ratio": 0.0
+    },
+    {
+      "split_name": "DoLPHiN",
+      "num_train": 453,
+      "num_test": 5078,
+      "majority_labels": [
+        "unknown"
+      ],
+      "macro_f1": 0.00431438178440374,
+      "exact_match_ratio": 0.16601024025206773
+    }
+  ]
+}

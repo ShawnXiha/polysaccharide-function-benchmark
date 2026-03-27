@@ -1,0 +1,62 @@
+{
+  "tag": "h32_e80_bs8",
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_publishable_supervised_v1.jsonl",
+  "split": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\splits_publishable_supervised_v1\\random_split.json",
+  "config": {
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "epochs": 80,
+    "hidden_dim": 32,
+    "lr": 0.01,
+    "batch_size": 8
+  },
+  "summary": {
+    "runs": [
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage2_tuning\\results\\graph_gcn\\h32_e80_bs8_seed11.json",
+        "macro_f1": 0.20671701840183498,
+        "exact_match_ratio": 0.20484848484848484,
+        "config": {
+          "seed": 11,
+          "epochs": 80,
+          "hidden_dim": 32,
+          "lr": 0.01,
+          "batch_size": 8
+        }
+      },
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage2_tuning\\results\\graph_gcn\\h32_e80_bs8_seed22.json",
+        "macro_f1": 0.22588763049567698,
+        "exact_match_ratio": 0.22424242424242424,
+        "config": {
+          "seed": 22,
+          "epochs": 80,
+          "hidden_dim": 32,
+          "lr": 0.01,
+          "batch_size": 8
+        }
+      },
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage2_tuning\\results\\graph_gcn\\h32_e80_bs8_seed33.json",
+        "macro_f1": 0.21170734447067438,
+        "exact_match_ratio": 0.2193939393939394,
+        "config": {
+          "seed": 33,
+          "epochs": 80,
+          "hidden_dim": 32,
+          "lr": 0.01,
+          "batch_size": 8
+        }
+      }
+    ],
+    "macro_f1_mean": 0.2147706644560621,
+    "macro_f1_std": 0.009945654277763588,
+    "macro_f1_rel_std": 0.0463082530519352,
+    "exact_match_mean": 0.21616161616161617,
+    "exact_match_std": 0.01009292605801762,
+    "exact_match_rel_std": 0.046691573819801144
+  }
+}

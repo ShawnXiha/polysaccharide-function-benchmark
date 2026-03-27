@@ -1,0 +1,159 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{lineno}
+
+\title{Supplementary Information\\A Benchmark and Polysaccharide-Specific Core Representation for Multi-label Structure-Function Prediction of Natural Polysaccharides}
+\author{[Author names to be inserted for submission]}
+\date{}
+
+\begin{document}
+\maketitle
+\doublespacing
+\linenumbers
+
+\section{Overview}
+
+This supplementary file consolidates the reproducibility note, benchmark statistics, split definitions, stronger simple baselines, per-label behavior, and representative case studies used by the BMC Bioinformatics submission version.
+
+\section{Benchmark Construction}
+
+The supervised benchmark is obtained by retaining only DoLPHiN records, removing the label \texttt{unknown}, and keeping only labels with global frequency at least 20. The filtered benchmark contains 4,121 records and 18 retained labels.
+
+\begin{table}[h]
+\centering
+\caption{Benchmark statistics after filtering.}
+\begin{tabular}{lc}
+\toprule
+Statistic & Value \\
+\midrule
+Records & 4,121 \\
+Retained labels & 18 \\
+Average labels per record & 1.56 \\
+Median labels per record & 1 \\
+Monomer composition missing rate & 2.4\% \\
+Linkage missing rate & 80.9\% \\
+Modification missing rate & 100.0\% \\
+MW/range missing rate & 26.6\% \\
+DOI missing rate & 0.1\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The benchmark is weakly supervised and positive-unlabeled in character because labels are literature-derived positives and missing labels are closer to unreported than confirmed absent.
+
+\section{Split Definitions}
+
+\begin{table}[h]
+\centering
+\caption{Reported split protocols.}
+\begin{tabular}{lccc}
+\toprule
+Split & Train & Valid & Test \\
+\midrule
+Random & 2472 & 824 & 825 \\
+DOI-grouped & 2474 & 831 & 816 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The DOI-grouped split keeps all records sharing the same DOI in the same partition to reduce paper-specific leakage.
+
+\section{Tuned Anchor and Final Representation}
+
+The tuned anchor is one-vs-rest logistic regression over count-vectorized feature text with \texttt{C = 16.0}, \texttt{class\_weight = balanced}, and the \texttt{liblinear} solver. The final \texttt{poly-core v1} representation keeps only molecular-weight buckets, branching-presence tokens, and residue-set tokens. It removes evidence-proxy tokens, completeness weighting, source-kingdom tokens, modification tokens, and composition-count tokens.
+
+\section{Stage 3 Evolution}
+
+\begin{table}[h]
+\centering
+\caption{Method evolution under the tuned logistic backbone.}
+\begin{tabular}{lc}
+\toprule
+Configuration & Macro-F1 \\
+\midrule
+Tuned logistic anchor & 0.2610 \\
+Evidence-aware v1 (full) & 0.2579 \\
+Weight-only variant & 0.2595 \\
+Feature-only variant (poly + evidence tokens) & 0.2582 \\
+Poly-feature-only v1 & 0.2654 \\
+Poly-core v1 & 0.2678 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Ablation Summary}
+
+\begin{table}[h]
+\centering
+\caption{Ablation summary around \texttt{poly-feature-only v1}.}
+\begin{tabular}{lcc}
+\toprule
+Ablation & Macro-F1 & Delta vs.\ reference \\
+\midrule
+Remove MW & 0.2461 & -0.0193 \\
+Remove branching & 0.2598 & -0.0056 \\
+Remove modification & 0.2619 & -0.0035 \\
+Remove residue & 0.2533 & -0.0121 \\
+Remove source kingdom & 0.2621 & -0.0033 \\
+Remove composition terms & 0.2669 & +0.0015 \\
+Poly-core v1 & 0.2678 & +0.0024 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Additional Sparse Baselines}
+
+\begin{table}[h]
+\centering
+\caption{Additional sparse baselines on the random test split.}
+\begin{tabular}{lcc}
+\toprule
+Method & Macro-F1 & Exact Match \\
+\midrule
+Tuned logistic & 0.2610 & 0.2606 \\
+Poly-core v1 & 0.2678 & 0.2570 \\
+TF-IDF + logistic & 0.2514 & 0.2897 \\
+TF-IDF + linear SVM & 0.2521 & 0.2921 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Additional sparse baselines on the DOI-grouped test split.}
+\begin{tabular}{lcc}
+\toprule
+Method & Macro-F1 & Exact Match \\
+\midrule
+Tuned logistic & 0.1250 & 0.1164 \\
+Poly-core v1 & 0.1140 & 0.1066 \\
+TF-IDF + logistic & 0.1247 & 0.1605 \\
+TF-IDF + linear SVM & 0.1248 & 0.1630 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Per-Label Behavior}
+
+Under the random split, the gain of \texttt{poly-core v1} is concentrated in a subset of labels, particularly \textit{antimicrobial}, \textit{neuroprotective}, \textit{microbiota\_regulation}, and \textit{organ\_protective}. Under the DOI-grouped split, at least one label, \textit{antiaging}, shows a substantial collapse. This reinforces that the method is label-sensitive and split-sensitive rather than uniformly stronger.
+
+\section{Case Studies}
+
+Random-split local improvements include \texttt{dolphin::36019}, \texttt{dolphin::33416}, and \texttt{dolphin::34576}. A representative random-split failure is \texttt{dolphin::37102}. DOI-grouped degradation is illustrated by \texttt{dolphin::36764} and \texttt{dolphin::34975}, while \texttt{dolphin::36637} shows that grouped-split local gains still exist. These examples support four recurring error categories: useful local corrections, over-pruning, grouped-split fragility, and parser-sensitive behavior.
+
+\section{Artifact Pointers}
+
+\begin{itemize}
+\item benchmark dataset: \texttt{data\_processed/dataset\_publishable\_supervised\_v1.jsonl}
+\item random split: \texttt{data\_processed/splits\_publishable\_supervised\_v2/random\_split.json}
+\item DOI-grouped split: \texttt{data\_processed/splits\_publishable\_supervised\_v2/doi\_grouped\_split.json}
+\item tuned logistic summary: \texttt{experiments/stage2\_tuning/results/logistic/count\_c16\_balanced\_summary.json}
+\item poly-core summary: \texttt{experiments/stage4\_ablation/results/poly\_core\_v1\_summary.json}
+\end{itemize}
+
+\end{document}

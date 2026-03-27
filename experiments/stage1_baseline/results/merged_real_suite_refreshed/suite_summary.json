@@ -1,0 +1,66 @@
+{
+  "completed": [
+    {
+      "model": "majority",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite_refreshed\\majority_random.json"
+    },
+    {
+      "model": "majority",
+      "split": "source",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite_refreshed\\majority_source.json"
+    },
+    {
+      "model": "logistic",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite_refreshed\\logistic_random.json"
+    },
+    {
+      "model": "logistic",
+      "split": "source",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite_refreshed\\logistic_source.json"
+    },
+    {
+      "model": "random_forest",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite_refreshed\\random_forest_random.json"
+    },
+    {
+      "model": "random_forest",
+      "split": "source",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite_refreshed\\random_forest_source.json"
+    },
+    {
+      "model": "sequence_ngram",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite_refreshed\\sequence_ngram_random.json"
+    },
+    {
+      "model": "sequence_ngram",
+      "split": "source",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite_refreshed\\sequence_ngram_source.json"
+    },
+    {
+      "model": "sequence_transformer",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite_refreshed\\sequence_transformer_random.json"
+    },
+    {
+      "model": "sequence_transformer",
+      "split": "source",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite_refreshed\\sequence_transformer_source.json"
+    },
+    {
+      "model": "graph_gcn",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite_refreshed\\graph_gcn_random.json"
+    },
+    {
+      "model": "graph_gcn",
+      "split": "source",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite_refreshed\\graph_gcn_source.json"
+    }
+  ],
+  "skipped": [],
+  "failed": []
+}

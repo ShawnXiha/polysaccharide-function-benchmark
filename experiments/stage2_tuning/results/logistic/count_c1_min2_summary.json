@@ -1,0 +1,65 @@
+{
+  "tag": "count_c1_min2",
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_publishable_supervised_v1.jsonl",
+  "split": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\splits_publishable_supervised_v1\\random_split.json",
+  "config": {
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "c": 1.0,
+    "min_df": 2,
+    "max_features": 0,
+    "binary": false
+  },
+  "summary": {
+    "runs": [
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage2_tuning\\results\\logistic\\count_c1_min2_seed11.json",
+        "macro_f1": 0.15731266787281123,
+        "exact_match_ratio": 0.2727272727272727,
+        "vectorizer_vocab_size": 2275,
+        "config": {
+          "seed": 11,
+          "c": 1.0,
+          "min_df": 2,
+          "max_features": 0,
+          "binary": false
+        }
+      },
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage2_tuning\\results\\logistic\\count_c1_min2_seed22.json",
+        "macro_f1": 0.15731266787281123,
+        "exact_match_ratio": 0.2727272727272727,
+        "vectorizer_vocab_size": 2275,
+        "config": {
+          "seed": 22,
+          "c": 1.0,
+          "min_df": 2,
+          "max_features": 0,
+          "binary": false
+        }
+      },
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage2_tuning\\results\\logistic\\count_c1_min2_seed33.json",
+        "macro_f1": 0.15731266787281123,
+        "exact_match_ratio": 0.2727272727272727,
+        "vectorizer_vocab_size": 2275,
+        "config": {
+          "seed": 33,
+          "c": 1.0,
+          "min_df": 2,
+          "max_features": 0,
+          "binary": false
+        }
+      }
+    ],
+    "macro_f1_mean": 0.15731266787281123,
+    "macro_f1_std": 0.0,
+    "macro_f1_rel_std": 0.0,
+    "exact_match_mean": 0.2727272727272727,
+    "exact_match_std": 0.0,
+    "exact_match_rel_std": 0.0
+  }
+}

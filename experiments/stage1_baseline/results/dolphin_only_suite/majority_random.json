@@ -1,0 +1,16 @@
+{
+  "dataset": "data_processed\\dataset_dolphin_only.jsonl",
+  "split": "data_processed\\splits_dolphin_only\\random_split.json",
+  "results": [
+    {
+      "split_name": "default",
+      "num_train": 120,
+      "num_test": 40,
+      "majority_labels": [
+        "immunoregulation"
+      ],
+      "macro_f1": 0.04433497536945813,
+      "exact_match_ratio": 0.45
+    }
+  ]
+}

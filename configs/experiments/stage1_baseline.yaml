@@ -1,0 +1,9 @@
+stage: 1
+name: initial_implementation
+goal: reproduce baseline pipelines and verify splits
+budget: 20
+gate_condition: metrics within accepted variance for internal baseline checks
+deliverables:
+  - executable baseline pipeline
+  - verified data loader
+  - baseline result table

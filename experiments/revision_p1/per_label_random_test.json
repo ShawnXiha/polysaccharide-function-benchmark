@@ -1,0 +1,387 @@
+{
+  "result_a": "experiments\\revision_p0\\logistic_random_test\\tuned_logistic_random_test_seed11.json",
+  "result_b": "experiments\\revision_p0\\poly_core_random_test\\poly_core_random_test_seed11.json",
+  "label_a": "Tuned Logistic",
+  "label_b": "Poly-core v1",
+  "split_name": "default",
+  "per_label": [
+    {
+      "label": "antiaging",
+      "support": 23,
+      "f1_a": 0.10526315789473685,
+      "f1_b": 0.10526315789473685,
+      "precision_a": 0.13333333333333333,
+      "recall_a": 0.08695652173913043,
+      "precision_b": 0.13333333333333333,
+      "recall_b": 0.08695652173913043,
+      "delta_f1": 0.0
+    },
+    {
+      "label": "anticoagulant",
+      "support": 28,
+      "f1_a": 0.3934426229508197,
+      "f1_b": 0.3529411764705882,
+      "precision_a": 0.36363636363636365,
+      "recall_a": 0.42857142857142855,
+      "precision_b": 0.3,
+      "recall_b": 0.42857142857142855,
+      "delta_f1": -0.04050144648023152
+    },
+    {
+      "label": "antidiabetic",
+      "support": 94,
+      "f1_a": 0.4222222222222222,
+      "f1_b": 0.4222222222222222,
+      "precision_a": 0.4418604651162791,
+      "recall_a": 0.40425531914893614,
+      "precision_b": 0.4418604651162791,
+      "recall_b": 0.40425531914893614,
+      "delta_f1": 0.0
+    },
+    {
+      "label": "antifatigue",
+      "support": 10,
+      "f1_a": 0.13333333333333333,
+      "f1_b": 0.11764705882352941,
+      "precision_a": 0.2,
+      "recall_a": 0.1,
+      "precision_b": 0.14285714285714285,
+      "recall_b": 0.1,
+      "delta_f1": -0.01568627450980392
+    },
+    {
+      "label": "antiinflammatory",
+      "support": 27,
+      "f1_a": 0.2711864406779661,
+      "f1_b": 0.26666666666666666,
+      "precision_a": 0.25,
+      "recall_a": 0.2962962962962963,
+      "precision_b": 0.24242424242424243,
+      "recall_b": 0.2962962962962963,
+      "delta_f1": -0.004519774011299438
+    },
+    {
+      "label": "antimicrobial",
+      "support": 31,
+      "f1_a": 0.2745098039215686,
+      "f1_b": 0.3673469387755102,
+      "precision_a": 0.35,
+      "recall_a": 0.22580645161290322,
+      "precision_b": 0.5,
+      "recall_b": 0.2903225806451613,
+      "delta_f1": 0.09283713485394163
+    },
+    {
+      "label": "antiobesity",
+      "support": 12,
+      "f1_a": 0.08,
+      "f1_b": 0.08695652173913043,
+      "precision_a": 0.07692307692307693,
+      "recall_a": 0.08333333333333333,
+      "precision_b": 0.09090909090909091,
+      "recall_b": 0.08333333333333333,
+      "delta_f1": 0.006956521739130431
+    },
+    {
+      "label": "antioxidant",
+      "support": 459,
+      "f1_a": 0.7221621621621622,
+      "f1_b": 0.716612377850163,
+      "precision_a": 0.7167381974248928,
+      "recall_a": 0.7276688453159041,
+      "precision_b": 0.7142857142857143,
+      "recall_b": 0.7189542483660131,
+      "delta_f1": -0.005549784311999262
+    },
+    {
+      "label": "antiproliferative",
+      "support": 10,
+      "f1_a": 0.11764705882352941,
+      "f1_b": 0.11764705882352941,
+      "precision_a": 0.14285714285714285,
+      "recall_a": 0.1,
+      "precision_b": 0.14285714285714285,
+      "recall_b": 0.1,
+      "delta_f1": 0.0
+    },
+    {
+      "label": "antitumor",
+      "support": 168,
+      "f1_a": 0.4649859943977591,
+      "f1_b": 0.4692737430167597,
+      "precision_a": 0.43915343915343913,
+      "recall_a": 0.49404761904761907,
+      "precision_b": 0.4421052631578947,
+      "recall_b": 0.5,
+      "delta_f1": 0.004287748619000609
+    },
+    {
+      "label": "antiviral",
+      "support": 9,
+      "f1_a": 0.13333333333333333,
+      "f1_b": 0.1111111111111111,
+      "precision_a": 0.16666666666666666,
+      "recall_a": 0.1111111111111111,
+      "precision_b": 0.1111111111111111,
+      "recall_b": 0.1111111111111111,
+      "delta_f1": -0.022222222222222227
+    },
+    {
+      "label": "cholesterol_lowering",
+      "support": 16,
+      "f1_a": 0.27586206896551724,
+      "f1_b": 0.27586206896551724,
+      "precision_a": 0.3076923076923077,
+      "recall_a": 0.25,
+      "precision_b": 0.3076923076923077,
+      "recall_b": 0.25,
+      "delta_f1": 0.0
+    },
+    {
+      "label": "immunomodulatory",
+      "support": 312,
+      "f1_a": 0.5878378378378378,
+      "f1_b": 0.5781512605042017,
+      "precision_a": 0.6214285714285714,
+      "recall_a": 0.5576923076923077,
+      "precision_b": 0.607773851590106,
+      "recall_b": 0.5512820512820513,
+      "delta_f1": -0.009686577333636093
+    },
+    {
+      "label": "lipid_lowering",
+      "support": 24,
+      "f1_a": 0.1276595744680851,
+      "f1_b": 0.0909090909090909,
+      "precision_a": 0.13043478260869565,
+      "recall_a": 0.125,
+      "precision_b": 0.1,
+      "recall_b": 0.08333333333333333,
+      "delta_f1": -0.0367504835589942
+    },
+    {
+      "label": "microbiota_regulation",
+      "support": 26,
+      "f1_a": 0.1,
+      "f1_b": 0.14285714285714285,
+      "precision_a": 0.14285714285714285,
+      "recall_a": 0.07692307692307693,
+      "precision_b": 0.1875,
+      "recall_b": 0.11538461538461539,
+      "delta_f1": 0.042857142857142844
+    },
+    {
+      "label": "neuroprotective",
+      "support": 16,
+      "f1_a": 0.35714285714285715,
+      "f1_b": 0.42857142857142855,
+      "precision_a": 0.4166666666666667,
+      "recall_a": 0.3125,
+      "precision_b": 0.5,
+      "recall_b": 0.375,
+      "delta_f1": 0.0714285714285714
+    },
+    {
+      "label": "organ_protective",
+      "support": 41,
+      "f1_a": 0.13114754098360656,
+      "f1_b": 0.16949152542372883,
+      "precision_a": 0.2,
+      "recall_a": 0.0975609756097561,
+      "precision_b": 0.2777777777777778,
+      "recall_b": 0.12195121951219512,
+      "delta_f1": 0.03834398444012227
+    },
+    {
+      "label": "radioprotective",
+      "support": 4,
+      "f1_a": 0.0,
+      "f1_b": 0.0,
+      "precision_a": 0.0,
+      "recall_a": 0.0,
+      "precision_b": 0.0,
+      "recall_b": 0.0,
+      "delta_f1": 0.0
+    }
+  ],
+  "top_gain": [
+    {
+      "label": "antimicrobial",
+      "support": 31,
+      "f1_a": 0.2745098039215686,
+      "f1_b": 0.3673469387755102,
+      "precision_a": 0.35,
+      "recall_a": 0.22580645161290322,
+      "precision_b": 0.5,
+      "recall_b": 0.2903225806451613,
+      "delta_f1": 0.09283713485394163
+    },
+    {
+      "label": "neuroprotective",
+      "support": 16,
+      "f1_a": 0.35714285714285715,
+      "f1_b": 0.42857142857142855,
+      "precision_a": 0.4166666666666667,
+      "recall_a": 0.3125,
+      "precision_b": 0.5,
+      "recall_b": 0.375,
+      "delta_f1": 0.0714285714285714
+    },
+    {
+      "label": "microbiota_regulation",
+      "support": 26,
+      "f1_a": 0.1,
+      "f1_b": 0.14285714285714285,
+      "precision_a": 0.14285714285714285,
+      "recall_a": 0.07692307692307693,
+      "precision_b": 0.1875,
+      "recall_b": 0.11538461538461539,
+      "delta_f1": 0.042857142857142844
+    },
+    {
+      "label": "organ_protective",
+      "support": 41,
+      "f1_a": 0.13114754098360656,
+      "f1_b": 0.16949152542372883,
+      "precision_a": 0.2,
+      "recall_a": 0.0975609756097561,
+      "precision_b": 0.2777777777777778,
+      "recall_b": 0.12195121951219512,
+      "delta_f1": 0.03834398444012227
+    },
+    {
+      "label": "antiobesity",
+      "support": 12,
+      "f1_a": 0.08,
+      "f1_b": 0.08695652173913043,
+      "precision_a": 0.07692307692307693,
+      "recall_a": 0.08333333333333333,
+      "precision_b": 0.09090909090909091,
+      "recall_b": 0.08333333333333333,
+      "delta_f1": 0.006956521739130431
+    },
+    {
+      "label": "antitumor",
+      "support": 168,
+      "f1_a": 0.4649859943977591,
+      "f1_b": 0.4692737430167597,
+      "precision_a": 0.43915343915343913,
+      "recall_a": 0.49404761904761907,
+      "precision_b": 0.4421052631578947,
+      "recall_b": 0.5,
+      "delta_f1": 0.004287748619000609
+    },
+    {
+      "label": "antiaging",
+      "support": 23,
+      "f1_a": 0.10526315789473685,
+      "f1_b": 0.10526315789473685,
+      "precision_a": 0.13333333333333333,
+      "recall_a": 0.08695652173913043,
+      "precision_b": 0.13333333333333333,
+      "recall_b": 0.08695652173913043,
+      "delta_f1": 0.0
+    },
+    {
+      "label": "antidiabetic",
+      "support": 94,
+      "f1_a": 0.4222222222222222,
+      "f1_b": 0.4222222222222222,
+      "precision_a": 0.4418604651162791,
+      "recall_a": 0.40425531914893614,
+      "precision_b": 0.4418604651162791,
+      "recall_b": 0.40425531914893614,
+      "delta_f1": 0.0
+    }
+  ],
+  "top_drop": [
+    {
+      "label": "anticoagulant",
+      "support": 28,
+      "f1_a": 0.3934426229508197,
+      "f1_b": 0.3529411764705882,
+      "precision_a": 0.36363636363636365,
+      "recall_a": 0.42857142857142855,
+      "precision_b": 0.3,
+      "recall_b": 0.42857142857142855,
+      "delta_f1": -0.04050144648023152
+    },
+    {
+      "label": "lipid_lowering",
+      "support": 24,
+      "f1_a": 0.1276595744680851,
+      "f1_b": 0.0909090909090909,
+      "precision_a": 0.13043478260869565,
+      "recall_a": 0.125,
+      "precision_b": 0.1,
+      "recall_b": 0.08333333333333333,
+      "delta_f1": -0.0367504835589942
+    },
+    {
+      "label": "antiviral",
+      "support": 9,
+      "f1_a": 0.13333333333333333,
+      "f1_b": 0.1111111111111111,
+      "precision_a": 0.16666666666666666,
+      "recall_a": 0.1111111111111111,
+      "precision_b": 0.1111111111111111,
+      "recall_b": 0.1111111111111111,
+      "delta_f1": -0.022222222222222227
+    },
+    {
+      "label": "antifatigue",
+      "support": 10,
+      "f1_a": 0.13333333333333333,
+      "f1_b": 0.11764705882352941,
+      "precision_a": 0.2,
+      "recall_a": 0.1,
+      "precision_b": 0.14285714285714285,
+      "recall_b": 0.1,
+      "delta_f1": -0.01568627450980392
+    },
+    {
+      "label": "immunomodulatory",
+      "support": 312,
+      "f1_a": 0.5878378378378378,
+      "f1_b": 0.5781512605042017,
+      "precision_a": 0.6214285714285714,
+      "recall_a": 0.5576923076923077,
+      "precision_b": 0.607773851590106,
+      "recall_b": 0.5512820512820513,
+      "delta_f1": -0.009686577333636093
+    },
+    {
+      "label": "antioxidant",
+      "support": 459,
+      "f1_a": 0.7221621621621622,
+      "f1_b": 0.716612377850163,
+      "precision_a": 0.7167381974248928,
+      "recall_a": 0.7276688453159041,
+      "precision_b": 0.7142857142857143,
+      "recall_b": 0.7189542483660131,
+      "delta_f1": -0.005549784311999262
+    },
+    {
+      "label": "antiinflammatory",
+      "support": 27,
+      "f1_a": 0.2711864406779661,
+      "f1_b": 0.26666666666666666,
+      "precision_a": 0.25,
+      "recall_a": 0.2962962962962963,
+      "precision_b": 0.24242424242424243,
+      "recall_b": 0.2962962962962963,
+      "delta_f1": -0.004519774011299438
+    },
+    {
+      "label": "antiaging",
+      "support": 23,
+      "f1_a": 0.10526315789473685,
+      "f1_b": 0.10526315789473685,
+      "precision_a": 0.13333333333333333,
+      "recall_a": 0.08695652173913043,
+      "precision_b": 0.13333333333333333,
+      "recall_b": 0.08695652173913043,
+      "delta_f1": 0.0
+    }
+  ]
+}

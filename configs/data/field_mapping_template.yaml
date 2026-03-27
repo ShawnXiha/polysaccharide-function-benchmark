@@ -1,0 +1,31 @@
+fields:
+  poly_id:
+    description: stable internal identifier
+  source_db:
+    description: originating database
+  source_record_id:
+    description: original record identifier in source_db
+  raw_representation:
+    description: source-provided sequence or structure text
+  canonical_representation:
+    description: normalized training representation
+  monomer_composition:
+    description: monosaccharide composition summary
+  linkage:
+    description: linkage or repeating-unit linkage text
+  branching:
+    description: branching descriptors
+  modification:
+    description: chemical modification annotations
+  mw_or_range:
+    description: molecular weight or range
+  organism_source:
+    description: biological source
+  function_label:
+    description: downstream target label
+  evidence_type:
+    description: in_vitro, animal, clinical
+  doi:
+    description: literature evidence
+  license:
+    description: source data license or reuse status

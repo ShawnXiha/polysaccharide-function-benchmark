@@ -1,0 +1,11 @@
+model_family: classical
+models:
+  - majority
+  - logistic_regression
+  - xgboost
+features:
+  - monomer_composition
+  - linkage
+  - branching
+  - modification
+  - mw_or_range

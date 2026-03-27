@@ -1,0 +1,16 @@
+{
+  "dataset": "data_processed\\dataset_publishable_supervised_v1.jsonl",
+  "split": "data_processed\\splits_publishable_supervised_v1\\random_split.json",
+  "results": [
+    {
+      "split_name": "default",
+      "num_train": 2472,
+      "num_test": 825,
+      "majority_labels": [
+        "antioxidant"
+      ],
+      "macro_f1": 0.039719626168224303,
+      "exact_match_ratio": 0.2775757575757576
+    }
+  ]
+}

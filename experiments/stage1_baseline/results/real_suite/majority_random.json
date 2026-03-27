@@ -1,0 +1,16 @@
+{
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_v0_real.jsonl",
+  "split": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\splits_real\\random_split.json",
+  "results": [
+    {
+      "split_name": "default",
+      "num_train": 1,
+      "num_test": 0,
+      "majority_labels": [
+        "immunomodulatory"
+      ],
+      "macro_f1": 0.0,
+      "exact_match_ratio": 0.0
+    }
+  ]
+}

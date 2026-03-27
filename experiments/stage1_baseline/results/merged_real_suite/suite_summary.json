@@ -1,0 +1,89 @@
+{
+  "completed": [
+    {
+      "model": "majority",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite\\majority_random.json"
+    },
+    {
+      "model": "majority",
+      "split": "source",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite\\majority_source.json"
+    },
+    {
+      "model": "logistic",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite\\logistic_random.json"
+    },
+    {
+      "model": "random_forest",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite\\random_forest_random.json"
+    },
+    {
+      "model": "random_forest",
+      "split": "source",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite\\random_forest_source.json"
+    },
+    {
+      "model": "sequence_ngram",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite\\sequence_ngram_random.json"
+    },
+    {
+      "model": "sequence_transformer",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite\\sequence_transformer_random.json"
+    },
+    {
+      "model": "sequence_transformer",
+      "split": "source",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite\\sequence_transformer_source.json"
+    },
+    {
+      "model": "graph_gcn",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite\\graph_gcn_random.json"
+    },
+    {
+      "model": "graph_gcn",
+      "split": "source",
+      "output": "experiments\\stage1_baseline\\results\\merged_real_suite\\graph_gcn_source.json"
+    }
+  ],
+  "skipped": [],
+  "failed": [
+    {
+      "model": "logistic",
+      "split": "source",
+      "command": [
+        "C:\\Users\\huaka\\anaconda3\\python.exe",
+        "-m",
+        "polysaccharidesdb.models.run_logistic_baseline",
+        "--dataset",
+        "data_processed\\dataset_v0_real.jsonl",
+        "--split",
+        "data_processed\\splits_real\\leave_one_source_out.json",
+        "--output",
+        "experiments\\stage1_baseline\\results\\merged_real_suite\\logistic_source.json"
+      ],
+      "returncode": 1
+    },
+    {
+      "model": "sequence_ngram",
+      "split": "source",
+      "command": [
+        "C:\\Users\\huaka\\anaconda3\\python.exe",
+        "-m",
+        "polysaccharidesdb.models.run_sequence_ngram_baseline",
+        "--dataset",
+        "data_processed\\dataset_v0_real.jsonl",
+        "--split",
+        "data_processed\\splits_real\\leave_one_source_out.json",
+        "--output",
+        "experiments\\stage1_baseline\\results\\merged_real_suite\\sequence_ngram_source.json"
+      ],
+      "returncode": 1
+    }
+  ]
+}

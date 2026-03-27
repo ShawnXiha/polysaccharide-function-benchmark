@@ -1,0 +1,29 @@
+{
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_v0_real.jsonl",
+  "split": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\splits_real\\leave_one_source_out.json",
+  "results": [
+    {
+      "split_name": "CSDB",
+      "num_train": 1,
+      "num_test": 1,
+      "labels": [
+        "antioxidant",
+        "immunomodulatory"
+      ],
+      "macro_f1": 0.5,
+      "exact_match_ratio": 0.0
+    },
+    {
+      "split_name": "DoLPHiN",
+      "num_train": 1,
+      "num_test": 1,
+      "labels": [
+        "antioxidant",
+        "immunomodulatory"
+      ],
+      "macro_f1": 0.5,
+      "exact_match_ratio": 0.0
+    }
+  ],
+  "note": "minimal graph baseline using tokenized star graphs and GCN"
+}

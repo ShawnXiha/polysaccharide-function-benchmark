@@ -1,0 +1,10 @@
+stage: 2
+name: hyperparameter_tuning
+goal: tune stable configurations for the working baselines
+budget: 12
+gate_condition: variance below 5 percent across 3 runs
+priority_parameters:
+  - learning_rate
+  - batch_size
+  - loss_weight
+  - regularization

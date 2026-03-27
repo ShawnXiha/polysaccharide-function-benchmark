@@ -1,0 +1,73 @@
+{
+  "tag": "tuned_logistic_doi_test",
+  "dataset": "data_processed\\dataset_publishable_supervised_v1.jsonl",
+  "split": "data_processed\\splits_publishable_supervised_v2\\doi_grouped_split.json",
+  "config": {
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "eval_split": "test",
+    "c": 16.0,
+    "min_df": 1,
+    "max_features": 0,
+    "binary": false,
+    "class_weight": "balanced"
+  },
+  "summary": {
+    "runs": [
+      {
+        "path": "experiments\\revision_p0\\logistic_doi_test\\tuned_logistic_doi_test_seed11.json",
+        "macro_f1": 0.12502108314958488,
+        "exact_match_ratio": 0.11642156862745098,
+        "vectorizer_vocab_size": 5887,
+        "config": {
+          "eval_split": "test",
+          "seed": 11,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced"
+        }
+      },
+      {
+        "path": "experiments\\revision_p0\\logistic_doi_test\\tuned_logistic_doi_test_seed22.json",
+        "macro_f1": 0.12502108314958488,
+        "exact_match_ratio": 0.11642156862745098,
+        "vectorizer_vocab_size": 5887,
+        "config": {
+          "eval_split": "test",
+          "seed": 22,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced"
+        }
+      },
+      {
+        "path": "experiments\\revision_p0\\logistic_doi_test\\tuned_logistic_doi_test_seed33.json",
+        "macro_f1": 0.12502108314958488,
+        "exact_match_ratio": 0.11642156862745098,
+        "vectorizer_vocab_size": 5887,
+        "config": {
+          "eval_split": "test",
+          "seed": 33,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced"
+        }
+      }
+    ],
+    "macro_f1_mean": 0.12502108314958488,
+    "macro_f1_std": 0.0,
+    "macro_f1_rel_std": 0.0,
+    "exact_match_mean": 0.11642156862745098,
+    "exact_match_std": 0.0,
+    "exact_match_rel_std": 0.0
+  }
+}

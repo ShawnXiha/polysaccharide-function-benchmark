@@ -1,0 +1,69 @@
+{
+  "tag": "count_c16_balanced",
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_publishable_supervised_v1.jsonl",
+  "split": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\splits_publishable_supervised_v1\\random_split.json",
+  "config": {
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "c": 16.0,
+    "min_df": 1,
+    "max_features": 0,
+    "binary": false,
+    "class_weight": "balanced"
+  },
+  "summary": {
+    "runs": [
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage2_tuning\\results\\logistic\\count_c16_balanced_seed11.json",
+        "macro_f1": 0.26098533383974076,
+        "exact_match_ratio": 0.2606060606060606,
+        "vectorizer_vocab_size": 6255,
+        "config": {
+          "seed": 11,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced"
+        }
+      },
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage2_tuning\\results\\logistic\\count_c16_balanced_seed22.json",
+        "macro_f1": 0.26098533383974076,
+        "exact_match_ratio": 0.2606060606060606,
+        "vectorizer_vocab_size": 6255,
+        "config": {
+          "seed": 22,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced"
+        }
+      },
+      {
+        "path": "D:\\projects\\paper_writing\\polysaccharidesdb\\experiments\\stage2_tuning\\results\\logistic\\count_c16_balanced_seed33.json",
+        "macro_f1": 0.26098533383974076,
+        "exact_match_ratio": 0.2606060606060606,
+        "vectorizer_vocab_size": 6255,
+        "config": {
+          "seed": 33,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced"
+        }
+      }
+    ],
+    "macro_f1_mean": 0.26098533383974076,
+    "macro_f1_std": 0.0,
+    "macro_f1_rel_std": 0.0,
+    "exact_match_mean": 0.2606060606060606,
+    "exact_match_std": 0.0,
+    "exact_match_rel_std": 0.0
+  }
+}

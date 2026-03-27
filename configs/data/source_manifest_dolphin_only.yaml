@@ -1,0 +1,16 @@
+sources:
+  - name: DoLPHiN
+    enabled: true
+    format: csv
+    path: data_raw/dolphin_export.csv
+  - name: CSDB
+    enabled: false
+    format: csv
+    path: data_raw/csdb_export.csv
+  - name: GlyTouCan
+    enabled: false
+    format: csv
+    path: data_raw/glytoucan_mapping.csv
+output:
+  dataset: data_processed/dataset_dolphin_only.jsonl
+  report: data_interim/dataset_dolphin_only_validation_report.json

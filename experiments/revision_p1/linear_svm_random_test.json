@@ -1,0 +1,8063 @@
+{
+  "dataset": "data_processed\\dataset_publishable_supervised_v1.jsonl",
+  "split": "data_processed\\splits_publishable_supervised_v2\\random_split.json",
+  "config": {
+    "eval_split": "test",
+    "seed": 11,
+    "c": 1.0,
+    "min_df": 1,
+    "ngram_max": 2,
+    "class_weight": "balanced"
+  },
+  "results": [
+    {
+      "split_name": "default",
+      "eval_split": "test",
+      "num_train": 2472,
+      "num_test": 825,
+      "labels": [
+        "antiaging",
+        "anticoagulant",
+        "antidiabetic",
+        "antifatigue",
+        "antiinflammatory",
+        "antimicrobial",
+        "antiobesity",
+        "antioxidant",
+        "antiproliferative",
+        "antitumor",
+        "antiviral",
+        "cholesterol_lowering",
+        "immunomodulatory",
+        "lipid_lowering",
+        "microbiota_regulation",
+        "neuroprotective",
+        "organ_protective",
+        "radioprotective"
+      ],
+      "vectorizer_vocab_size": 26020,
+      "macro_f1": 0.2520659345556242,
+      "exact_match_ratio": 0.2921212121212121,
+      "predictions": [
+        {
+          "poly_id": "dolphin::34716",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34924",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35252",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34358",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34680",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "lipid_lowering"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34712",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32996",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33756",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36060",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33435",
+          "y_true": [
+            "antiinflammatory",
+            "antitumor"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36004",
+          "y_true": [
+            "antiinflammatory",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "organ_protective"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34576",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33847",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33427",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37477",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33063",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35242",
+          "y_true": [
+            "antiobesity"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34312",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34378",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34115",
+          "y_true": [
+            "antiaging",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33861",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34173",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36089",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33050",
+          "y_true": [
+            "antifatigue"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34815",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34127",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33881",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35691",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35001",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35159",
+          "y_true": [
+            "cholesterol_lowering"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36516",
+          "y_true": [
+            "antiinflammatory",
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37364",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34138",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35746",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33941",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37102",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34064",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34857",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34960",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36256",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33463",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34840",
+          "y_true": [
+            "antidiabetic",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36836",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34761",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35091",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36873",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36735",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35613",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34826",
+          "y_true": [
+            "immunomodulatory",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37348",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34302",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35509",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35321",
+          "y_true": [
+            "antioxidant",
+            "antiproliferative"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "lipid_lowering"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37159",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35879",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34917",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36664",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33343",
+          "y_true": [
+            "antidiabetic",
+            "antiobesity",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34883",
+          "y_true": [
+            "anticoagulant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33260",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33955",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35315",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37171",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34916",
+          "y_true": [
+            "antimicrobial"
+          ],
+          "y_pred": [
+            "antiaging",
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35145",
+          "y_true": [
+            "antiobesity",
+            "cholesterol_lowering"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36014",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36675",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33537",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33785",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34755",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36519",
+          "y_true": [
+            "antiinflammatory",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33169",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36467",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37444",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32754",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35975",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35823",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33414",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33926",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34646",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35045",
+          "y_true": [
+            "antiaging",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34580",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36016",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37194",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33643",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35407",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35713",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34710",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34879",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33031",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "microbiota_regulation"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37523",
+          "y_true": [
+            "antidiabetic",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35607",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37359",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37539",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32922",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32833",
+          "y_true": [
+            "antiaging",
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antifatigue",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33413",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33668",
+          "y_true": [
+            "anticoagulant",
+            "antidiabetic",
+            "antiinflammatory",
+            "antimicrobial",
+            "antiobesity",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36876",
+          "y_true": [
+            "antioxidant",
+            "cholesterol_lowering"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "organ_protective"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37325",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34274",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35904",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33864",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36305",
+          "y_true": [
+            "antidiabetic",
+            "organ_protective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36756",
+          "y_true": [
+            "antiinflammatory",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37229",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34375",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37128",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35726",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant",
+            "antitumor",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35857",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35135",
+          "y_true": [
+            "cholesterol_lowering"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34165",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33080",
+          "y_true": [
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35834",
+          "y_true": [
+            "antioxidant",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33512",
+          "y_true": [
+            "antifatigue",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36204",
+          "y_true": [
+            "cholesterol_lowering"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36988",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36624",
+          "y_true": [
+            "organ_protective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34954",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35117",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37221",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35918",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34825",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37016",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34918",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34322",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35817",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37353",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35429",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36589",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36993",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36983",
+          "y_true": [
+            "antidiabetic",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34178",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34247",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32733",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36818",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35274",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34674",
+          "y_true": [
+            "neuroprotective"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "neuroprotective"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34235",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35374",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35628",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37808",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant",
+            "neuroprotective"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36278",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35925",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37213",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35863",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34735",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33624",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33310",
+          "y_true": [
+            "anticoagulant"
+          ],
+          "y_pred": [
+            "anticoagulant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35302",
+          "y_true": [
+            "antimicrobial"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34214",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36019",
+          "y_true": [
+            "antioxidant",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34659",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34339",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34683",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36980",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34269",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35101",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34233",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36119",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33299",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37066",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antimicrobial",
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34288",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35674",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34355",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35858",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33019",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34780",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34494",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33658",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35895",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36216",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36249",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36117",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35971",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35235",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antiobesity",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36688",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35153",
+          "y_true": [
+            "cholesterol_lowering"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32738",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34800",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36070",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32914",
+          "y_true": [
+            "antiobesity",
+            "antioxidant",
+            "cholesterol_lowering",
+            "immunomodulatory",
+            "lipid_lowering",
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33994",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33615",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35411",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34585",
+          "y_true": [
+            "neuroprotective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33217",
+          "y_true": [
+            "anticoagulant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35118",
+          "y_true": [
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35577",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34801",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37173",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36592",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36165",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34418",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34793",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35514",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33179",
+          "y_true": [
+            "antidiabetic",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32889",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37112",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35434",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37424",
+          "y_true": [
+            "anticoagulant",
+            "antimicrobial",
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34072",
+          "y_true": [
+            "anticoagulant",
+            "antiinflammatory",
+            "antitumor",
+            "antiviral"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37058",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32846",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34359",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37400",
+          "y_true": [
+            "anticoagulant",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36859",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35934",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34647",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35110",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35762",
+          "y_true": [
+            "antioxidant",
+            "lipid_lowering",
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34441",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37811",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antimicrobial"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36488",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "antiviral",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37619",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34144",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34347",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34642",
+          "y_true": [
+            "neuroprotective",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33634",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35840",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32829",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33802",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33824",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36630",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36764",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34253",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34435",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34899",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36748",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33670",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33800",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34943",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36925",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32891",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34574",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33176",
+          "y_true": [
+            "antidiabetic",
+            "antifatigue",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36037",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36596",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33464",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37443",
+          "y_true": [
+            "antioxidant",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33951",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36961",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36199",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36950",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antimicrobial",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37796",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "organ_protective"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36667",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34699",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36567",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34363",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36213",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33556",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32834",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34701",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33543",
+          "y_true": [
+            "antioxidant",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36712",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36656",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33479",
+          "y_true": [
+            "antiaging",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37220",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33871",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33445",
+          "y_true": [
+            "antioxidant",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36298",
+          "y_true": [
+            "antiinflammatory"
+          ],
+          "y_pred": [
+            "antiinflammatory",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35663",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "antiviral",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37224",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35325",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36530",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34451",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33154",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35872",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33957",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antimicrobial",
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35945",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33736",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34468",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32896",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37453",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36636",
+          "y_true": [
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34496",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34265",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32904",
+          "y_true": [
+            "antiobesity",
+            "cholesterol_lowering",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "immunomodulatory",
+            "organ_protective"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33311",
+          "y_true": [
+            "anticoagulant"
+          ],
+          "y_pred": [
+            "anticoagulant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34774",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33416",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35293",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35441",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34515",
+          "y_true": [
+            "immunomodulatory",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36822",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "lipid_lowering"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32880",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35264",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33420",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35990",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37241",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37390",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32771",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35329",
+          "y_true": [
+            "anticoagulant",
+            "antimicrobial"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34765",
+          "y_true": [
+            "anticoagulant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36055",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35289",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34823",
+          "y_true": [
+            "antidiabetic",
+            "lipid_lowering"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36246",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37431",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34075",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "anticoagulant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35744",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33329",
+          "y_true": [
+            "anticoagulant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36479",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34369",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32746",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32913",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34136",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37654",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37279",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35732",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33111",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32941",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36869",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33963",
+          "y_true": [
+            "antiaging",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37394",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35094",
+          "y_true": [
+            "antioxidant",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34084",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36897",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35731",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35974",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33694",
+          "y_true": [
+            "antimicrobial"
+          ],
+          "y_pred": [
+            "microbiota_regulation"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34407",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36110",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33738",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35567",
+          "y_true": [
+            "anticoagulant",
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34157",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34118",
+          "y_true": [
+            "antiaging",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33448",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37454",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36250",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33172",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33216",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37776",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33350",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37379",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33157",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35855",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34229",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35303",
+          "y_true": [
+            "antimicrobial"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36750",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35880",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32764",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35195",
+          "y_true": [
+            "antioxidant",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antiobesity",
+            "antioxidant",
+            "cholesterol_lowering",
+            "lipid_lowering"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35814",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37775",
+          "y_true": [
+            "antioxidant",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35609",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34242",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36046",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35255",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36819",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37332",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33458",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34170",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34516",
+          "y_true": [
+            "immunomodulatory",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33927",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37025",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33014",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37035",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34432",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33339",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antiaging",
+            "antidiabetic",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37507",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35096",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33753",
+          "y_true": [
+            "antifatigue",
+            "antiinflammatory",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antiinflammatory",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35232",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33033",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33142",
+          "y_true": [
+            "neuroprotective"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35338",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35665",
+          "y_true": [
+            "antiaging",
+            "antidiabetic",
+            "antifatigue"
+          ],
+          "y_pred": [
+            "antiaging",
+            "antidiabetic",
+            "antifatigue",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34891",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32770",
+          "y_true": [
+            "anticoagulant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33030",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36323",
+          "y_true": [
+            "antimicrobial"
+          ],
+          "y_pred": [
+            "antimicrobial",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37120",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34886",
+          "y_true": [
+            "immunomodulatory",
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory",
+            "microbiota_regulation"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34231",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35778",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37335",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33330",
+          "y_true": [
+            "anticoagulant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34631",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34090",
+          "y_true": [
+            "anticoagulant",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33879",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antiviral",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34289",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36100",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35889",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33703",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34071",
+          "y_true": [
+            "antiinflammatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34298",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35166",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35348",
+          "y_true": [
+            "antidiabetic",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37481",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35828",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34730",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antifatigue"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33068",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35657",
+          "y_true": [
+            "antiaging",
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "radioprotective"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32895",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35505",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35421",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33937",
+          "y_true": [
+            "antioxidant",
+            "cholesterol_lowering",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35376",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37081",
+          "y_true": [
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "organ_protective"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33249",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34664",
+          "y_true": [
+            "neuroprotective"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33865",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36940",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35916",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33011",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35507",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33013",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "microbiota_regulation"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33591",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36891",
+          "y_true": [
+            "antioxidant",
+            "antiproliferative"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33061",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35104",
+          "y_true": [
+            "neuroprotective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32965",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33456",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35204",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36896",
+          "y_true": [
+            "antioxidant",
+            "antiproliferative"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35083",
+          "y_true": [
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34969",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35451",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32938",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32967",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34287",
+          "y_true": [
+            "antiaging",
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36273",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32982",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35250",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36202",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35426",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32972",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "antiviral",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33780",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34218",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33614",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33446",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35011",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36113",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35849",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37790",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36574",
+          "y_true": [
+            "antiinflammatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36181",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36017",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "organ_protective"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34746",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antiinflammatory",
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34171",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34877",
+          "y_true": [
+            "antiproliferative",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36586",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36577",
+          "y_true": [
+            "antiinflammatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34089",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34608",
+          "y_true": [
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32740",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34559",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33489",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32973",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37135",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34653",
+          "y_true": [
+            "antiproliferative",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36952",
+          "y_true": [
+            "antiinflammatory",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33755",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34988",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35007",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34675",
+          "y_true": [
+            "neuroprotective"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "neuroprotective"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33496",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33870",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36880",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36330",
+          "y_true": [
+            "antimicrobial"
+          ],
+          "y_pred": [
+            "antimicrobial"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33115",
+          "y_true": [
+            "antiaging",
+            "anticoagulant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32792",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36828",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35244",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "cholesterol_lowering",
+            "lipid_lowering"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35807",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32940",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33134",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory",
+            "neuroprotective"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35284",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36913",
+          "y_true": [
+            "antiinflammatory"
+          ],
+          "y_pred": [
+            "antiinflammatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36938",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36694",
+          "y_true": [
+            "antidiabetic",
+            "antifatigue",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "organ_protective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34829",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33041",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37000",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33958",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34908",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37302",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33575",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34741",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antimicrobial",
+            "antioxidant",
+            "antitumor",
+            "cholesterol_lowering",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33376",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34851",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37670",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37350",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33623",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33953",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33182",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37625",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36661",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34392",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36163",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34660",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32981",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33136",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35781",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35812",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35908",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32954",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37540",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36949",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antimicrobial",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34928",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34696",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34748",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34454",
+          "y_true": [
+            "antioxidant",
+            "organ_protective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34779",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35835",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33130",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33119",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33617",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34678",
+          "y_true": [
+            "immunomodulatory",
+            "neuroprotective"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36692",
+          "y_true": [
+            "antidiabetic",
+            "antifatigue",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "organ_protective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34953",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36579",
+          "y_true": [
+            "antiinflammatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33909",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34952",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35410",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35381",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37044",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36143",
+          "y_true": [
+            "antioxidant",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33338",
+          "y_true": [
+            "antiaging",
+            "antifatigue",
+            "antiinflammatory",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "radioprotective"
+          ],
+          "y_pred": [
+            "antimicrobial",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "lipid_lowering"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37452",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33759",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35006",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35886",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34143",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33876",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35129",
+          "y_true": [
+            "antiobesity",
+            "cholesterol_lowering",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "cholesterol_lowering",
+            "lipid_lowering"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37315",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34356",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36931",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32861",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37152",
+          "y_true": [
+            "anticoagulant",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antiinflammatory",
+            "antitumor",
+            "antiviral"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33009",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33829",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32974",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35718",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36066",
+          "y_true": [
+            "antioxidant",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33023",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32761",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33791",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35475",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33839",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35300",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35474",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32818",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "organ_protective"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34387",
+          "y_true": [
+            "antioxidant",
+            "microbiota_regulation"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32995",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33809",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33950",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33258",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34863",
+          "y_true": [
+            "antiproliferative"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35143",
+          "y_true": [
+            "antiobesity",
+            "cholesterol_lowering"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37122",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34808",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant",
+            "antiproliferative",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34532",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35797",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35900",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34644",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34279",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36087",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33677",
+          "y_true": [
+            "antiviral",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35985",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36178",
+          "y_true": [
+            "antiaging",
+            "antimicrobial",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36340",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35238",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37285",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33743",
+          "y_true": [
+            "antiinflammatory",
+            "antioxidant",
+            "immunomodulatory",
+            "neuroprotective",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antiobesity",
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34747",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35579",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36991",
+          "y_true": [
+            "antiinflammatory",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antiinflammatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35190",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34088",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33491",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35281",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34962",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35839",
+          "y_true": [
+            "antiinflammatory",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33314",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33304",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36401",
+          "y_true": [
+            "antiinflammatory",
+            "antioxidant",
+            "immunomodulatory",
+            "neuroprotective"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35211",
+          "y_true": [
+            "antiaging",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36374",
+          "y_true": [
+            "antiaging",
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33016",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36744",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35008",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36186",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33083",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37664",
+          "y_true": [
+            "anticoagulant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37369",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37505",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37020",
+          "y_true": [
+            "antioxidant",
+            "cholesterol_lowering",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "cholesterol_lowering",
+            "lipid_lowering"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33891",
+          "y_true": [
+            "anticoagulant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32970",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33882",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34262",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36689",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36810",
+          "y_true": [
+            "organ_protective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37023",
+          "y_true": [
+            "antioxidant",
+            "cholesterol_lowering",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34489",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37286",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33199",
+          "y_true": [
+            "antifatigue",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32811",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35019",
+          "y_true": [
+            "neuroprotective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34330",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35525",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32734",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37234",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35201",
+          "y_true": [
+            "antioxidant",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37255",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36520",
+          "y_true": [
+            "antiaging",
+            "antiobesity",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "lipid_lowering",
+            "radioprotective"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35239",
+          "y_true": [
+            "antiobesity",
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33474",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36387",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antiinflammatory",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34534",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37468",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33667",
+          "y_true": [
+            "anticoagulant",
+            "antidiabetic",
+            "antiinflammatory",
+            "antimicrobial",
+            "antiobesity",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "organ_protective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35594",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37787",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35752",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36851",
+          "y_true": [
+            "antidiabetic",
+            "antiinflammatory",
+            "antitumor",
+            "immunomodulatory",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34225",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35683",
+          "y_true": [
+            "antioxidant",
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36982",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33168",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37204",
+          "y_true": [
+            "immunomodulatory",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35103",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antiinflammatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33553",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36379",
+          "y_true": [
+            "antiinflammatory",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35074",
+          "y_true": [
+            "anticoagulant",
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34081",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36118",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37006",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36138",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37403",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32745",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34872",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33459",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34794",
+          "y_true": [
+            "neuroprotective"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34205",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33195",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34396",
+          "y_true": [
+            "antioxidant",
+            "antiproliferative"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35760",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36448",
+          "y_true": [
+            "antiviral"
+          ],
+          "y_pred": [
+            "anticoagulant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34095",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36304",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35229",
+          "y_true": [
+            "antidiabetic",
+            "lipid_lowering"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37055",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35944",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33213",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36123",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35938",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32779",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37349",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36935",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35298",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33967",
+          "y_true": [
+            "antidiabetic",
+            "antimicrobial",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35196",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34933",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35511",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34571",
+          "y_true": [
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34584",
+          "y_true": [
+            "neuroprotective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37805",
+          "y_true": [
+            "antiaging",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35513",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34743",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37791",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36617",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33467",
+          "y_true": [
+            "anticoagulant"
+          ],
+          "y_pred": [
+            "anticoagulant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35694",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33436",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33187",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36937",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32925",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36342",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33105",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35040",
+          "y_true": [
+            "neuroprotective"
+          ],
+          "y_pred": [
+            "neuroprotective"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35111",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33368",
+          "y_true": [
+            "antiinflammatory",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33787",
+          "y_true": [
+            "antiinflammatory",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34485",
+          "y_true": [
+            "antidiabetic",
+            "immunomodulatory",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34645",
+          "y_true": [
+            "antidiabetic",
+            "neuroprotective"
+          ],
+          "y_pred": [
+            "antiobesity",
+            "cholesterol_lowering"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35449",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37114",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34768",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35453",
+          "y_true": [
+            "anticoagulant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36269",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34079",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35237",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35331",
+          "y_true": [
+            "anticoagulant",
+            "antimicrobial"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36261",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33939",
+          "y_true": [
+            "antiaging",
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33373",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34087",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33390",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34893",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35768",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37217",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37054",
+          "y_true": [
+            "antioxidant",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34630",
+          "y_true": [
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35068",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35820",
+          "y_true": [
+            "antioxidant",
+            "organ_protective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33749",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34291",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36111",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37008",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35363",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37351",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37210",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33740",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33004",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34099",
+          "y_true": [
+            "antimicrobial",
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34654",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34295",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36679",
+          "y_true": [
+            "antiinflammatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32864",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36770",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33830",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32962",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36505",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36447",
+          "y_true": [
+            "antiviral"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antitumor",
+            "antiviral"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36856",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34331",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antiaging",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35956",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33788",
+          "y_true": [
+            "antiinflammatory",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35313",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35978",
+          "y_true": [
+            "antiaging",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35756",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::37271",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34108",
+          "y_true": [
+            "antioxidant",
+            "antiproliferative"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34561",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34907",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33484",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33929",
+          "y_true": [
+            "antioxidant",
+            "antiproliferative"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36175",
+          "y_true": [
+            "antiaging",
+            "antimicrobial",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35217",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "lipid_lowering"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33517",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35734",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35598",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33025",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35790",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant",
+            "antitumor",
+            "antiviral"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35951",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37318",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36039",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34096",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35891",
+          "y_true": [
+            "anticoagulant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33734",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34458",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34519",
+          "y_true": [
+            "immunomodulatory",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33481",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34497",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36820",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35738",
+          "y_true": [
+            "antiaging",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antiaging",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34871",
+          "y_true": [
+            "cholesterol_lowering",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34141",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37782",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33146",
+          "y_true": [
+            "antiaging",
+            "antimicrobial",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antiaging",
+            "antimicrobial",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36960",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33854",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36910",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33059",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37558",
+          "y_true": [
+            "anticoagulant",
+            "antifatigue",
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34188",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36487",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "antiviral",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33825",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35846",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32920",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33017",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36050",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33627",
+          "y_true": [
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35414",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34484",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36939",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37057",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35654",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35700",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antiaging",
+            "antidiabetic",
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36801",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34203",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35291",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33055",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory",
+            "microbiota_regulation"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34557",
+          "y_true": [
+            "anticoagulant"
+          ],
+          "y_pred": [
+            "anticoagulant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37254",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37491",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33300",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35226",
+          "y_true": [
+            "antidiabetic"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34895",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36177",
+          "y_true": [
+            "antiaging",
+            "antimicrobial",
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antiaging",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32910",
+          "y_true": [
+            "antidiabetic",
+            "antitumor",
+            "immunomodulatory",
+            "organ_protective",
+            "radioprotective"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::36690",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::34086",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35548",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34411",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36875",
+          "y_true": [
+            "antioxidant",
+            "cholesterol_lowering"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "organ_protective"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34473",
+          "y_true": [
+            "antiaging"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33129",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34563",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33112",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33151",
+          "y_true": [
+            "antiobesity"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34381",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36391",
+          "y_true": [
+            "antidiabetic",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37423",
+          "y_true": [
+            "anticoagulant",
+            "antimicrobial",
+            "antioxidant",
+            "antitumor"
+          ],
+          "y_pred": [
+            "anticoagulant",
+            "antioxidant",
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33763",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34276",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35308",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": [
+            "antitumor"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35939",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36866",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34310",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32785",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35310",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::37116",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34819",
+          "y_true": [
+            "antimicrobial",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36840",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34638",
+          "y_true": [
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32950",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34919",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34805",
+          "y_true": [
+            "cholesterol_lowering",
+            "lipid_lowering",
+            "organ_protective"
+          ],
+          "y_pred": [
+            "anticoagulant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33597",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32977",
+          "y_true": [
+            "antidiabetic",
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::32993",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::36860",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33529",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::33706",
+          "y_true": [
+            "antioxidant",
+            "antitumor",
+            "antiviral",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antitumor",
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34146",
+          "y_true": [
+            "antioxidant",
+            "immunomodulatory"
+          ],
+          "y_pred": [
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::34842",
+          "y_true": [
+            "immunomodulatory"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::35024",
+          "y_true": [
+            "microbiota_regulation"
+          ],
+          "y_pred": [
+            "immunomodulatory"
+          ]
+        },
+        {
+          "poly_id": "dolphin::35283",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": [
+            "antidiabetic",
+            "antioxidant"
+          ]
+        },
+        {
+          "poly_id": "dolphin::32937",
+          "y_true": [
+            "antioxidant"
+          ],
+          "y_pred": []
+        },
+        {
+          "poly_id": "dolphin::33801",
+          "y_true": [
+            "antitumor"
+          ],
+          "y_pred": []
+        }
+      ]
+    }
+  ],
+  "note": "Linear SVM baseline over TF-IDF structured text features"
+}

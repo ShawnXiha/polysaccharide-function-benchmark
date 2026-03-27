@@ -1,0 +1,16 @@
+{
+  "dataset": "data_processed\\dataset_dolphin_only.jsonl",
+  "split": "data_processed\\splits_dolphin_only\\random_split.json",
+  "results": [
+    {
+      "split_name": "default",
+      "num_train": 3046,
+      "num_test": 1016,
+      "majority_labels": [
+        "antioxidant"
+      ],
+      "macro_f1": 0.012652082890864409,
+      "exact_match_ratio": 0.2076771653543307
+    }
+  ]
+}

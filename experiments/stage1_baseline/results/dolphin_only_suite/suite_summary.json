@@ -1,0 +1,67 @@
+{
+  "completed": [
+    {
+      "model": "majority",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\dolphin_only_suite\\majority_random.json"
+    },
+    {
+      "model": "logistic",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\dolphin_only_suite\\logistic_random.json"
+    },
+    {
+      "model": "random_forest",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\dolphin_only_suite\\random_forest_random.json"
+    },
+    {
+      "model": "sequence_ngram",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\dolphin_only_suite\\sequence_ngram_random.json"
+    },
+    {
+      "model": "sequence_transformer",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\dolphin_only_suite\\sequence_transformer_random.json"
+    },
+    {
+      "model": "graph_gcn",
+      "split": "random",
+      "output": "experiments\\stage1_baseline\\results\\dolphin_only_suite\\graph_gcn_random.json"
+    }
+  ],
+  "skipped": [
+    {
+      "model": "majority",
+      "split": "source",
+      "reason": "empty train/test partition"
+    },
+    {
+      "model": "logistic",
+      "split": "source",
+      "reason": "empty train/test partition"
+    },
+    {
+      "model": "random_forest",
+      "split": "source",
+      "reason": "empty train/test partition"
+    },
+    {
+      "model": "sequence_ngram",
+      "split": "source",
+      "reason": "empty train/test partition"
+    },
+    {
+      "model": "sequence_transformer",
+      "split": "source",
+      "reason": "empty train/test partition"
+    },
+    {
+      "model": "graph_gcn",
+      "split": "source",
+      "reason": "empty train/test partition"
+    }
+  ],
+  "failed": []
+}

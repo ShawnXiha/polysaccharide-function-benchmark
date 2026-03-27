@@ -1,0 +1,9 @@
+stage: 3
+name: proposed_method
+goal: validate evidence-aware modeling against tuned baselines
+budget: 12
+gate_condition: consistent improvement on primary metric across 3 runs
+core_components:
+  - evidence_weighting
+  - source_aware_features
+  - polysaccharide_specific_features

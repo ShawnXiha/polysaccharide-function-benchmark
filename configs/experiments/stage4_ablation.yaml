@@ -1,0 +1,11 @@
+stage: 4
+name: ablation_study
+goal: validate contribution of every claimed component
+budget: 18
+gate_condition: every claim supported by a controlled ablation
+ablations:
+  - no_evidence_weighting
+  - no_source_encoding
+  - no_mw_feature
+  - no_modification_feature
+  - no_repeating_unit_encoding

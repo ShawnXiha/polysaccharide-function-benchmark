@@ -1,0 +1,20 @@
+{
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_v0.jsonl",
+  "split": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\splits\\random_split.json",
+  "results": [
+    {
+      "split_name": "default",
+      "num_train": 3,
+      "num_test": 1,
+      "labels": [
+        "antioxidant",
+        "antiviral",
+        "immunomodulatory",
+        "prebiotic"
+      ],
+      "macro_f1": 0.0,
+      "exact_match_ratio": 0.0
+    }
+  ],
+  "note": "minimal graph baseline using tokenized star graphs and GCN"
+}

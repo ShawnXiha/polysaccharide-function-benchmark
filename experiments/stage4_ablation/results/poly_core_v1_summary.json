@@ -1,0 +1,112 @@
+{
+  "tag": "poly_core_v1",
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_publishable_supervised_v1.jsonl",
+  "split": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\splits_publishable_supervised_v1\\random_split.json",
+  "config": {
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "c": 16.0,
+    "min_df": 1,
+    "max_features": 0,
+    "binary": false,
+    "class_weight": "balanced",
+    "use_poly_features": true,
+    "use_evidence_features": false,
+    "use_sample_weight": false,
+    "include_mw": true,
+    "include_branching": true,
+    "include_modification": false,
+    "include_residue": true,
+    "include_source_kingdom": false,
+    "include_composition_terms": false,
+    "method": "evidence_aware_logistic_v1"
+  },
+  "summary": {
+    "runs": [
+      {
+        "path": "experiments\\stage4_ablation\\results\\poly_core_v1_seed11.json",
+        "macro_f1": 0.2677516972569477,
+        "exact_match_ratio": 0.25696969696969696,
+        "vectorizer_vocab_size": 6277,
+        "sample_weight_mean": 1.0,
+        "config": {
+          "seed": 11,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced",
+          "use_poly_features": true,
+          "use_evidence_features": false,
+          "use_sample_weight": false,
+          "include_mw": true,
+          "include_branching": true,
+          "include_modification": false,
+          "include_residue": true,
+          "include_source_kingdom": false,
+          "include_composition_terms": false,
+          "method": "evidence_aware_logistic_v1"
+        }
+      },
+      {
+        "path": "experiments\\stage4_ablation\\results\\poly_core_v1_seed22.json",
+        "macro_f1": 0.2677516972569477,
+        "exact_match_ratio": 0.25696969696969696,
+        "vectorizer_vocab_size": 6277,
+        "sample_weight_mean": 1.0,
+        "config": {
+          "seed": 22,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced",
+          "use_poly_features": true,
+          "use_evidence_features": false,
+          "use_sample_weight": false,
+          "include_mw": true,
+          "include_branching": true,
+          "include_modification": false,
+          "include_residue": true,
+          "include_source_kingdom": false,
+          "include_composition_terms": false,
+          "method": "evidence_aware_logistic_v1"
+        }
+      },
+      {
+        "path": "experiments\\stage4_ablation\\results\\poly_core_v1_seed33.json",
+        "macro_f1": 0.2677516972569477,
+        "exact_match_ratio": 0.25696969696969696,
+        "vectorizer_vocab_size": 6277,
+        "sample_weight_mean": 1.0,
+        "config": {
+          "seed": 33,
+          "c": 16.0,
+          "min_df": 1,
+          "max_features": 0,
+          "binary": false,
+          "class_weight": "balanced",
+          "use_poly_features": true,
+          "use_evidence_features": false,
+          "use_sample_weight": false,
+          "include_mw": true,
+          "include_branching": true,
+          "include_modification": false,
+          "include_residue": true,
+          "include_source_kingdom": false,
+          "include_composition_terms": false,
+          "method": "evidence_aware_logistic_v1"
+        }
+      }
+    ],
+    "macro_f1_mean": 0.2677516972569477,
+    "macro_f1_std": 0.0,
+    "macro_f1_rel_std": 0.0,
+    "exact_match_mean": 0.25696969696969696,
+    "exact_match_std": 0.0,
+    "exact_match_rel_std": 0.0
+  }
+}

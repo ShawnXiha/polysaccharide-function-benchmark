@@ -1,0 +1,27 @@
+{
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_v0.jsonl",
+  "split": "data_processed\\splits\\leave_one_source_out.json",
+  "results": [
+    {
+      "split_name": "CSDB",
+      "num_train": 3,
+      "num_test": 2,
+      "majority_labels": [
+        "antioxidant",
+        "immunomodulatory"
+      ],
+      "macro_f1": 0.2222222222222222,
+      "exact_match_ratio": 0.0
+    },
+    {
+      "split_name": "DoLPHiN",
+      "num_train": 2,
+      "num_test": 3,
+      "majority_labels": [
+        "immunomodulatory"
+      ],
+      "macro_f1": 0.16666666666666666,
+      "exact_match_ratio": 0.0
+    }
+  ]
+}

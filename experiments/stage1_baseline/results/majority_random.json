@@ -1,0 +1,11 @@
+{
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_v0.jsonl",
+  "split": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\splits\\random_split.json",
+  "num_train": 3,
+  "num_test": 1,
+  "majority_labels": [
+    "antiviral"
+  ],
+  "macro_f1": 0.0,
+  "exact_match_ratio": 0.0
+}

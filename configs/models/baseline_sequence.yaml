@@ -1,0 +1,7 @@
+model_family: sequence
+representation: canonical_iupac
+models:
+  - ngram
+  - transformer
+optional_representation:
+  - wurcs

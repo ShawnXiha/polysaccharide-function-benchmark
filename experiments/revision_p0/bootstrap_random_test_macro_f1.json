@@ -1,0 +1,16 @@
+{
+  "metric": "macro_f1",
+  "split_name": "default",
+  "num_examples": 825,
+  "num_bootstrap": 2000,
+  "result_a": "experiments\\revision_p0\\logistic_random_test\\tuned_logistic_random_test_seed11.json",
+  "result_b": "experiments\\revision_p0\\poly_core_random_test\\poly_core_random_test_seed11.json",
+  "observed_a": 0.26098533383974076,
+  "observed_b": 0.2677516972569477,
+  "observed_delta_b_minus_a": 0.006766363417206933,
+  "delta_ci_95": [
+    -0.011479725194450008,
+    0.02599607316540059
+  ],
+  "p_two_sided": 0.448
+}

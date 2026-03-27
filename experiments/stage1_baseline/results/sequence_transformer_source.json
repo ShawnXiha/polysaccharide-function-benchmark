@@ -1,0 +1,33 @@
+{
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_v0.jsonl",
+  "split": "data_processed\\splits\\leave_one_source_out.json",
+  "results": [
+    {
+      "split_name": "CSDB",
+      "num_train": 3,
+      "num_test": 2,
+      "labels": [
+        "antioxidant",
+        "antiviral",
+        "immunomodulatory",
+        "prebiotic"
+      ],
+      "macro_f1": 0.0,
+      "exact_match_ratio": 0.0
+    },
+    {
+      "split_name": "DoLPHiN",
+      "num_train": 2,
+      "num_test": 3,
+      "labels": [
+        "antioxidant",
+        "antiviral",
+        "immunomodulatory",
+        "prebiotic"
+      ],
+      "macro_f1": 0.0,
+      "exact_match_ratio": 0.0
+    }
+  ],
+  "note": "lightweight transformer encoder over canonical representation without external transformers dependency"
+}

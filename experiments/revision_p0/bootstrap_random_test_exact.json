@@ -1,0 +1,16 @@
+{
+  "metric": "exact_match",
+  "split_name": "default",
+  "num_examples": 825,
+  "num_bootstrap": 2000,
+  "result_a": "experiments\\revision_p0\\logistic_random_test\\tuned_logistic_random_test_seed11.json",
+  "result_b": "experiments\\revision_p0\\poly_core_random_test\\poly_core_random_test_seed11.json",
+  "observed_a": 0.2606060606060606,
+  "observed_b": 0.25696969696969696,
+  "observed_delta_b_minus_a": -0.0036363636363636598,
+  "delta_ci_95": [
+    -0.016969696969696968,
+    0.009696969696969704
+  ],
+  "p_two_sided": 0.667
+}

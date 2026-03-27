@@ -1,0 +1,16 @@
+{
+  "dataset": "data_processed\\dataset_v0_real.jsonl",
+  "split": "data_processed\\splits_real\\random_split.json",
+  "results": [
+    {
+      "split_name": "default",
+      "num_train": 3318,
+      "num_test": 1107,
+      "majority_labels": [
+        "unknown"
+      ],
+      "macro_f1": 0.008217869087434304,
+      "exact_match_ratio": 0.23306233062330622
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+dataset_name: polysaccharide_dataset_v0
+primary_sources:
+  - DoLPHiN
+secondary_sources:
+  - CSDB
+  - GlyTouCan
+canonical_representation: canonical_iupac
+optional_representation:
+  - wurcs
+tasks:
+  - function_multilabel_classification
+splits:
+  - random
+  - leave_one_source_out
+  - leave_one_genus_out
+evidence_levels:
+  - in_vitro
+  - animal
+  - clinical

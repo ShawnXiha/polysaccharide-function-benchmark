@@ -1,0 +1,50 @@
+{
+  "dataset": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_publishable_supervised_v1.jsonl",
+  "split": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\splits_publishable_supervised_v1\\random_split.json",
+  "config": {
+    "seed": 11,
+    "c": 16.0,
+    "min_df": 1,
+    "max_features": 0,
+    "binary": false,
+    "class_weight": "balanced",
+    "use_poly_features": true,
+    "use_evidence_features": false,
+    "use_sample_weight": false,
+    "method": "evidence_aware_logistic_v1"
+  },
+  "results": [
+    {
+      "split_name": "default",
+      "num_train": 2472,
+      "num_test": 825,
+      "labels": [
+        "antiaging",
+        "anticoagulant",
+        "antidiabetic",
+        "antifatigue",
+        "antiinflammatory",
+        "antimicrobial",
+        "antiobesity",
+        "antioxidant",
+        "antiproliferative",
+        "antitumor",
+        "antiviral",
+        "cholesterol_lowering",
+        "immunomodulatory",
+        "lipid_lowering",
+        "microbiota_regulation",
+        "neuroprotective",
+        "organ_protective",
+        "radioprotective"
+      ],
+      "vectorizer_vocab_size": 6287,
+      "sample_weight_mean": 1.0,
+      "sample_weight_min": 1.0,
+      "sample_weight_max": 1.0,
+      "macro_f1": 0.26538346576385335,
+      "exact_match_ratio": 0.2581818181818182
+    }
+  ],
+  "note": "logistic baseline with evidence/completeness sample weighting and polysaccharide-specific feature augmentation"
+}
