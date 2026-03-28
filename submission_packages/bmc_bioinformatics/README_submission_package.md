@@ -50,8 +50,7 @@ The manuscript is fundamentally a bioinformatics benchmark and machine-learning 
 
 ## Immediate blockers before upload
 
-1. Replace `Author Names` with real metadata.
-2. Convert the current generic manuscript structure into the BMC house style.
-3. Insert the full Declarations block.
-4. Produce a structured abstract with explicit `Background`, `Results`, and `Conclusions`.
-5. Rebuild with line numbering and double spacing.
+1. Designate a corresponding author and add contact email.
+2. Decide whether to move from the current generic LaTeX layout to the official Springer Nature template before upload.
+3. Verify that the GitHub repository is public or otherwise accessible to reviewers at submission time.
+4. Add a fuller postal/contact block if required by the submission system.

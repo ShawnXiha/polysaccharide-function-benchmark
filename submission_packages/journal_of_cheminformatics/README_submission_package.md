@@ -48,8 +48,7 @@ This manuscript is best framed as a reproducible computational methodology and b
 
 ## Immediate blockers before upload
 
-1. Replace `Author Names` with real author metadata.
-2. Produce a Springer Nature submission build with line numbers and double spacing.
-3. Add a `Scientific Contribution` subsection to the abstract for the Journal of Cheminformatics version.
-4. Insert the journal-required declarations block into the manuscript.
-5. Prepare openly accessible code/data links or an explicit repository release plan consistent with the journal's reproducibility requirement.
+1. Designate a corresponding author and add contact email.
+2. Decide whether to move from the current generic LaTeX layout to the official Springer Nature template before upload.
+3. Verify that the GitHub repository is public or otherwise accessible to reviewers at submission time.
+4. Add a postal address if the journal requires a fuller corresponding-author block in the metadata page.

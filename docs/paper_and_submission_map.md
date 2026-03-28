@@ -81,3 +81,16 @@ Edit the venue draft directly when the change affects:
 - declarations
 - journal house style
 - upload-package structure
+
+## Current Submission Metadata Status
+
+- repository URL:
+  - `https://github.com/ShawnXiha/polysaccharide-function-benchmark`
+- author currently filled in both venue packages:
+  - `Qiang Xia`
+- affiliation currently filled in both venue packages:
+  - `Zhejiang Tea Group`
+- remaining metadata blockers:
+  - corresponding-author designation
+  - contact email
+  - optional Springer Nature template migration

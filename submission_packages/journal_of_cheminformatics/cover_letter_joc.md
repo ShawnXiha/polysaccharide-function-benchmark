@@ -2,7 +2,7 @@
 
 Dear Editors,
 
-We submit the manuscript titled **"A benchmark and polysaccharide-specific core representation for multi-label structure-function prediction of natural polysaccharides"** for consideration as a **Methodology** article in the *Journal of Cheminformatics*.
+We submit the manuscript titled **"Benchmarking Natural Polysaccharide Function Prediction with a Sparse Anchor and Core Structural Features"** for consideration as a **Methodology** article in the *Journal of Cheminformatics*.
 
 This work addresses a gap between existing glycan-centric machine learning workflows and the practical representation constraints of natural polysaccharide records. Rather than claiming a large universal model improvement, the manuscript makes three narrower contributions that we believe fit the journal well. First, it constructs a reproducible benchmark for multi-label prediction from public natural-polysaccharide resources. Second, it establishes a tuned sparse logistic baseline as a strong anchor, showing that simple sparse methods remain highly competitive under current data conditions. Third, it uses controlled structured-token ablations to identify which signals are genuinely useful in this setting, with molecular-weight, residue-set, and branching features emerging as the most informative components.
 
@@ -12,6 +12,6 @@ This manuscript is original, is not under consideration elsewhere, and all autho
 
 Sincerely,
 
-[Corresponding author name]  
-[Affiliation]  
-[Email]
+Qiang Xia  
+Zhejiang Tea Group  
+[Email to be added before submission]

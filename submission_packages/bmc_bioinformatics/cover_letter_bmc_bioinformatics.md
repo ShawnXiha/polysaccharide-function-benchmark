@@ -2,7 +2,7 @@
 
 Dear Editors,
 
-We submit the manuscript titled **"A benchmark and polysaccharide-specific core representation for multi-label structure-function prediction of natural polysaccharides"** for consideration as a **Research article** in *BMC Bioinformatics*.
+We submit the manuscript titled **"A Benchmark and Polysaccharide-Specific Core Representation for Multi-label Structure-Function Prediction of Natural Polysaccharides"** for consideration as a **Research article** in *BMC Bioinformatics*.
 
 This study addresses a practical bioinformatics gap in natural-polysaccharide machine learning. Public polysaccharide records are structurally heterogeneous, incomplete, and weakly supervised, which makes direct transfer of glycan-centric modeling assumptions unreliable. In response, we construct a reproducible benchmark from public resources, establish a tuned sparse logistic baseline as a strong anchor, and use structured augmentation plus controlled ablation to determine which structural signals are actually useful under current data conditions.
 
@@ -12,6 +12,6 @@ This manuscript is original, is not under consideration elsewhere, and all autho
 
 Sincerely,
 
-[Corresponding author name]  
-[Affiliation]  
-[Email]
+Qiang Xia  
+Zhejiang Tea Group  
+[Email to be added before submission]

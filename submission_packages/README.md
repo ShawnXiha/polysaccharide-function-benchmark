@@ -28,12 +28,18 @@ Each venue folder contains:
 
 ## Current Status
 
-Both venue bundles are compilable, but still contain placeholder metadata for:
+Both venue bundles are compilable and already include:
 
-- authors
-- affiliations
-- funding
-- acknowledgements
-- final repository URL / accession
+- author name
+- affiliation
+- funding status
+- acknowledgements status
+- repository URL
+
+Remaining submission metadata is limited to:
+
+- corresponding-author designation
+- contact email
+- any optional postal/contact block required by the target journal
 
 Use the venue README inside each folder to see remaining blockers before upload.

@@ -2,7 +2,7 @@
 
 ## Title
 
-A benchmark and polysaccharide-specific core representation for multi-label structure-function prediction of natural polysaccharides
+Benchmarking Natural Polysaccharide Function Prediction with a Sparse Anchor and Core Structural Features
 
 ## Running title
 
@@ -10,15 +10,13 @@ Benchmarking natural polysaccharide function prediction
 
 ## Authors
 
-1. [Full name], [Affiliation]
-2. [Full name], [Affiliation]
-3. [Full name], [Affiliation]
+1. Qiang Xia, Zhejiang Tea Group
 
 ## Corresponding author
 
-- Name: [Full name]
-- Email: [email]
-- Postal address: [full address]
+- Name: To be designated at submission
+- Email: To be added at submission
+- Postal address: Zhejiang Tea Group
 
 ## Keywords
 

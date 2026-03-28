@@ -49,6 +49,19 @@ Each venue folder contains:
 - one submission manifest
 - one conversion-note file
 
+Current submission metadata status:
+
+- repository remote:
+  - `git@github.com:ShawnXiha/polysaccharide-function-benchmark.git`
+- public repository URL used in submission documents:
+  - `https://github.com/ShawnXiha/polysaccharide-function-benchmark`
+- current filled author metadata:
+  - `Qiang Xia`
+  - `Zhejiang Tea Group`
+- still pending:
+  - corresponding-author designation
+  - contact email
+
 ## Data and Experiment Files
 
 - `data_raw/`

@@ -3,31 +3,31 @@
 ## Article type
 
 - [x] Recommended article type chosen: `Research article`
-- [ ] Structured abstract prepared
+- [x] Structured abstract prepared
 
 ## Manuscript structure
 
-- [ ] Title page with all authors, affiliations, and corresponding author
-- [ ] Abstract under 350 words with `Background`, `Results`, and `Conclusions`
-- [ ] Keywords section with 3 to 10 keywords
-- [ ] Background
-- [ ] Methods
-- [ ] Results
-- [ ] Discussion
-- [ ] Conclusions
+- [x] Title page with author and affiliation; corresponding-author designation still pending
+- [x] Abstract under 350 words with `Background`, `Results`, and `Conclusions`
+- [x] Keywords section with 3 to 10 keywords
+- [x] Background
+- [x] Methods
+- [x] Results
+- [x] Discussion
+- [x] Conclusions
 - [ ] List of abbreviations if needed
-- [ ] Declarations block
+- [x] Declarations block
 
 ## Declarations
 
-- [ ] Ethics approval and consent to participate
-- [ ] Consent for publication
-- [ ] Availability of data and materials
-- [ ] Competing interests
-- [ ] Funding
-- [ ] Authors' contributions
-- [ ] Acknowledgements
-- [ ] Authors' information or `Not applicable`
+- [x] Ethics approval and consent to participate
+- [x] Consent for publication
+- [x] Availability of data and materials
+- [x] Competing interests
+- [x] Funding
+- [x] Authors' contributions
+- [x] Acknowledgements
+- [x] Authors' information or `Not applicable`
 
 ## Files to upload
 
@@ -39,7 +39,7 @@
 
 ## Formatting
 
-- [ ] Double spacing
-- [ ] Line numbering
+- [x] Double spacing
+- [x] Line numbering
 - [ ] Figures uploaded in citation order
 - [ ] Table titles above and legends below

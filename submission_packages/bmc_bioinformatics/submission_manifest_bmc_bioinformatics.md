@@ -2,9 +2,9 @@
 
 ## Main manuscript
 
-- Source manuscript: [paper_poly_core_v1.tex](D:/projects/paper_writing/polysaccharidesdb/paper_poly_core_v1.tex)
-- Bibliography: [references_poly_core_v1.bib](D:/projects/paper_writing/polysaccharidesdb/references_poly_core_v1.bib)
-- PDF draft: [paper_poly_core_v1.pdf](D:/projects/paper_writing/polysaccharidesdb/paper_poly_core_v1.pdf)
+- Source manuscript: [paper_bmc_bioinformatics.tex](D:/projects/paper_writing/polysaccharidesdb/submission_packages/bmc_bioinformatics/paper_bmc_bioinformatics.tex)
+- Bibliography: [references_poly_core_v1.bib](D:/projects/paper_writing/polysaccharidesdb/submission_packages/bmc_bioinformatics/references_poly_core_v1.bib)
+- PDF draft: [paper_bmc_bioinformatics.pdf](D:/projects/paper_writing/polysaccharidesdb/submission_packages/bmc_bioinformatics/paper_bmc_bioinformatics.pdf)
 
 ## Figures
 
@@ -14,11 +14,8 @@
 
 ## Supplementary files
 
-- [supplement_reproducibility_poly_core_v1.md](D:/projects/paper_writing/polysaccharidesdb/supplement_reproducibility_poly_core_v1.md)
-- [supplement_benchmark_statistics.md](D:/projects/paper_writing/polysaccharidesdb/supplement_benchmark_statistics.md)
-- [supplement_per_label_analysis.md](D:/projects/paper_writing/polysaccharidesdb/supplement_per_label_analysis.md)
-- [supplement_case_studies.md](D:/projects/paper_writing/polysaccharidesdb/supplement_case_studies.md)
-- [supplement_stronger_simple_baselines.md](D:/projects/paper_writing/polysaccharidesdb/supplement_stronger_simple_baselines.md)
+- [supplementary_information_bmc.tex](D:/projects/paper_writing/polysaccharidesdb/submission_packages/bmc_bioinformatics/supplementary_information_bmc.tex)
+- [supplementary_information_bmc.pdf](D:/projects/paper_writing/polysaccharidesdb/submission_packages/bmc_bioinformatics/supplementary_information_bmc.pdf)
 
 ## Recommended upload grouping
 
