@@ -31,15 +31,15 @@
 
 ## Files to upload
 
-- [ ] Main manuscript source (`.tex` + bibliography + figures)
-- [ ] Compiled PDF
-- [ ] Additional files bundle
-- [ ] Cover letter
-- [ ] Title page / author metadata
+- [x] Main manuscript source (`.tex` + bibliography + figures)
+- [x] Compiled PDF
+- [x] Additional files bundle
+- [x] Cover letter
+- [x] Title page / author metadata
 
 ## Formatting
 
 - [x] Double spacing
 - [x] Line numbering
 - [ ] Figures uploaded in citation order
-- [ ] Table titles above and legends below
+- [x] Table titles above and legends below

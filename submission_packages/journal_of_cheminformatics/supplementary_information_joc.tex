@@ -4,10 +4,11 @@
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{hyperref}
+\usepackage{xurl}
 \usepackage{setspace}
 \usepackage{lineno}
 
-\title{Supplementary Information\\Benchmarking Natural Polysaccharide Function Prediction with a Sparse Anchor and Core Structural Features}
+\title{Additional file 1\\Reproducibility notes, benchmark statistics, and error analysis for\\Benchmarking Natural Polysaccharide Function Prediction with a Sparse Anchor and Core Structural Features}
 \author{[Author names to be inserted for submission]}
 \date{}
 
@@ -18,7 +19,7 @@
 
 \section{Supplementary Note 1: Reproducibility Scope}
 
-This supplementary file records the exact benchmark definition, split layout, tuned-anchor configuration, final \texttt{poly-core v1} definition, additional sparse baselines, per-label behavior, and representative case studies used by the Journal of Cheminformatics submission draft. It is intentionally narrower than a full repository walkthrough. The purpose is to make the paper's final claim reproducible without mixing in earlier exploratory scaffolding.
+This additional file records the exact benchmark definition, split layout, tuned-anchor configuration, final \texttt{poly-core v1} definition, additional sparse baselines, per-label behavior, and representative case studies used by the Journal of Cheminformatics submission draft. It is intentionally narrower than a full repository walkthrough. The purpose is to make the paper's final claim reproducible without mixing in earlier exploratory scaffolding.
 
 \section{Supplementary Note 2: Benchmark Definition and Statistics}
 
@@ -47,7 +48,13 @@ DOI missing rate & 0.1\% \\
 \end{tabular}
 \end{table}
 
-The retained label vocabulary is: antiaging, anticoagulant, antidiabetic, antifatigue, antiinflammatory, antimicrobial, antiobesity, antioxidant, antiproliferative, antitumor, antiviral, cholesterol\_lowering, immunomodulatory, lipid\_lowering, microbiota\_regulation, neuroprotective, organ\_protective, and radioprotective.
+The retained label vocabulary is:
+\begin{itemize}
+\item \texttt{antiaging}, \texttt{anticoagulant}, \texttt{antidiabetic}, \texttt{antifatigue}, \texttt{antiinflammatory}, and \texttt{antimicrobial}
+\item \texttt{antiobesity}, \texttt{antioxidant}, \texttt{antiproliferative}, \texttt{antitumor}, and \texttt{antiviral}
+\item \texttt{cholesterol\_lowering}, \texttt{immunomodulatory}, \texttt{lipid\_lowering}, and \texttt{microbiota\_regulation}
+\item \texttt{neuroprotective}, \texttt{organ\_protective}, and \texttt{radioprotective}
+\end{itemize}
 
 \section{Supplementary Note 3: Weak-Supervision Interpretation}
 
@@ -74,7 +81,7 @@ The DOI-grouped split was checked to ensure that the same DOI never appears in m
 
 \section{Supplementary Note 5: Tuned Sparse Anchor}
 
-The primary comparison anchor is one-vs-rest logistic regression over count-vectorized feature text. The final tuned configuration uses the \texttt{liblinear} solver, \texttt{C = 16.0}, \texttt{class\_weight = balanced}, \texttt{min\_df = 1}, and an uncapped vocabulary. On the fixed training split this yields a vocabulary of 6,255 tokens. The tuned anchor reaches macro-F1 0.2610 and exact match 0.2606 on the random test split.
+The primary comparison anchor is one-vs-rest logistic regression over count-vectorized feature text. The final tuned configuration uses the \texttt{liblinear} solver with regularization strength \texttt{C = 16.0}, balanced class weighting, \texttt{min\_df = 1}, and an uncapped vocabulary. On the fixed training split this yields a vocabulary of 6,255 tokens. The tuned anchor reaches macro-F1 0.2610 and exact match 0.2606 on the random test split.
 
 \section{Supplementary Note 6: Final \texttt{poly-core v1} Representation}
 
@@ -171,9 +178,9 @@ Under the random split, the macro-F1 gain of \texttt{poly-core v1} is label-conc
 
 \section{Supplementary Note 11: Case Studies and Error Analysis}
 
-Representative random-split improvements include records \texttt{dolphin::36019}, \texttt{dolphin::33416}, and \texttt{dolphin::34576}, where the structured augmentation either recovers a missing label or prunes an extra false positive. A representative random-split failure is \texttt{dolphin::37102}, where the augmentation suppresses a previously correct antioxidant prediction.
+Representative random-split improvements include records \path{dolphin::36019}, \path{dolphin::33416}, and \path{dolphin::34576}, where the structured augmentation either recovers a missing label or prunes an extra false positive. A representative random-split failure is \path{dolphin::37102}, where the augmentation suppresses a previously correct antioxidant prediction.
 
-Grouped-split degradation is illustrated by records such as \texttt{dolphin::36764} and \texttt{dolphin::34975}, where the tuned logistic anchor remains correct but \texttt{poly-core v1} drops a true label. At the same time, grouped-split local gains still exist, for example \texttt{dolphin::36637}. The method is therefore inconsistent rather than uniformly bad under grouped splitting.
+Grouped-split degradation is illustrated by records such as \path{dolphin::36764} and \path{dolphin::34975}, where the tuned logistic anchor remains correct but \texttt{poly-core v1} drops a true label. At the same time, grouped-split local gains still exist, for example \path{dolphin::36637}. The method is therefore inconsistent rather than uniformly bad under grouped splitting.
 
 These cases support four error categories: useful local corrections, over-pruning, grouped-split fragility, and parser-sensitive behavior.
 
@@ -182,11 +189,11 @@ These cases support four error categories: useful local corrections, over-prunin
 Main artifacts used by the manuscript:
 
 \begin{itemize}
-\item benchmark dataset: \texttt{data\_processed/dataset\_publishable\_supervised\_v1.jsonl}
-\item random split: \texttt{data\_processed/splits\_publishable\_supervised\_v2/random\_split.json}
-\item DOI-grouped split: \texttt{data\_processed/splits\_publishable\_supervised\_v2/doi\_grouped\_split.json}
-\item tuned logistic summary: \texttt{experiments/stage2\_tuning/results/logistic/count\_c16\_balanced\_summary.json}
-\item poly-core summary: \texttt{experiments/stage4\_ablation/results/poly\_core\_v1\_summary.json}
+\item benchmark dataset: \path{data_processed/dataset_publishable_supervised_v1.jsonl}
+\item random split: \path{data_processed/splits_publishable_supervised_v2/random_split.json}
+\item DOI-grouped split: \path{data_processed/splits_publishable_supervised_v2/doi_grouped_split.json}
+\item tuned logistic summary: \path{experiments/stage2_tuning/results/logistic/count_c16_balanced_summary.json}
+\item poly-core summary: \path{experiments/stage4_ablation/results/poly_core_v1_summary.json}
 \end{itemize}
 
 \end{document}

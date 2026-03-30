@@ -4,10 +4,11 @@
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{hyperref}
+\usepackage{xurl}
 \usepackage{setspace}
 \usepackage{lineno}
 
-\title{Supplementary Information\\A Benchmark and Polysaccharide-Specific Core Representation for Multi-label Structure-Function Prediction of Natural Polysaccharides}
+\title{Additional file 1\\Reproducibility notes, benchmark statistics, and error analysis for\\A Benchmark and Polysaccharide-Specific Core Representation for Multi-label Structure-Function Prediction of Natural Polysaccharides}
 \author{[Author names to be inserted for submission]}
 \date{}
 
@@ -18,7 +19,7 @@
 
 \section{Overview}
 
-This supplementary file consolidates the reproducibility note, benchmark statistics, split definitions, stronger simple baselines, per-label behavior, and representative case studies used by the BMC Bioinformatics submission version.
+This additional file consolidates the reproducibility note, benchmark statistics, split definitions, stronger simple baselines, per-label behavior, and representative case studies used by the BMC Bioinformatics submission version.
 
 \section{Benchmark Construction}
 
@@ -65,7 +66,7 @@ The DOI-grouped split keeps all records sharing the same DOI in the same partiti
 
 \section{Tuned Anchor and Final Representation}
 
-The tuned anchor is one-vs-rest logistic regression over count-vectorized feature text with \texttt{C = 16.0}, \texttt{class\_weight = balanced}, and the \texttt{liblinear} solver. The final \texttt{poly-core v1} representation keeps only molecular-weight buckets, branching-presence tokens, and residue-set tokens. It removes evidence-proxy tokens, completeness weighting, source-kingdom tokens, modification tokens, and composition-count tokens.
+The tuned anchor is one-vs-rest logistic regression over count-vectorized feature text with \texttt{C = 16.0}, balanced class weighting, and the \texttt{liblinear} solver. The final \texttt{poly-core v1} representation keeps only molecular-weight buckets, branching-presence tokens, and residue-set tokens. It removes evidence-proxy tokens, completeness weighting, source-kingdom tokens, modification tokens, and composition-count tokens.
 
 \section{Stage 3 Evolution}
 
@@ -140,20 +141,20 @@ TF-IDF + linear SVM & 0.1248 & 0.1630 \\
 
 \section{Per-Label Behavior}
 
-Under the random split, the gain of \texttt{poly-core v1} is concentrated in a subset of labels, particularly \textit{antimicrobial}, \textit{neuroprotective}, \textit{microbiota\_regulation}, and \textit{organ\_protective}. Under the DOI-grouped split, at least one label, \textit{antiaging}, shows a substantial collapse. This reinforces that the method is label-sensitive and split-sensitive rather than uniformly stronger.
+Under the random split, the gain of \texttt{poly-core v1} is concentrated in a subset of labels, particularly \textit{antimicrobial}, \textit{neuroprotective}, \textit{microbiota regulation}, and \textit{organ protective}. Under the DOI-grouped split, at least one label, \textit{antiaging}, shows a substantial collapse. This reinforces that the method is label-sensitive and split-sensitive rather than uniformly stronger.
 
 \section{Case Studies}
 
-Random-split local improvements include \texttt{dolphin::36019}, \texttt{dolphin::33416}, and \texttt{dolphin::34576}. A representative random-split failure is \texttt{dolphin::37102}. DOI-grouped degradation is illustrated by \texttt{dolphin::36764} and \texttt{dolphin::34975}, while \texttt{dolphin::36637} shows that grouped-split local gains still exist. These examples support four recurring error categories: useful local corrections, over-pruning, grouped-split fragility, and parser-sensitive behavior.
+Random-split local improvements include \path{dolphin::36019}, \path{dolphin::33416}, and \path{dolphin::34576}. A representative random-split failure is \path{dolphin::37102}. DOI-grouped degradation is illustrated by \path{dolphin::36764} and \path{dolphin::34975}, while \path{dolphin::36637} shows that grouped-split local gains still exist. These examples support four recurring error categories: useful local corrections, over-pruning, grouped-split fragility, and parser-sensitive behavior.
 
 \section{Artifact Pointers}
 
 \begin{itemize}
-\item benchmark dataset: \texttt{data\_processed/dataset\_publishable\_supervised\_v1.jsonl}
-\item random split: \texttt{data\_processed/splits\_publishable\_supervised\_v2/random\_split.json}
-\item DOI-grouped split: \texttt{data\_processed/splits\_publishable\_supervised\_v2/doi\_grouped\_split.json}
-\item tuned logistic summary: \texttt{experiments/stage2\_tuning/results/logistic/count\_c16\_balanced\_summary.json}
-\item poly-core summary: \texttt{experiments/stage4\_ablation/results/poly\_core\_v1\_summary.json}
+\item benchmark dataset: \path{data_processed/dataset_publishable_supervised_v1.jsonl}
+\item random split: \path{data_processed/splits_publishable_supervised_v2/random_split.json}
+\item DOI-grouped split: \path{data_processed/splits_publishable_supervised_v2/doi_grouped_split.json}
+\item tuned logistic summary: \path{experiments/stage2_tuning/results/logistic/count_c16_balanced_summary.json}
+\item poly-core summary: \path{experiments/stage4_ablation/results/poly_core_v1_summary.json}
 \end{itemize}
 
 \end{document}

@@ -12,7 +12,7 @@
 - [figure2_main_results.pdf](D:/projects/paper_writing/polysaccharidesdb/figures/figure2_main_results.pdf)
 - [figure3_ablation.pdf](D:/projects/paper_writing/polysaccharidesdb/figures/figure3_ablation.pdf)
 
-## Supplementary files
+## Additional file 1
 
 - [supplementary_information_joc.tex](D:/projects/paper_writing/polysaccharidesdb/submission_packages/journal_of_cheminformatics/supplementary_information_joc.tex)
 - [supplementary_information_joc.pdf](D:/projects/paper_writing/polysaccharidesdb/submission_packages/journal_of_cheminformatics/supplementary_information_joc.pdf)
@@ -22,7 +22,7 @@
 1. Main manuscript source package
 2. Compiled manuscript PDF
 3. Figure files
-4. Supplementary materials bundle
+4. Additional file 1
 5. Cover letter
 6. Title page / author metadata
 7. Any repository or archive accession note

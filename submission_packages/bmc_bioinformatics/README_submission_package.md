@@ -38,7 +38,7 @@ The manuscript is fundamentally a bioinformatics benchmark and machine-learning 
 - primary manuscript:
   - `paper_bmc_bioinformatics.tex`
   - `paper_bmc_bioinformatics.pdf`
-- supplementary information:
+- Additional file 1:
   - `supplementary_information_bmc.tex`
   - `supplementary_information_bmc.pdf`
 - [checklist_bmc_bioinformatics.md](D:/projects/paper_writing/polysaccharidesdb/submission_packages/bmc_bioinformatics/checklist_bmc_bioinformatics.md)

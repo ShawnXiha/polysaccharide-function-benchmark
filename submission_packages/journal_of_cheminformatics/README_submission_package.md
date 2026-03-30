@@ -36,7 +36,7 @@ This manuscript is best framed as a reproducible computational methodology and b
 - primary manuscript:
   - `paper_joc_methodology.tex`
   - `paper_joc_methodology.pdf`
-- supplementary information:
+- Additional file 1:
   - `supplementary_information_joc.tex`
   - `supplementary_information_joc.pdf`
 - [checklist_joc.md](D:/projects/paper_writing/polysaccharidesdb/submission_packages/journal_of_cheminformatics/checklist_joc.md)
