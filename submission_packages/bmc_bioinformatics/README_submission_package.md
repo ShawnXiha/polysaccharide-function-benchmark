@@ -46,6 +46,7 @@ The manuscript is fundamentally a bioinformatics benchmark and machine-learning 
 - [title_page_bmc_bioinformatics.md](D:/projects/paper_writing/polysaccharidesdb/submission_packages/bmc_bioinformatics/title_page_bmc_bioinformatics.md)
 - [declarations_bmc_bioinformatics.md](D:/projects/paper_writing/polysaccharidesdb/submission_packages/bmc_bioinformatics/declarations_bmc_bioinformatics.md)
 - [submission_manifest_bmc_bioinformatics.md](D:/projects/paper_writing/polysaccharidesdb/submission_packages/bmc_bioinformatics/submission_manifest_bmc_bioinformatics.md)
+- [upload_checklist_bmc_bioinformatics.md](D:/projects/paper_writing/polysaccharidesdb/submission_packages/bmc_bioinformatics/upload_checklist_bmc_bioinformatics.md)
 - [manuscript_conversion_notes_bmc_bioinformatics.md](D:/projects/paper_writing/polysaccharidesdb/submission_packages/bmc_bioinformatics/manuscript_conversion_notes_bmc_bioinformatics.md)
 
 ## Immediate blockers before upload

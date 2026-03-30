@@ -22,6 +22,6 @@
 1. Main manuscript source package
 2. Compiled manuscript PDF
 3. Figure files
-4. Additional files bundle
+4. Additional file 1
 5. Cover letter
 6. Title page / author metadata

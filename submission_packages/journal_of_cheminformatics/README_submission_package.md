@@ -44,6 +44,7 @@ This manuscript is best framed as a reproducible computational methodology and b
 - [title_page_joc.md](D:/projects/paper_writing/polysaccharidesdb/submission_packages/journal_of_cheminformatics/title_page_joc.md)
 - [declarations_joc.md](D:/projects/paper_writing/polysaccharidesdb/submission_packages/journal_of_cheminformatics/declarations_joc.md)
 - [submission_manifest_joc.md](D:/projects/paper_writing/polysaccharidesdb/submission_packages/journal_of_cheminformatics/submission_manifest_joc.md)
+- [upload_checklist_joc.md](D:/projects/paper_writing/polysaccharidesdb/submission_packages/journal_of_cheminformatics/upload_checklist_joc.md)
 - [manuscript_conversion_notes_joc.md](D:/projects/paper_writing/polysaccharidesdb/submission_packages/journal_of_cheminformatics/manuscript_conversion_notes_joc.md)
 
 ## Immediate blockers before upload
