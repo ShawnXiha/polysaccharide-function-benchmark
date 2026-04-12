@@ -14,20 +14,11 @@ from torch_geometric.loader import DataLoader
 from torch_geometric.nn import GCNConv, global_mean_pool
 
 from polysaccharidesdb.models.dataset import index_by_poly_id, load_dataset
+from polysaccharidesdb.models.graph_features import TOKENS, build_vocab
 from polysaccharidesdb.models.split_utils import expand_split_payload
 from polysaccharidesdb.paths import DATA_PROCESSED, EXPERIMENTS
 from polysaccharidesdb.utils.io import read_json, write_json
 from polysaccharidesdb.utils.metrics import exact_match_ratio, macro_f1_score
-
-
-TOKENS = [
-    "monomer_composition",
-    "linkage",
-    "branching",
-    "modification",
-    "mw_or_range",
-    "organism_source",
-]
 
 
 def parse_args() -> argparse.Namespace:
@@ -55,20 +46,8 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def build_vocab(records: list[dict]) -> dict[str, int]:
-    vocab = {"<unk>": 0}
-    for record in records:
-        for field in TOKENS:
-            token = f"{field}={record.get(field, '')}"
-            if token not in vocab:
-                vocab[token] = len(vocab)
-    return vocab
-
-
 def record_to_graph(record: dict, vocab: dict[str, int], label_to_idx: dict[str, int]) -> Data:
     root_token = f"repr={record.get('canonical_representation', '')}"
-    if root_token not in vocab:
-        vocab[root_token] = len(vocab)
 
     node_tokens = [root_token] + [f"{field}={record.get(field, '')}" for field in TOKENS]
     x = torch.tensor([[vocab.get(token, 0)] for token in node_tokens], dtype=torch.long)
@@ -158,14 +137,15 @@ def main() -> None:
     split_payload = read_json(args.split)
     expanded_splits = expand_split_payload(split_payload)
 
-    all_labels = sorted({label for record in records for label in record.get("function_label", [])})
-    label_to_idx = {label: idx for idx, label in enumerate(all_labels)}
-    vocab = build_vocab(records)
-
     split_results = []
     for split_def in expanded_splits:
         train_records = [record_map[poly_id] for poly_id in split_def["train"]]
         test_records = [record_map[poly_id] for poly_id in split_def["test"]]
+
+        all_labels = sorted({label for record in train_records for label in record.get("function_label", [])})
+        label_to_idx = {label: idx for idx, label in enumerate(all_labels)}
+        vocab = build_vocab(train_records)
+
         train_graphs = [record_to_graph(record, vocab, label_to_idx) for record in train_records]
         test_graphs = [record_to_graph(record, vocab, label_to_idx) for record in test_records]
 
@@ -186,6 +166,8 @@ def main() -> None:
                 "num_train": len(train_records),
                 "num_test": len(test_records),
                 "labels": all_labels,
+                "vocab_size": len(vocab),
+                "vocab_built_from": "train",
                 "macro_f1": macro_f1,
                 "exact_match_ratio": exact_match,
             }

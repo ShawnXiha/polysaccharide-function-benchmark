@@ -120,7 +120,7 @@ def make_main_results_figure() -> None:
         "Logistic\ntuned",
         "Poly-core\nv1",
     ]
-    macro = [0.0397, 0.1580, 0.1752, 0.2035, 0.0397, 0.1941, 0.2610, 0.2678]
+    macro = [0.0397, 0.1580, 0.1752, 0.2035, 0.0397, 0.2103, 0.2610, 0.2678]
     colors = [
         PALETTE["gray"],
         PALETTE["blue"],

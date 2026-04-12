@@ -41,7 +41,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--eval-split",
         type=str,
-        default="test",
+        default="valid",
         choices=["valid", "test"],
         help="Which partition from the split file to evaluate on",
     )
@@ -51,6 +51,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-features", type=int, default=0)
     parser.add_argument("--binary", action="store_true")
     parser.add_argument("--class-weight", type=str, default="none")
+    parser.add_argument(
+        "--final-test",
+        action="store_true",
+        help="Mark this run as a frozen final-test evaluation",
+    )
     return parser.parse_args()
 
 
@@ -133,6 +138,7 @@ def main() -> None:
         "split": str(args.split),
         "config": {
             "eval_split": args.eval_split,
+            "is_final_test": args.final_test,
             "seed": args.seed,
             "c": args.c,
             "min_df": args.min_df,
