@@ -1,0 +1,64 @@
+{
+  "families": {
+    "immune_regulation": [
+      "immunomodulatory",
+      "antiinflammatory",
+      "anticomplement"
+    ],
+    "antiinfective": [
+      "antimicrobial",
+      "antiviral"
+    ],
+    "gut_host_homeostasis": [
+      "microbiota_regulation"
+    ],
+    "glucose_metabolic": [
+      "antidiabetic"
+    ],
+    "lipid_cardiometabolic": [
+      "antiobesity",
+      "cholesterol_lowering",
+      "lipid_lowering"
+    ],
+    "redox_tissue_protection": [
+      "antioxidant",
+      "organ_protective",
+      "radioprotective",
+      "antiaging",
+      "antihypoxic",
+      "antifatigue"
+    ],
+    "anticancer_cellular": [
+      "antitumor",
+      "antiproliferative"
+    ],
+    "neuro_sensory": [
+      "neuroprotective",
+      "antinociceptive"
+    ],
+    "vascular_hemostasis": [
+      "anticoagulant"
+    ],
+    "material_delivery": [
+      "drug_delivery",
+      "emulsifying"
+    ],
+    "reproductive_regenerative": [
+      "reproductive_support",
+      "osteogenic"
+    ]
+  },
+  "parent_child_edges": [
+    ["host_defense", "immune_regulation"],
+    ["host_defense", "antiinfective"],
+    ["host_defense", "gut_host_homeostasis"],
+    ["metabolic_health", "glucose_metabolic"],
+    ["metabolic_health", "lipid_cardiometabolic"],
+    ["tissue_protection", "redox_tissue_protection"],
+    ["tissue_protection", "neuro_sensory"],
+    ["tissue_protection", "reproductive_regenerative"],
+    ["therapeutic_application", "anticancer_cellular"],
+    ["therapeutic_application", "vascular_hemostasis"],
+    ["therapeutic_application", "material_delivery"]
+  ]
+}

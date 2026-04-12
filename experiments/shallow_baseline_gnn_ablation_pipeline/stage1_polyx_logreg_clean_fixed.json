@@ -1,0 +1,22 @@
+{
+  "pyg_path": "D:\\projects\\paper_writing\\polysaccharidesgraph\\data\\processed\\pyg\\dolphin_kg_v0.pt",
+  "kg_dir": "D:\\projects\\paper_writing\\polysaccharidesgraph\\data\\processed\\neo4j",
+  "feature_source": "poly_x",
+  "model_family": "logreg",
+  "include_disease_features": false,
+  "seed": 42,
+  "num_labels": 66,
+  "train_size": 3046,
+  "valid_size": 1016,
+  "test_size": 1016,
+  "feature_dim": 354,
+  "valid_macro_f1": 0.07740055046182354,
+  "valid_exact_match_ratio": 0.007874015748031496,
+  "test_macro_f1": 0.06124400481790083,
+  "test_exact_match_ratio": 0.007874015748031496,
+  "threshold_mean": 0.5075757503509521,
+  "threshold_min": 0.10000000149011612,
+  "threshold_max": 0.8999999761581421,
+  "note": "Shallow multilabel baseline with validation threshold tuning on a unified train/valid/test split.",
+  "poly_x_dim": 354
+}

@@ -1,0 +1,2129 @@
+{
+  "output": "data\\processed\\pyg\\dolphin_kg_v0_with_disease.pt",
+  "include_disease_edges": true,
+  "poly_feature_dim": 355,
+  "num_disease_derived_poly_features": 1,
+  "poly_feature_schema": [
+    {
+      "name": "degree__organism",
+      "source_relation": "poly_organism",
+      "disease_derived": false
+    },
+    {
+      "name": "degree__monosaccharide",
+      "source_relation": "poly_monosaccharide",
+      "disease_derived": false
+    },
+    {
+      "name": "degree__glycosidic_bond",
+      "source_relation": "poly_bond",
+      "disease_derived": false
+    },
+    {
+      "name": "degree__publication",
+      "source_relation": "poly_publication",
+      "disease_derived": false
+    },
+    {
+      "name": "degree__disease",
+      "source_relation": "poly_disease",
+      "disease_derived": true
+    },
+    {
+      "name": "mw_signal",
+      "source_field": "mw_or_range_raw",
+      "disease_derived": false
+    },
+    {
+      "name": "branching__has_text",
+      "source_field": "branching_raw",
+      "disease_derived": false
+    },
+    {
+      "name": "branching__no_relevant_information",
+      "source_field": "branching_raw",
+      "disease_derived": false
+    },
+    {
+      "name": "branching__text_length_capped",
+      "source_field": "branching_raw",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:e960ee19c478",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:e960ee19c478",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:2f713f4e3b43",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:2f713f4e3b43",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:7bdebc03fef7",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:7bdebc03fef7",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:cd22a9eb89a8",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:cd22a9eb89a8",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:be284897ae95",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:be284897ae95",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:69977f67f818",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:69977f67f818",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:997ac9293e0c",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:997ac9293e0c",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:6390e9567975",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:6390e9567975",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:4dc02ca9ea1f",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:4dc02ca9ea1f",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:e28c8e0a806b",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:e28c8e0a806b",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:a9fe4b9605f3",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:a9fe4b9605f3",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:2cdb8961f7de",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:2cdb8961f7de",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:4c049e555cbd",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:4c049e555cbd",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:9974d67628e3",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:9974d67628e3",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:846ce8a923dc",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:846ce8a923dc",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:41bf6a84967f",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:41bf6a84967f",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:2e47cea94653",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:2e47cea94653",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:348567a6fc9d",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:348567a6fc9d",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:54e05909de72",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:54e05909de72",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:e53c5f73a352",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:e53c5f73a352",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:ba3cabdbc6ce",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:ba3cabdbc6ce",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:39a526d4247a",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:39a526d4247a",
+      "disease_derived": false
+    },
+    {
+      "name": "monosaccharide_ratio__mono:8dcb1d37d757",
+      "source_relation": "poly_monosaccharide",
+      "source_node_id": "mono:8dcb1d37d757",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:a7301c11d9f4",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:a7301c11d9f4",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:9ef0e89bad3c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:9ef0e89bad3c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:666c5efc54b1",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:666c5efc54b1",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:432da5937745",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:432da5937745",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:7eb0181e5395",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:7eb0181e5395",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:fed568ac0d58",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:fed568ac0d58",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:6dac55dd4b54",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:6dac55dd4b54",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:6860798aab5e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:6860798aab5e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:05ccd11fb583",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:05ccd11fb583",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:0391cd25bbaf",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:0391cd25bbaf",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:15c5899bdb60",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:15c5899bdb60",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b49a301d3721",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b49a301d3721",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f9986e1d81b5",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f9986e1d81b5",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:71846eee06cd",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:71846eee06cd",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:313e20ed1058",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:313e20ed1058",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:14d097721c42",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:14d097721c42",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:380ef2e4ac6d",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:380ef2e4ac6d",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:88a9bc17c010",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:88a9bc17c010",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:568c1e7f2c49",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:568c1e7f2c49",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:4927d2a793bf",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:4927d2a793bf",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:cc3d4eb4b5f1",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:cc3d4eb4b5f1",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:49c88a83e4c2",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:49c88a83e4c2",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:63f1f2cd5ec2",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:63f1f2cd5ec2",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:93c428812320",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:93c428812320",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:5f6827a102d1",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:5f6827a102d1",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:7298acf1fa37",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:7298acf1fa37",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b30e13089dee",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b30e13089dee",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:9205ba20a866",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:9205ba20a866",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:7fafe1effab1",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:7fafe1effab1",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:3290b3f34adc",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:3290b3f34adc",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:eefdd65afc66",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:eefdd65afc66",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:529d793ce9c9",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:529d793ce9c9",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d7527f3c34fe",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d7527f3c34fe",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:1422dba28a18",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:1422dba28a18",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ee3b36648234",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ee3b36648234",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b36dba22d2ee",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b36dba22d2ee",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:4341e8dcaf49",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:4341e8dcaf49",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:6507e7302c35",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:6507e7302c35",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f040c0dc3362",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f040c0dc3362",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:9e772351c137",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:9e772351c137",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c9e169e2ac4e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c9e169e2ac4e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c4533beb842e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c4533beb842e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:7c2c86b646c5",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:7c2c86b646c5",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:5f5b8f9a3ede",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:5f5b8f9a3ede",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:1931b27204fd",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:1931b27204fd",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c1b10e35ea5c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c1b10e35ea5c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:86a2d0abdf17",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:86a2d0abdf17",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d1514ba18b2a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d1514ba18b2a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:614d3667901f",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:614d3667901f",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:a2cf9c45ddbf",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:a2cf9c45ddbf",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:5d001718b32c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:5d001718b32c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ca969f5d253b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ca969f5d253b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:cc1677c585bf",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:cc1677c585bf",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:90e6645d4e3e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:90e6645d4e3e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ed446ca65aaf",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ed446ca65aaf",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:70a9014cc23a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:70a9014cc23a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c4132e365903",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c4132e365903",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:90e18407cfd8",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:90e18407cfd8",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:bb61b5ac28c4",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:bb61b5ac28c4",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d0c29fa08a4b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d0c29fa08a4b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:7372fc450f24",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:7372fc450f24",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:bf7035146e0d",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:bf7035146e0d",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:5eadc4236c1b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:5eadc4236c1b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:9fc12cbd95c8",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:9fc12cbd95c8",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b7480a2a6e50",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b7480a2a6e50",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:0c9d302ed775",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:0c9d302ed775",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:4e27cc9d4b72",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:4e27cc9d4b72",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:df3ba6c7ab0f",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:df3ba6c7ab0f",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:54af7467d9e8",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:54af7467d9e8",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ea382c001d13",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ea382c001d13",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:74b857aeb6e8",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:74b857aeb6e8",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:35465f06d596",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:35465f06d596",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f7e52b6f62cf",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f7e52b6f62cf",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f1ce7ac79f7c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f1ce7ac79f7c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:86524655e61a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:86524655e61a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:a6fd732a7854",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:a6fd732a7854",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:7b03d1db998b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:7b03d1db998b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:460faf5dd2e1",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:460faf5dd2e1",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:95ce38c4f64b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:95ce38c4f64b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:9f98ef60c118",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:9f98ef60c118",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:38ac0a48d38f",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:38ac0a48d38f",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ff7f51a102f8",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ff7f51a102f8",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:2a0addbdbf5e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:2a0addbdbf5e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:5d6031860a51",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:5d6031860a51",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:0c014ec4a783",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:0c014ec4a783",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:060c5a040bff",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:060c5a040bff",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:795c789abba0",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:795c789abba0",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:1780e3ec8d43",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:1780e3ec8d43",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:31f8a855b569",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:31f8a855b569",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:10bb269dca4b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:10bb269dca4b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:766543d51514",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:766543d51514",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:55190cce9a79",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:55190cce9a79",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:bfe675f72c33",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:bfe675f72c33",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:e8446832bddb",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:e8446832bddb",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:0432387e810d",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:0432387e810d",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b160d69f5b9a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b160d69f5b9a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:a5fd3418d39b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:a5fd3418d39b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f2bff9b4a3ca",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f2bff9b4a3ca",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:fdd1577d13e6",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:fdd1577d13e6",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b5f52a9d6b9f",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b5f52a9d6b9f",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:7c5ec48130f5",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:7c5ec48130f5",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:445bfbdae87b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:445bfbdae87b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d59313a1cdad",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d59313a1cdad",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:7a5ff602584c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:7a5ff602584c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:42a38aee9c46",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:42a38aee9c46",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f71e000d8f88",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f71e000d8f88",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:0ad0bbd820ab",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:0ad0bbd820ab",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:bf71a7aff854",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:bf71a7aff854",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d5688f33a6b5",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d5688f33a6b5",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:5f2ab68039eb",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:5f2ab68039eb",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c63fd005fdf7",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c63fd005fdf7",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:5e2fb8528c5d",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:5e2fb8528c5d",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f203a0521c15",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f203a0521c15",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f9d1b83d223b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f9d1b83d223b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:2c50aac98384",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:2c50aac98384",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d4505143343f",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d4505143343f",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:273908c0f6c5",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:273908c0f6c5",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:7a1268cbac00",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:7a1268cbac00",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:18b0533801bc",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:18b0533801bc",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:918a3fca45f1",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:918a3fca45f1",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:54d12405c466",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:54d12405c466",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f379da5a552f",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f379da5a552f",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:634559d23c75",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:634559d23c75",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c292f4468df2",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c292f4468df2",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:a8567f78d6b0",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:a8567f78d6b0",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d46f89a5ae3a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d46f89a5ae3a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ce7f7746c2a3",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ce7f7746c2a3",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:1cf6f408b486",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:1cf6f408b486",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ed856b8982bd",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ed856b8982bd",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:e75b03bc8c93",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:e75b03bc8c93",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:07734cab59c1",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:07734cab59c1",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:4a28e92093df",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:4a28e92093df",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:9a13b3a52b96",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:9a13b3a52b96",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b4f5574ecf7c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b4f5574ecf7c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:93430e2d2106",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:93430e2d2106",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:53e234ed4377",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:53e234ed4377",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:6da40683a440",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:6da40683a440",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:56124e06b5e3",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:56124e06b5e3",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:85081897ceba",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:85081897ceba",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:a5a1eb0e26c6",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:a5a1eb0e26c6",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:04f7be0fa1f9",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:04f7be0fa1f9",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:98293c8d4203",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:98293c8d4203",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:8173ed5c105d",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:8173ed5c105d",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:a073c3596ba2",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:a073c3596ba2",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:8fba4b0ffdf2",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:8fba4b0ffdf2",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:515b386864b0",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:515b386864b0",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:e720bff3aa82",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:e720bff3aa82",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:afcb57d93026",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:afcb57d93026",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:604e5274b07f",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:604e5274b07f",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:1bdfce9e6e71",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:1bdfce9e6e71",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f37f66695cf2",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f37f66695cf2",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:50110affee54",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:50110affee54",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:86410a03475b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:86410a03475b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:754b5ec2f85e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:754b5ec2f85e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:3a9e93a55643",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:3a9e93a55643",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:49d108f64b89",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:49d108f64b89",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f69414b2bdae",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f69414b2bdae",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ddf418e6615a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ddf418e6615a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c9ad9f965fd3",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c9ad9f965fd3",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:17e94e3f5d61",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:17e94e3f5d61",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:946c6b484b2f",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:946c6b484b2f",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:24e8e2ea62c4",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:24e8e2ea62c4",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:dd9adce61c74",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:dd9adce61c74",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:3597467d117b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:3597467d117b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:00d370debb4c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:00d370debb4c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:2db1319f2af4",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:2db1319f2af4",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f4e9a4061de7",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f4e9a4061de7",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:2870e73dba84",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:2870e73dba84",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:49e49583f723",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:49e49583f723",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:bfcece0ff75c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:bfcece0ff75c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:dfae910fb26b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:dfae910fb26b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ab31751fe89a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ab31751fe89a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:6b651bb1f1b3",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:6b651bb1f1b3",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:67f5f741bbdd",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:67f5f741bbdd",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c78d6185f575",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c78d6185f575",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:bf2fbb686e75",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:bf2fbb686e75",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:868c6c5cf7ec",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:868c6c5cf7ec",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:838b1d56933e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:838b1d56933e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:270d80eabe11",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:270d80eabe11",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:5b8e9f052152",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:5b8e9f052152",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d8192742044b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d8192742044b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:378fb166d5ab",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:378fb166d5ab",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:2b1f12aade7b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:2b1f12aade7b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:917d2db28d7b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:917d2db28d7b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b1c4b85f5957",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b1c4b85f5957",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b118e6a51536",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b118e6a51536",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:aa9ee762c70c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:aa9ee762c70c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d02dc276d5c6",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d02dc276d5c6",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ad2b733c2210",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ad2b733c2210",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:68b3f5d253ba",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:68b3f5d253ba",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:348e158f4bcf",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:348e158f4bcf",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:e4b17ae08033",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:e4b17ae08033",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:3447c84bc7ee",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:3447c84bc7ee",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d86b8de45ad6",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d86b8de45ad6",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ee1869bcbf26",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ee1869bcbf26",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:e4b968d4c357",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:e4b968d4c357",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:7b0a175417e5",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:7b0a175417e5",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:798c501d9ac2",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:798c501d9ac2",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:7e88ae6fdd19",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:7e88ae6fdd19",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:4b9ef0adccd5",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:4b9ef0adccd5",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:e0da2d2ca283",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:e0da2d2ca283",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:2eb9a582da6e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:2eb9a582da6e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:8ec4ab74705e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:8ec4ab74705e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:5dd42ea9dde3",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:5dd42ea9dde3",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c2d24baa487a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c2d24baa487a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:506531a62f78",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:506531a62f78",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b6a65841220a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b6a65841220a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b9c784ccce43",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b9c784ccce43",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:6d2cfe1315a9",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:6d2cfe1315a9",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f45eefe7d97a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f45eefe7d97a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:10c1d3d12c76",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:10c1d3d12c76",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:5b93b6f263c7",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:5b93b6f263c7",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:de45aedbb19c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:de45aedbb19c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:963246193132",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:963246193132",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b6231a2220ce",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b6231a2220ce",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:597fca0b6882",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:597fca0b6882",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f142049b40b2",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f142049b40b2",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:31527a09c6a3",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:31527a09c6a3",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d3f5d669f271",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d3f5d669f271",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:bfa07aa92007",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:bfa07aa92007",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:3eaba7b38c7c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:3eaba7b38c7c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:4b0294eee218",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:4b0294eee218",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:df0818e77031",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:df0818e77031",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:954ba96e899a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:954ba96e899a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:1dfe3ee3778e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:1dfe3ee3778e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:73f3406882d4",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:73f3406882d4",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:57880582867a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:57880582867a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:28660f05e3bc",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:28660f05e3bc",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:75288be0fac1",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:75288be0fac1",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:20a8d764fab6",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:20a8d764fab6",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c3c75faa7709",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c3c75faa7709",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:e2efd56e07cf",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:e2efd56e07cf",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:260eb32988cf",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:260eb32988cf",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c16f567daeb6",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c16f567daeb6",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ff70c5444c58",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ff70c5444c58",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f7428064cb86",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f7428064cb86",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:4646267fe4fa",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:4646267fe4fa",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d6c875bc570e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d6c875bc570e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:a97abd5871f5",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:a97abd5871f5",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:58edb0e78633",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:58edb0e78633",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:0fcd82d382dd",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:0fcd82d382dd",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:453a1d497845",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:453a1d497845",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ab3bb2d97c0e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ab3bb2d97c0e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:1d1cad2195a3",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:1d1cad2195a3",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:1d11d38463d2",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:1d11d38463d2",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:2154ebf04b6a",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:2154ebf04b6a",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:da440afb2329",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:da440afb2329",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b579bf5a4eeb",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b579bf5a4eeb",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:7665df15e610",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:7665df15e610",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:6c2b925c3781",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:6c2b925c3781",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:8c373aadc326",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:8c373aadc326",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:2e206dbb1ea4",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:2e206dbb1ea4",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:54abd83e0c61",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:54abd83e0c61",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:e3890082f6b7",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:e3890082f6b7",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:86f344091400",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:86f344091400",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ed45df85dc50",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ed45df85dc50",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:808b8a5ab395",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:808b8a5ab395",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:1a8d539fe925",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:1a8d539fe925",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:0a08bff18e7f",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:0a08bff18e7f",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:69ed8c459e57",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:69ed8c459e57",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b0a13c67e382",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b0a13c67e382",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f91f4c603eee",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f91f4c603eee",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:0dd16ac8a116",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:0dd16ac8a116",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:2797b0811281",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:2797b0811281",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:391848f2c353",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:391848f2c353",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:2350a1a34feb",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:2350a1a34feb",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ca00b05c63dc",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ca00b05c63dc",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:435ff83baa98",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:435ff83baa98",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ee6ef3445e5c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ee6ef3445e5c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ca140e4934e3",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ca140e4934e3",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:0cbde796f624",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:0cbde796f624",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:313cb5a421e9",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:313cb5a421e9",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:16b727140f5b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:16b727140f5b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:1c9f75ec798c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:1c9f75ec798c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:f693efba39c7",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:f693efba39c7",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:23b82d50d569",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:23b82d50d569",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:63486eead734",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:63486eead734",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:fe7400379aef",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:fe7400379aef",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:1e2dd06cda88",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:1e2dd06cda88",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c0d3f352f391",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c0d3f352f391",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:55015d99565b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:55015d99565b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:9c49f9db87aa",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:9c49f9db87aa",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:46630ef02251",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:46630ef02251",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:bb5a4ede27e4",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:bb5a4ede27e4",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:e0297b9d5959",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:e0297b9d5959",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:3ce1d96052db",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:3ce1d96052db",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:cb9b7c6730f9",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:cb9b7c6730f9",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:92d15b2953f4",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:92d15b2953f4",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:05f456a1314f",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:05f456a1314f",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:8ef0e68aeac3",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:8ef0e68aeac3",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b77414b2467b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b77414b2467b",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:84eb78476d8d",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:84eb78476d8d",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:880246a5fc44",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:880246a5fc44",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:e10174916342",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:e10174916342",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:67a3f820716f",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:67a3f820716f",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:fbc58e43ea6c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:fbc58e43ea6c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:5ebf23dc057c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:5ebf23dc057c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:928b46f8ffb3",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:928b46f8ffb3",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:b1c3568ff7ef",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:b1c3568ff7ef",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:976171ef9283",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:976171ef9283",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c8a6550abe53",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c8a6550abe53",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:e142dc0e7e9d",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:e142dc0e7e9d",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:0e0becc4fb14",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:0e0becc4fb14",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d0352e13a470",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d0352e13a470",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:ca01a311757c",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:ca01a311757c",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:da23895471b8",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:da23895471b8",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:9209d0f47766",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:9209d0f47766",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:21c6b71d66eb",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:21c6b71d66eb",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:a78c15233f73",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:a78c15233f73",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:814ac1b5c01e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:814ac1b5c01e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:2caeff331eae",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:2caeff331eae",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:fb1fdd3e025d",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:fb1fdd3e025d",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:abb61d103b56",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:abb61d103b56",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:d3400135eec4",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:d3400135eec4",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:6b961ce192e7",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:6b961ce192e7",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:1bdb9f2013ed",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:1bdb9f2013ed",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:6257e5cb77c7",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:6257e5cb77c7",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:61e08a9a6ab8",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:61e08a9a6ab8",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:8899c73ba33e",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:8899c73ba33e",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:c887d565fa92",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:c887d565fa92",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:bebe647b2001",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:bebe647b2001",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:09885f8ec694",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:09885f8ec694",
+      "disease_derived": false
+    },
+    {
+      "name": "bond_presence__bond:eed092e8995b",
+      "source_relation": "poly_bond",
+      "source_node_id": "bond:eed092e8995b",
+      "disease_derived": false
+    }
+  ]
+}

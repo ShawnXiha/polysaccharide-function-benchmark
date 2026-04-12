@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{xurl}
+\title{Supplementary Materials for\\A DoLPHiN-Derived Polysaccharide Knowledge Graph for Interpretable Function Retrieval and Tail-Sensitive Ontology Propagation}
+\author{Author names withheld for draft preparation}
+\date{}
+\begin{document}
+\maketitle
+\setlength{\tabcolsep}{2pt}
+\sloppy
+\section*{Supplementary Table S1. Biology-facing case-study evidence summary}
+\scriptsize
+\begin{longtable}{>{\raggedright\arraybackslash}p{1.25cm}>{\raggedright\arraybackslash}p{1.25cm}>{\raggedright\arraybackslash}p{1.55cm}>{\raggedright\arraybackslash}p{1.45cm}>{\raggedright\arraybackslash}p{1.25cm}>{\raggedright\arraybackslash}p{0.9cm}>{\raggedright\arraybackslash}p{5.2cm}}
+\toprule
+Case & Poly ID & Name & Held-out function & Behavior & Rank & Evidence and biological interpretation \\
+\midrule
+\endfirsthead
+\toprule
+Case & Poly ID & Name & Held-out function & Behavior & Rank & Evidence and biological interpretation \\
+\midrule
+\endhead
+Clean success 1 & \texttt{dolphin::33862} & \texttt{BEP} & \texttt{immunomodulatory} & clean success & 1 & \textit{Boletus edulis}; glucose/galactose/arabinose/rhamnose profile; DOI \url{10.1016/j.carbpol.2013.12.085}. The retrieved label matches a reported immunomodulatory/antitumor polysaccharide study. \\
+Clean success 2 & \texttt{dolphin::33999} & \texttt{Galactofucan(M05 RDP 2H)} & \texttt{anticoagulant} & clean success & 1 & \textit{Laminaria saccharina}; marine fucose-rich cue; DOI \url{10.1016/j.phytochem.2010.05.021}. The case supports source/composition-driven retrieval for a chemically distinctive seaweed polysaccharide class. \\
+Ontology rescue & \texttt{dolphin::34783} & \texttt{APP90-2} & \texttt{osteogenic} & ontology hit & 43 $\rightarrow$ 3 & \textit{Alhagi maurorum}/\textit{A. pseudalhagi}; arabinose/xylose-rich profile; disease cue \texttt{organ injury}; DOI \url{10.1016/j.ijbiomac.2020.12.189}. Parent/child propagation routes sparse evidence toward a low-support regenerative label. \\
+Persistent failure & \texttt{dolphin::33382} & \textit{Amygdalus scoparia Spach} & \texttt{antiinflammatory} & persistent miss & 12 / 19 / 19 & Mixed galactose/xylose/arabinose/rhamnose and multiple bond motifs; DOI \url{10.1016/j.carbpol.2017.10.099}. The failure suggests that local typed evidence is not sufficiently discriminative without finer motif/provenance semantics. \\
+\bottomrule
+\end{longtable}
+\normalsize
+\section*{Supplementary Table S2. Additional note on GNN ablation interpretation}
+\begin{table}[h!]
+\centering
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}p{2.3cm}ccX}
+\toprule
+Setting & Model & Test macro-F1 & Test exact match & Interpretation \\
+\midrule
+Base graph & Hetero GNN & 0.0443 & 0.0256 & full message passing remains weak \\
+Base graph & No-message ablation & 0.0423 & 0.0276 & almost unchanged from full GNN \\
+Hybrid graph & Hetero GNN & 0.0347 & 0.0364 & message passing still weak after adding sparse meta-path inputs \\
+Hybrid graph & No-message ablation & 0.0386 & 0.1132 & higher exact match does not indicate better multi-label ranking quality \\
+\bottomrule
+\end{tabularx}
+\end{table}
+Exact match is intentionally not used as a primary conclusion for the GNN ablation because it is brittle in this multi-label setting. A model can obtain a superficially larger exact-match ratio by predicting very sparse label sets while still failing to recover the label distribution well enough to improve macro-F1. The core diagnostic evidence therefore remains the macro-F1 comparison between full message passing and no-message controls.
+
+\section*{Supplementary Table S3. Task-specific function hierarchy used for ontology propagation}
+\scriptsize
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{4.1cm}>{\raggedright\arraybackslash}p{5.0cm}}
+\toprule
+Parent category & Child family & DoLPHiN function labels & Curation rationale \\
+\midrule
+\endfirsthead
+\toprule
+Parent category & Child family & DoLPHiN function labels & Curation rationale \\
+\midrule
+\endhead
+\texttt{host\_defense} & \texttt{immune\_regulation} & \texttt{immunomodulatory}; \texttt{antiinflammatory}; \texttt{anticomplement} & Immune and inflammatory host-response functions. \\
+\texttt{host\_defense} & \texttt{antiinfective} & \texttt{antimicrobial}; \texttt{antiviral} & Direct pathogen- or infection-related activity. \\
+\texttt{host\_defense} & \texttt{gut\_host\_homeostasis} & \texttt{microbiota\_regulation} & Host-microbiota regulation treated as a host-defense/homeostasis branch. \\
+\texttt{metabolic\_health} & \texttt{glucose\_metabolic} & \texttt{antidiabetic} & Glucose and diabetes-related metabolic function. \\
+\texttt{metabolic\_health} & \texttt{lipid\_cardiometabolic} & \texttt{antiobesity}; \texttt{cholesterol\_lowering}; \texttt{lipid\_lowering} & Lipid and cardiometabolic regulation. \\
+\texttt{tissue\_protection} & \texttt{redox\_tissue\_protection} & \texttt{antioxidant}; \texttt{organ\_protective}; \texttt{radioprotective}; \texttt{antiaging}; \texttt{antihypoxic}; \texttt{antifatigue} & Stress-response and tissue-protection functions. \\
+\texttt{tissue\_protection} & \texttt{neuro\_sensory} & \texttt{neuroprotective}; \texttt{antinociceptive} & Nervous-system and sensory-protection functions. \\
+\texttt{tissue\_protection} & \texttt{reproductive\_regenerative} & \texttt{reproductive\_support}; \texttt{osteogenic} & Regenerative or reproductive support functions; this edge enables the osteogenic tail case. \\
+\texttt{therapeutic\_application} & \texttt{anticancer\_cellular} & \texttt{antitumor}; \texttt{antiproliferative} & Cancer- and cell-proliferation-related annotations. \\
+\texttt{therapeutic\_application} & \texttt{vascular\_hemostasis} & \texttt{anticoagulant} & Vascular and hemostatic application label. \\
+\texttt{therapeutic\_application} & \texttt{material\_delivery} & \texttt{drug\_delivery}; \texttt{emulsifying} & Formulation, delivery, and material-function annotations. \\
+\bottomrule
+\end{longtable}
+\normalsize
+\end{document}

@@ -1,0 +1,31 @@
+{
+  "output": "data\\processed\\pyg\\dolphin_kg_v0_with_disease.pt",
+  "node_types": {
+    "polysaccharide": 5078,
+    "organism": 1487,
+    "monosaccharide": 23,
+    "glycosidic_bond": 323,
+    "disease": 14,
+    "publication": 2386
+  },
+  "edge_types": {
+    "polysaccharide__isolated_from__organism": 5075,
+    "organism__rev_isolated_from__polysaccharide": 5075,
+    "polysaccharide__has_monosaccharide__monosaccharide": 17448,
+    "monosaccharide__rev_has_monosaccharide__polysaccharide": 17448,
+    "polysaccharide__has_glycosidic_bond__glycosidic_bond": 2313,
+    "glycosidic_bond__rev_has_glycosidic_bond__polysaccharide": 2313,
+    "polysaccharide__supported_by__publication": 5071,
+    "publication__rev_supported_by__polysaccharide": 5071,
+    "polysaccharide__associated_with_disease__disease": 3633,
+    "disease__rev_associated_with_disease__polysaccharide": 3633
+  },
+  "num_labels": 66,
+  "include_disease_edges": true,
+  "num_disease_derived_poly_features": 1,
+  "poly_feature_schema": "data\\processed\\pyg\\dolphin_kg_v0_with_disease.feature_schema.json",
+  "train_nodes": 3046,
+  "valid_nodes": 1016,
+  "test_nodes": 1016,
+  "poly_feature_dim": 355
+}

@@ -1,0 +1,94 @@
+graph_name: dolphin_kg_v0
+source_repo: D:\projects\paper_writing\polysaccharidesdb
+
+node_types:
+  - name: Polysaccharide
+    id_field: poly_id
+    properties:
+      - source_db
+      - source_record_id
+      - name
+      - raw_representation
+      - canonical_representation
+      - mw_or_range_raw
+      - mw_kda_min
+      - mw_kda_max
+      - branching_raw
+  - name: Organism
+    id_field: organism_id
+    properties:
+      - organism_name_raw
+      - organism_name_norm
+      - taxonomy_id
+      - kingdom
+  - name: Monosaccharide
+    id_field: monosaccharide_id
+    properties:
+      - mono_name_raw
+      - mono_name_norm
+      - mono_family
+  - name: GlycosidicBond
+    id_field: bond_id
+    properties:
+      - bond_text_raw
+      - bond_signature
+      - anomericity
+      - donor_residue
+      - acceptor_position
+  - name: Function
+    id_field: function_id
+    properties:
+      - function_name_norm
+      - function_group
+  - name: Disease
+    id_field: disease_id
+    properties:
+      - disease_name_raw
+      - disease_name_norm
+      - icd11_code
+      - disease_group
+  - name: Publication
+    id_field: doi
+    properties:
+      - title
+      - year
+      - journal
+
+edge_types:
+  - name: ISOLATED_FROM
+    source: Polysaccharide
+    target: Organism
+    properties: []
+  - name: HAS_MONOSACCHARIDE
+    source: Polysaccharide
+    target: Monosaccharide
+    properties:
+      - ratio_percent
+  - name: HAS_GLYCOSIDIC_BOND
+    source: Polysaccharide
+    target: GlycosidicBond
+    properties: []
+  - name: ASSOCIATED_WITH_FUNCTION
+    source: Polysaccharide
+    target: Function
+    properties:
+      - source_db
+  - name: ASSOCIATED_WITH_DISEASE
+    source: Polysaccharide
+    target: Disease
+    properties:
+      - source_db
+  - name: SUPPORTED_BY
+    source: Polysaccharide
+    target: Publication
+    properties:
+      - source_record_id
+
+exports:
+  neo4j:
+    node_dir: data/processed/neo4j/nodes
+    edge_dir: data/processed/neo4j/edges
+  pyg:
+    output_path: data/processed/pyg/dolphin_kg_v0.pt
+  triples:
+    output_path: data/processed/triples/dolphin_kg_v0.tsv

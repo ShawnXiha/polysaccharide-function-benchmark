@@ -1,0 +1,91 @@
+{
+  "families": {
+    "immune_inflammation": [
+      "immunomodulatory",
+      "antiinflammatory",
+      "anticomplement",
+      "antimicrobial",
+      "antiviral",
+      "prebiotic_activity",
+      "microbiota_regulation",
+      "improve_colonic_health",
+      "improving_colonic_health"
+    ],
+    "anticancer_cellular": [
+      "antitumor",
+      "antiproliferative",
+      "angiogenesis_inhibition",
+      "anti_apoptosis",
+      "protect_cells",
+      "inhibit_the_proliferation_of_osteosarcoma_cells"
+    ],
+    "metabolic_cardiometabolic": [
+      "antidiabetic",
+      "antiobesity",
+      "cholesterol_lowering",
+      "lipid_lowering",
+      "inhibiting_lipid_accumulation",
+      "reduce_fat",
+      "regulation_of_iron_metabolism",
+      "anemia_improving"
+    ],
+    "vascular_coagulation": [
+      "anticoagulant",
+      "procoagulant_activity",
+      "pro_angiogenic"
+    ],
+    "redox_protection": [
+      "antioxidant",
+      "reducing_capacity",
+      "organ_protective",
+      "radioprotective",
+      "radiation_hardening",
+      "antihypoxic",
+      "antifatigue",
+      "nti_myocardial_ischemic",
+      "improve_liver_function"
+    ],
+    "neuro_cognitive": [
+      "neuroprotective",
+      "treating_alzheimer_s_disease",
+      "antinociceptive",
+      "osteogenic"
+    ],
+    "barrier_cosmetic": [
+      "moisture_absorption",
+      "moisturizing_lubricating_and_reducing_wrinkles",
+      "moisturizing_lubricating_and_reducing_wrinkles",
+      "have_moisturizing_effect",
+      "whitening",
+      "dental_caries_prevention",
+      "percutaneous_absorption_promoting"
+    ],
+    "material_technological": [
+      "drug_delivery",
+      "emulsifying",
+      "food_additives",
+      "ability_to_gel",
+      "store_carbohydrates",
+      "be_glucosylated",
+      "an_important_source_of_dietary_fiber",
+      "potential_bioactive_or_technological_substances",
+      "affect_the_absorption"
+    ],
+    "reproductive_ecology": [
+      "reproductive_support",
+      "plant_defense",
+      "the_protective_effect_on_bees"
+    ],
+    "microbial_specific": [
+      "bacteroides_cellulosilyticus_bc",
+      "bacteroides_ovatus_bo",
+      "spaw_sanfh"
+    ],
+    "uncertain_misc": [
+      "unknown",
+      "ii",
+      "i_r",
+      "cell_to_cell_signaling"
+    ]
+  }
+}

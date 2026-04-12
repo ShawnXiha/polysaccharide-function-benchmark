@@ -1,0 +1,375 @@
+{
+  "kg_dir": "D:\\projects\\paper_writing\\polysaccharidesgraph\\data\\processed\\neo4j",
+  "include_disease_features": false,
+  "seed": 42,
+  "num_functions": 66,
+  "num_eval_edges": 1000,
+  "top_k": 25,
+  "label_idf_weighting": true,
+  "baselines": {
+    "popularity": {
+      "mrr": 0.48353587892012717,
+      "hits@1": 0.287,
+      "hits@3": 0.525,
+      "hits@5": 0.752,
+      "mean_rank": 4.64
+    },
+    "meta_path_centroid": {
+      "mrr": 0.05375127978187532,
+      "hits@1": 0.002,
+      "hits@3": 0.014,
+      "hits@5": 0.024,
+      "mean_rank": 26.108
+    },
+    "meta_path_knn": {
+      "mrr": 0.44052948703157857,
+      "hits@1": 0.231,
+      "hits@3": 0.558,
+      "hits@5": 0.737,
+      "mean_rank": 7.508
+    }
+  },
+  "examples": [
+    {
+      "poly_id": "dolphin::33929",
+      "held_out_function_id": "function:655ea0a4da8a",
+      "held_out_function_name": "antiproliferative",
+      "centroid_rank": 27,
+      "knn_rank": 30,
+      "top5_predictions": [
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 26.03257309532937
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 11.849217080020624
+        },
+        {
+          "function_id": "function:8bc4ac4251bf",
+          "function_name": "microbiota_regulation",
+          "score": 10.180404971552514
+        },
+        {
+          "function_id": "function:bfe4cb549d72",
+          "function_name": "antitumor",
+          "score": 8.915496998412888
+        },
+        {
+          "function_id": "function:2ffd10814851",
+          "function_name": "emulsifying",
+          "score": 6.824815808580573
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::35978",
+      "held_out_function_id": "function:c59e879f61be",
+      "held_out_function_name": "antiaging",
+      "centroid_rank": 40,
+      "knn_rank": 6,
+      "top5_predictions": [
+        {
+          "function_id": "function:50d8b4a941c2",
+          "function_name": "unknown",
+          "score": 16.76829822646612
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 13.824118512848257
+        },
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 11.833014956823718
+        },
+        {
+          "function_id": "function:b40bc13fec00",
+          "function_name": "antidiabetic",
+          "score": 10.379472110556147
+        },
+        {
+          "function_id": "function:8108c1c0e826",
+          "function_name": "cholesterol_lowering",
+          "score": 5.507516995245138
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::35689",
+      "held_out_function_id": "function:9051f68a7c0f",
+      "held_out_function_name": "immunomodulatory",
+      "centroid_rank": 36,
+      "knn_rank": 3,
+      "top5_predictions": [
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 31.5979885690481
+        },
+        {
+          "function_id": "function:b40bc13fec00",
+          "function_name": "antidiabetic",
+          "score": 17.29912176529288
+        },
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 16.566222914401223
+        },
+        {
+          "function_id": "function:962a5113af2f",
+          "function_name": "neuroprotective",
+          "score": 10.352319220037478
+        },
+        {
+          "function_id": "function:00b288701f82",
+          "function_name": "angiogenesis_inhibition",
+          "score": 0.0
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::36958",
+      "held_out_function_id": "function:ae0df7018a7f",
+      "held_out_function_name": "antioxidant",
+      "centroid_rank": 17,
+      "knn_rank": 3,
+      "top5_predictions": [
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 26.03263600834477
+        },
+        {
+          "function_id": "function:b40bc13fec00",
+          "function_name": "antidiabetic",
+          "score": 17.29912217773618
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 13.824121808776017
+        },
+        {
+          "function_id": "function:bfe4cb549d72",
+          "function_name": "antitumor",
+          "score": 11.88735389399379
+        },
+        {
+          "function_id": "function:962a5113af2f",
+          "function_name": "neuroprotective",
+          "score": 10.352319220037478
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::34413",
+      "held_out_function_id": "function:9051f68a7c0f",
+      "held_out_function_name": "immunomodulatory",
+      "centroid_rank": 38,
+      "knn_rank": 4,
+      "top5_predictions": [
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 27.628328680334757
+        },
+        {
+          "function_id": "function:b40bc13fec00",
+          "function_name": "antidiabetic",
+          "score": 17.286957162705438
+        },
+        {
+          "function_id": "function:50d8b4a941c2",
+          "function_name": "unknown",
+          "score": 13.963836563131757
+        },
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 11.827622775373063
+        },
+        {
+          "function_id": "function:556eb4150519",
+          "function_name": "radioprotective",
+          "score": 6.162407120556398
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::33304",
+      "held_out_function_id": "function:9051f68a7c0f",
+      "held_out_function_name": "immunomodulatory",
+      "centroid_rank": 25,
+      "knn_rank": 2,
+      "top5_predictions": [
+        {
+          "function_id": "function:bfe4cb549d72",
+          "function_name": "antitumor",
+          "score": 26.718938291032146
+        },
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 18.907079530043333
+        },
+        {
+          "function_id": "function:3db4379442dc",
+          "function_name": "antiinflammatory",
+          "score": 14.050250307227351
+        },
+        {
+          "function_id": "function:50d8b4a941c2",
+          "function_name": "unknown",
+          "score": 13.950111858295038
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 11.833778718971145
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::32755",
+      "held_out_function_id": "function:9051f68a7c0f",
+      "held_out_function_name": "immunomodulatory",
+      "centroid_rank": 11,
+      "knn_rank": 3,
+      "top5_predictions": [
+        {
+          "function_id": "function:bfe4cb549d72",
+          "function_name": "antitumor",
+          "score": 26.74652128539347
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 17.77385051605669
+        },
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 11.833001838190459
+        },
+        {
+          "function_id": "function:c59e879f61be",
+          "function_name": "antiaging",
+          "score": 5.270179741670631
+        },
+        {
+          "function_id": "function:3db4379442dc",
+          "function_name": "antiinflammatory",
+          "score": 4.688675318193897
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::33166",
+      "held_out_function_id": "function:ae0df7018a7f",
+      "held_out_function_name": "antioxidant",
+      "centroid_rank": 14,
+      "knn_rank": 1,
+      "top5_predictions": [
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 35.547686553573584
+        },
+        {
+          "function_id": "function:8bc4ac4251bf",
+          "function_name": "microbiota_regulation",
+          "score": 15.270651602124861
+        },
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 14.19958197774243
+        },
+        {
+          "function_id": "function:b40bc13fec00",
+          "function_name": "antidiabetic",
+          "score": 6.919637900102784
+        },
+        {
+          "function_id": "function:556eb4150519",
+          "function_name": "radioprotective",
+          "score": 6.165554363482324
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::35649",
+      "held_out_function_id": "function:c1b2b81cb31d",
+      "held_out_function_name": "antihypoxic",
+      "centroid_rank": 40,
+      "knn_rank": 58,
+      "top5_predictions": [
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 27.64823773196675
+        },
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 26.03263262289104
+        },
+        {
+          "function_id": "function:655ea0a4da8a",
+          "function_name": "antiproliferative",
+          "score": 12.072720620717337
+        },
+        {
+          "function_id": "function:c59e879f61be",
+          "function_name": "antiaging",
+          "score": 10.540376132114162
+        },
+        {
+          "function_id": "function:b40bc13fec00",
+          "function_name": "antidiabetic",
+          "score": 10.379472316777797
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::35665",
+      "held_out_function_id": "function:c59e879f61be",
+      "held_out_function_name": "antiaging",
+      "centroid_rank": 48,
+      "knn_rank": 6,
+      "top5_predictions": [
+        {
+          "function_id": "function:bfe4cb549d72",
+          "function_name": "antitumor",
+          "score": 26.683742902502697
+        },
+        {
+          "function_id": "function:50d8b4a941c2",
+          "function_name": "unknown",
+          "score": 20.21161115122179
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 14.155739932346492
+        },
+        {
+          "function_id": "function:8913e15071d3",
+          "function_name": "antifatigue",
+          "score": 10.505508964407884
+        },
+        {
+          "function_id": "function:3db4379442dc",
+          "function_name": "antiinflammatory",
+          "score": 8.446706216067307
+        }
+      ]
+    }
+  ],
+  "note": "Each evaluation hides one known poly-function edge and ranks the held-out function among all function nodes."
+}

@@ -1,0 +1,1022 @@
+{
+  "kg_dir": "D:\\projects\\paper_writing\\polysaccharidesgraph\\data\\processed\\neo4j",
+  "include_disease_features": true,
+  "seed": 42,
+  "num_functions": 66,
+  "num_eval_edges": 10,
+  "top_k": 50,
+  "label_idf_weighting": false,
+  "rare_label_expansion": false,
+  "rare_label_threshold": 10,
+  "rare_label_top_k": 50,
+  "rare_label_decay": 0.5,
+  "source_constrained_rerank": false,
+  "source_rerank_top_n": 10,
+  "source_rerank_weight": 1.0,
+  "source_cluster_backoff": false,
+  "source_cluster_top_n": 10,
+  "source_cluster_exact_weight": 1.0,
+  "source_cluster_genus_weight": 0.6,
+  "source_cluster_kingdom_weight": 0.3,
+  "tail_candidate_generation": false,
+  "tail_label_threshold": 10,
+  "tail_candidate_top_k": 75,
+  "tail_candidate_limit": 5,
+  "tail_candidate_activation": 1.0,
+  "tail_candidate_source_exact_weight": 1.0,
+  "tail_candidate_source_genus_weight": 0.6,
+  "tail_candidate_source_kingdom_weight": 0.3,
+  "label_specific_backoff": false,
+  "label_backoff_threshold": 10,
+  "label_backoff_top_n": 15,
+  "label_backoff_weight": 0.5,
+  "label_backoff_exact_weight": 1.0,
+  "label_backoff_genus_weight": 0.6,
+  "label_backoff_kingdom_weight": 0.3,
+  "disease_label_prior": false,
+  "disease_prior_top_n": 15,
+  "disease_prior_weight": 0.5,
+  "disease_prior_alpha": 1.0,
+  "tail_aware_disease_prior": false,
+  "tail_disease_prior_top_n": 30,
+  "tail_disease_prior_threshold": 10,
+  "tail_disease_prior_weight": 1.0,
+  "tail_disease_prior_boost": 2.0,
+  "tail_disease_prior_max_multiplier": 4.0,
+  "label_prototype_refinement": false,
+  "prototype_top_n": 15,
+  "prototype_neighbors": 5,
+  "prototype_weight": 0.5,
+  "prototype_tail_threshold": 10,
+  "prototype_tail_boost": 1.0,
+  "frequency_adjusted_disease_prior": true,
+  "freq_disease_prior_top_n": 20,
+  "freq_disease_prior_weight": 1.0,
+  "freq_disease_prior_strength": 0.5,
+  "freq_disease_prior_mode": "divide",
+  "support_aware_candidate_generation": false,
+  "support_candidate_top_k": 75,
+  "support_candidate_base_window": 20,
+  "support_candidate_threshold": 50,
+  "support_candidate_limit": 6,
+  "support_candidate_activation": 0.3,
+  "support_candidate_exact_weight": 1.0,
+  "support_candidate_genus_weight": 0.6,
+  "support_candidate_kingdom_weight": 0.3,
+  "integrated_support_aware_knn": false,
+  "integrated_support_top_k": 25,
+  "integrated_support_extended_k": 100,
+  "integrated_support_threshold": 50,
+  "integrated_support_decay": 0.35,
+  "integrated_support_exact_weight": 1.0,
+  "integrated_support_genus_weight": 0.6,
+  "integrated_support_kingdom_weight": 0.3,
+  "explicit_tail_support_knn": false,
+  "tail_support_top_k": 25,
+  "tail_support_extended_k": 150,
+  "tail_support_threshold": 10,
+  "tail_support_decay": 0.75,
+  "tail_support_exact_weight": 1.0,
+  "tail_support_genus_weight": 0.8,
+  "tail_support_kingdom_weight": 0.5,
+  "tail_support_boost": 2.0,
+  "disease_conditioned_base_vote": true,
+  "disease_vote_top_k": 25,
+  "disease_vote_weight": 1.0,
+  "disease_vote_max_boost": 5.0,
+  "tail_structural_signature": false,
+  "tail_signature_threshold": 10,
+  "tail_signature_top_n": 20,
+  "tail_signature_feature_limit": 12,
+  "tail_signature_weight": 0.5,
+  "tail_signature_min_local_rate": 0.25,
+  "tail_signature_max_boost": 2.0,
+  "tail_signature_count": 44,
+  "structure_aware_candidate_generation": false,
+  "structure_candidate_base_window": 20,
+  "structure_candidate_threshold": 10,
+  "structure_candidate_limit": 5,
+  "structure_candidate_activation": 0.5,
+  "label_specific_subgraph_motifs": false,
+  "motif_threshold": 10,
+  "motif_feature_limit": 20,
+  "motif_min_local_rate": 0.2,
+  "motif_candidate_base_window": 20,
+  "motif_candidate_limit": 5,
+  "motif_candidate_activation": 0.75,
+  "motif_signature_count": 33,
+  "taxonomy_conditioned_motifs": false,
+  "taxonomy_motif_threshold": 10,
+  "taxonomy_motif_feature_limit": 20,
+  "taxonomy_motif_min_local_rate": 0.2,
+  "taxonomy_motif_base_window": 20,
+  "taxonomy_motif_candidate_limit": 5,
+  "taxonomy_motif_activation": 1.0,
+  "taxonomy_motif_signature_count": 31,
+  "hierarchy_config": "D:\\projects\\paper_writing\\polysaccharidesgraph\\configs\\function_hierarchy_v1.json",
+  "hierarchy_support": false,
+  "hierarchy_base_window": 20,
+  "hierarchy_threshold": 10,
+  "hierarchy_candidate_limit": 5,
+  "hierarchy_activation": 0.75,
+  "hierarchy_min_seed_count": 1,
+  "hierarchy_specificity_power": 1.0,
+  "hierarchy_graph_native": false,
+  "hierarchy_graph_weight": 0.1,
+  "hierarchy_parent_child_native": false,
+  "hierarchy_confidence_threshold": 0.0,
+  "hierarchy_adaptive_power": 1.0,
+  "hierarchy_family_count": 11,
+  "hierarchy_parent_count": 0,
+  "baselines": {
+    "popularity": {
+      "raw": {
+        "mrr": 0.42841199720995116,
+        "hits@1": 0.2,
+        "hits@3": 0.6,
+        "hits@5": 0.6,
+        "mean_rank": 7.2
+      },
+      "filtered": {
+        "mrr": 0.5807954545454546,
+        "hits@1": 0.5,
+        "hits@3": 0.6,
+        "hits@5": 0.6,
+        "mean_rank": 6.5
+      }
+    },
+    "meta_path_centroid": {
+      "raw": {
+        "mrr": 0.11291486291486288,
+        "hits@1": 0.0,
+        "hits@3": 0.2,
+        "hits@5": 0.2,
+        "mean_rank": 19.5
+      },
+      "filtered": {
+        "mrr": 0.11457647027768977,
+        "hits@1": 0.0,
+        "hits@3": 0.2,
+        "hits@5": 0.2,
+        "mean_rank": 19.1
+      }
+    },
+    "meta_path_knn": {
+      "raw": {
+        "mrr": 0.5745370370370371,
+        "hits@1": 0.4,
+        "hits@3": 0.7,
+        "hits@5": 0.8,
+        "mean_rank": 5.0
+      },
+      "filtered": {
+        "mrr": 0.6955128205128205,
+        "hits@1": 0.6,
+        "hits@3": 0.7,
+        "hits@5": 0.8,
+        "mean_rank": 4.4
+      }
+    },
+    "meta_path_knn_freq_adjusted_disease_prior": {
+      "raw": {
+        "mrr": 0.5763227513227513,
+        "hits@1": 0.4,
+        "hits@3": 0.7,
+        "hits@5": 0.8,
+        "mean_rank": 4.9
+      },
+      "filtered": {
+        "mrr": 0.6955128205128205,
+        "hits@1": 0.6,
+        "hits@3": 0.7,
+        "hits@5": 0.8,
+        "mean_rank": 4.4
+      }
+    },
+    "meta_path_knn_disease_conditioned_vote": {
+      "raw": {
+        "mrr": 0.622421052631579,
+        "hits@1": 0.5,
+        "hits@3": 0.7,
+        "hits@5": 0.7,
+        "mean_rank": 9.7
+      },
+      "filtered": {
+        "mrr": 0.730952380952381,
+        "hits@1": 0.7,
+        "hits@3": 0.7,
+        "hits@5": 0.8,
+        "mean_rank": 9.1
+      }
+    },
+    "meta_path_knn_disease_conditioned_vote_freq_prior": {
+      "raw": {
+        "mrr": 0.6257543859649123,
+        "hits@1": 0.5,
+        "hits@3": 0.7,
+        "hits@5": 0.8,
+        "mean_rank": 9.6
+      },
+      "filtered": {
+        "mrr": 0.730952380952381,
+        "hits@1": 0.7,
+        "hits@3": 0.7,
+        "hits@5": 0.8,
+        "mean_rank": 9.1
+      }
+    }
+  },
+  "per_label": {
+    "function:655ea0a4da8a": {
+      "function_name": "antiproliferative",
+      "train_support": 50,
+      "eval_support": 1,
+      "stratum": "mid_11_50",
+      "raw_meta_path_knn_mrr": 0.037037037037037035,
+      "raw_meta_path_knn_hits@1": 0.0,
+      "raw_meta_path_knn_hits@3": 0.0,
+      "filtered_meta_path_knn_mrr": 0.038461538461538464,
+      "filtered_meta_path_knn_hits@1": 0.0,
+      "filtered_meta_path_knn_hits@3": 0.0,
+      "filtered_meta_path_knn_hits@5": 0.0,
+      "filtered_meta_path_knn_mean_rank": 26,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_mrr": 0.037037037037037035,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_hits@1": 0.0,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_hits@3": 0.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_mrr": 0.038461538461538464,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@1": 0.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@3": 0.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@5": 0.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_mean_rank": 26,
+      "raw_meta_path_knn_disease_conditioned_vote_mrr": 0.04,
+      "raw_meta_path_knn_disease_conditioned_vote_hits@1": 0.0,
+      "raw_meta_path_knn_disease_conditioned_vote_hits@3": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_mrr": 0.041666666666666664,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@1": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@3": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@5": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_mean_rank": 24,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_mrr": 0.04,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_hits@1": 0.0,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_hits@3": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_mrr": 0.041666666666666664,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@1": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@3": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@5": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_mean_rank": 24
+    },
+    "function:9051f68a7c0f": {
+      "function_name": "immunomodulatory",
+      "train_support": 1528,
+      "eval_support": 4,
+      "stratum": "head_gt_50",
+      "raw_meta_path_knn_mrr": 1.0,
+      "raw_meta_path_knn_hits@1": 1.0,
+      "raw_meta_path_knn_hits@3": 1.0,
+      "filtered_meta_path_knn_mrr": 1.0,
+      "filtered_meta_path_knn_hits@1": 1.0,
+      "filtered_meta_path_knn_hits@3": 1.0,
+      "filtered_meta_path_knn_hits@5": 1.0,
+      "filtered_meta_path_knn_mean_rank": 1,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_mrr": 1.0,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_hits@1": 1.0,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_hits@3": 1.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_mrr": 1.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@1": 1.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@3": 1.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@5": 1.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_mean_rank": 1,
+      "raw_meta_path_knn_disease_conditioned_vote_mrr": 1.0,
+      "raw_meta_path_knn_disease_conditioned_vote_hits@1": 1.0,
+      "raw_meta_path_knn_disease_conditioned_vote_hits@3": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_mrr": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@1": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@3": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@5": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_mean_rank": 1,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_mrr": 1.0,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_hits@1": 1.0,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_hits@3": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_mrr": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@1": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@3": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@5": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_mean_rank": 1
+    },
+    "function:ae0df7018a7f": {
+      "function_name": "antioxidant",
+      "train_support": 2200,
+      "eval_support": 2,
+      "stratum": "head_gt_50",
+      "raw_meta_path_knn_mrr": 0.5,
+      "raw_meta_path_knn_hits@1": 0.0,
+      "raw_meta_path_knn_hits@3": 1.0,
+      "filtered_meta_path_knn_mrr": 1.0,
+      "filtered_meta_path_knn_hits@1": 1.0,
+      "filtered_meta_path_knn_hits@3": 1.0,
+      "filtered_meta_path_knn_hits@5": 1.0,
+      "filtered_meta_path_knn_mean_rank": 1,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_mrr": 0.5,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_hits@1": 0.0,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_hits@3": 1.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_mrr": 1.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@1": 1.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@3": 1.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@5": 1.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_mean_rank": 1,
+      "raw_meta_path_knn_disease_conditioned_vote_mrr": 0.5,
+      "raw_meta_path_knn_disease_conditioned_vote_hits@1": 0.0,
+      "raw_meta_path_knn_disease_conditioned_vote_hits@3": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_mrr": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@1": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@3": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@5": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_mean_rank": 1,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_mrr": 0.5,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_hits@1": 0.0,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_hits@3": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_mrr": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@1": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@3": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@5": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_mean_rank": 1
+    },
+    "function:c1b2b81cb31d": {
+      "function_name": "antihypoxic",
+      "train_support": 10,
+      "eval_support": 1,
+      "stratum": "tail_1_10",
+      "raw_meta_path_knn_mrr": 0.25,
+      "raw_meta_path_knn_hits@1": 0.0,
+      "raw_meta_path_knn_hits@3": 0.0,
+      "filtered_meta_path_knn_mrr": 0.25,
+      "filtered_meta_path_knn_hits@1": 0.0,
+      "filtered_meta_path_knn_hits@3": 0.0,
+      "filtered_meta_path_knn_hits@5": 1.0,
+      "filtered_meta_path_knn_mean_rank": 4,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_mrr": 0.25,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_hits@1": 0.0,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_hits@3": 0.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_mrr": 0.25,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@1": 0.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@3": 0.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@5": 1.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_mean_rank": 4,
+      "raw_meta_path_knn_disease_conditioned_vote_mrr": 0.017543859649122806,
+      "raw_meta_path_knn_disease_conditioned_vote_hits@1": 0.0,
+      "raw_meta_path_knn_disease_conditioned_vote_hits@3": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_mrr": 0.017857142857142856,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@1": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@3": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@5": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_mean_rank": 56,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_mrr": 0.017543859649122806,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_hits@1": 0.0,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_hits@3": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_mrr": 0.017857142857142856,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@1": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@3": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@5": 0.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_mean_rank": 56
+    },
+    "function:c59e879f61be": {
+      "function_name": "antiaging",
+      "train_support": 92,
+      "eval_support": 2,
+      "stratum": "head_gt_50",
+      "raw_meta_path_knn_mrr": 0.22916666666666666,
+      "raw_meta_path_knn_hits@1": 0.0,
+      "raw_meta_path_knn_hits@3": 0.5,
+      "filtered_meta_path_knn_mrr": 0.3333333333333333,
+      "filtered_meta_path_knn_hits@1": 0.0,
+      "filtered_meta_path_knn_hits@3": 0.5,
+      "filtered_meta_path_knn_hits@5": 0.5,
+      "filtered_meta_path_knn_mean_rank": 4,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_mrr": 0.23809523809523808,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_hits@1": 0.0,
+      "raw_meta_path_knn_freq_adjusted_disease_prior_hits@3": 0.5,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_mrr": 0.3333333333333333,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@1": 0.0,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@3": 0.5,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_hits@5": 0.5,
+      "filtered_meta_path_knn_freq_adjusted_disease_prior_mean_rank": 4,
+      "raw_meta_path_knn_disease_conditioned_vote_mrr": 0.5833333333333334,
+      "raw_meta_path_knn_disease_conditioned_vote_hits@1": 0.5,
+      "raw_meta_path_knn_disease_conditioned_vote_hits@3": 0.5,
+      "filtered_meta_path_knn_disease_conditioned_vote_mrr": 0.625,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@1": 0.5,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@3": 0.5,
+      "filtered_meta_path_knn_disease_conditioned_vote_hits@5": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_mean_rank": 2.5,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_mrr": 0.6,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_hits@1": 0.5,
+      "raw_meta_path_knn_disease_conditioned_vote_freq_prior_hits@3": 0.5,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_mrr": 0.625,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@1": 0.5,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@3": 0.5,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_hits@5": 1.0,
+      "filtered_meta_path_knn_disease_conditioned_vote_freq_prior_mean_rank": 2.5
+    }
+  },
+  "stratified": {
+    "meta_path_knn": {
+      "tail_1_10": {
+        "num_labels": 1,
+        "num_eval_edges": 1,
+        "macro_filtered_mrr": 0.25,
+        "macro_filtered_hits@3": 0.0,
+        "micro_filtered_mrr": 0.25,
+        "micro_filtered_hits@3": 0.0,
+        "micro_filtered_hits@5": 1.0
+      },
+      "mid_11_50": {
+        "num_labels": 1,
+        "num_eval_edges": 1,
+        "macro_filtered_mrr": 0.038461538461538464,
+        "macro_filtered_hits@3": 0.0,
+        "micro_filtered_mrr": 0.038461538461538464,
+        "micro_filtered_hits@3": 0.0,
+        "micro_filtered_hits@5": 0.0
+      },
+      "head_gt_50": {
+        "num_labels": 3,
+        "num_eval_edges": 8,
+        "macro_filtered_mrr": 0.7777777777777778,
+        "macro_filtered_hits@3": 0.8333333333333334,
+        "micro_filtered_mrr": 0.8333333333333333,
+        "micro_filtered_hits@3": 0.875,
+        "micro_filtered_hits@5": 0.875
+      }
+    },
+    "meta_path_knn_freq_adjusted_disease_prior": {
+      "tail_1_10": {
+        "num_labels": 1,
+        "num_eval_edges": 1,
+        "macro_filtered_mrr": 0.25,
+        "macro_filtered_hits@3": 0.0,
+        "micro_filtered_mrr": 0.25,
+        "micro_filtered_hits@3": 0.0,
+        "micro_filtered_hits@5": 1.0
+      },
+      "mid_11_50": {
+        "num_labels": 1,
+        "num_eval_edges": 1,
+        "macro_filtered_mrr": 0.038461538461538464,
+        "macro_filtered_hits@3": 0.0,
+        "micro_filtered_mrr": 0.038461538461538464,
+        "micro_filtered_hits@3": 0.0,
+        "micro_filtered_hits@5": 0.0
+      },
+      "head_gt_50": {
+        "num_labels": 3,
+        "num_eval_edges": 8,
+        "macro_filtered_mrr": 0.7777777777777778,
+        "macro_filtered_hits@3": 0.8333333333333334,
+        "micro_filtered_mrr": 0.8333333333333333,
+        "micro_filtered_hits@3": 0.875,
+        "micro_filtered_hits@5": 0.875
+      }
+    },
+    "meta_path_knn_disease_conditioned_vote": {
+      "tail_1_10": {
+        "num_labels": 1,
+        "num_eval_edges": 1,
+        "macro_filtered_mrr": 0.017857142857142856,
+        "macro_filtered_hits@3": 0.0,
+        "micro_filtered_mrr": 0.017857142857142856,
+        "micro_filtered_hits@3": 0.0,
+        "micro_filtered_hits@5": 0.0
+      },
+      "mid_11_50": {
+        "num_labels": 1,
+        "num_eval_edges": 1,
+        "macro_filtered_mrr": 0.041666666666666664,
+        "macro_filtered_hits@3": 0.0,
+        "micro_filtered_mrr": 0.041666666666666664,
+        "micro_filtered_hits@3": 0.0,
+        "micro_filtered_hits@5": 0.0
+      },
+      "head_gt_50": {
+        "num_labels": 3,
+        "num_eval_edges": 8,
+        "macro_filtered_mrr": 0.875,
+        "macro_filtered_hits@3": 0.8333333333333334,
+        "micro_filtered_mrr": 0.90625,
+        "micro_filtered_hits@3": 0.875,
+        "micro_filtered_hits@5": 1.0
+      }
+    },
+    "meta_path_knn_disease_conditioned_vote_freq_prior": {
+      "tail_1_10": {
+        "num_labels": 1,
+        "num_eval_edges": 1,
+        "macro_filtered_mrr": 0.017857142857142856,
+        "macro_filtered_hits@3": 0.0,
+        "micro_filtered_mrr": 0.017857142857142856,
+        "micro_filtered_hits@3": 0.0,
+        "micro_filtered_hits@5": 0.0
+      },
+      "mid_11_50": {
+        "num_labels": 1,
+        "num_eval_edges": 1,
+        "macro_filtered_mrr": 0.041666666666666664,
+        "macro_filtered_hits@3": 0.0,
+        "micro_filtered_mrr": 0.041666666666666664,
+        "micro_filtered_hits@3": 0.0,
+        "micro_filtered_hits@5": 0.0
+      },
+      "head_gt_50": {
+        "num_labels": 3,
+        "num_eval_edges": 8,
+        "macro_filtered_mrr": 0.875,
+        "macro_filtered_hits@3": 0.8333333333333334,
+        "micro_filtered_mrr": 0.90625,
+        "micro_filtered_hits@3": 0.875,
+        "micro_filtered_hits@5": 1.0
+      }
+    }
+  },
+  "examples": [
+    {
+      "poly_id": "dolphin::33929",
+      "held_out_function_id": "function:655ea0a4da8a",
+      "held_out_function_name": "antiproliferative",
+      "raw_ranks": {
+        "popularity": 17,
+        "meta_path_centroid": 30,
+        "meta_path_knn": 27,
+        "meta_path_knn_freq_adjusted_disease_prior": 27,
+        "meta_path_knn_disease_conditioned_vote": 25,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 25
+      },
+      "filtered_ranks": {
+        "popularity": 16,
+        "meta_path_centroid": 30,
+        "meta_path_knn": 26,
+        "meta_path_knn_freq_adjusted_disease_prior": 26,
+        "meta_path_knn_disease_conditioned_vote": 24,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 24
+      },
+      "top5_predictions": [
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 29.99774259328842
+        },
+        {
+          "function_id": "function:50d8b4a941c2",
+          "function_name": "unknown",
+          "score": 10.998464465141296
+        },
+        {
+          "function_id": "function:8bc4ac4251bf",
+          "function_name": "microbiota_regulation",
+          "score": 4.99984335899353
+        },
+        {
+          "function_id": "function:0410fe6bc330",
+          "function_name": "anticoagulant",
+          "score": 1.9996105432510376
+        },
+        {
+          "function_id": "function:2ffd10814851",
+          "function_name": "emulsifying",
+          "score": 0.999999463558197
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::35978",
+      "held_out_function_id": "function:c59e879f61be",
+      "held_out_function_name": "antiaging",
+      "raw_ranks": {
+        "popularity": 11,
+        "meta_path_centroid": 42,
+        "meta_path_knn": 3,
+        "meta_path_knn_freq_adjusted_disease_prior": 3,
+        "meta_path_knn_disease_conditioned_vote": 1,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 1
+      },
+      "filtered_ranks": {
+        "popularity": 10,
+        "meta_path_centroid": 41,
+        "meta_path_knn": 2,
+        "meta_path_knn_freq_adjusted_disease_prior": 2,
+        "meta_path_knn_disease_conditioned_vote": 1,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 1
+      },
+      "top5_predictions": [
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 17.12840751062521
+        },
+        {
+          "function_id": "function:b40bc13fec00",
+          "function_name": "antidiabetic",
+          "score": 16.041800167033358
+        },
+        {
+          "function_id": "function:c59e879f61be",
+          "function_name": "antiaging",
+          "score": 14.248158908782322
+        },
+        {
+          "function_id": "function:962a5113af2f",
+          "function_name": "neuroprotective",
+          "score": 10.005281470737641
+        },
+        {
+          "function_id": "function:8108c1c0e826",
+          "function_name": "cholesterol_lowering",
+          "score": 6.005334429482909
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::35689",
+      "held_out_function_id": "function:9051f68a7c0f",
+      "held_out_function_name": "immunomodulatory",
+      "raw_ranks": {
+        "popularity": 2,
+        "meta_path_centroid": 10,
+        "meta_path_knn": 1,
+        "meta_path_knn_freq_adjusted_disease_prior": 1,
+        "meta_path_knn_disease_conditioned_vote": 1,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 1
+      },
+      "filtered_ranks": {
+        "popularity": 1,
+        "meta_path_centroid": 10,
+        "meta_path_knn": 1,
+        "meta_path_knn_freq_adjusted_disease_prior": 1,
+        "meta_path_knn_disease_conditioned_vote": 1,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 1
+      },
+      "top5_predictions": [
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 50.368293508428664
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 19.12050277788531
+        },
+        {
+          "function_id": "function:3db4379442dc",
+          "function_name": "antiinflammatory",
+          "score": 2.021017595694154
+        },
+        {
+          "function_id": "function:8bc4ac4251bf",
+          "function_name": "microbiota_regulation",
+          "score": 1.0047694221515582
+        },
+        {
+          "function_id": "function:0410fe6bc330",
+          "function_name": "anticoagulant",
+          "score": 0.010923026989239257
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::36958",
+      "held_out_function_id": "function:ae0df7018a7f",
+      "held_out_function_name": "antioxidant",
+      "raw_ranks": {
+        "popularity": 1,
+        "meta_path_centroid": 35,
+        "meta_path_knn": 2,
+        "meta_path_knn_freq_adjusted_disease_prior": 2,
+        "meta_path_knn_disease_conditioned_vote": 2,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 2
+      },
+      "filtered_ranks": {
+        "popularity": 1,
+        "meta_path_centroid": 35,
+        "meta_path_knn": 1,
+        "meta_path_knn_freq_adjusted_disease_prior": 1,
+        "meta_path_knn_disease_conditioned_vote": 1,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 1
+      },
+      "top5_predictions": [
+        {
+          "function_id": "function:89a4e8b2603e",
+          "function_name": "organ_protective",
+          "score": 36.349464743493144
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 20.113932145292647
+        },
+        {
+          "function_id": "function:a578d3368661",
+          "function_name": "lipid_lowering",
+          "score": 9.011945504277945
+        },
+        {
+          "function_id": "function:3db4379442dc",
+          "function_name": "antiinflammatory",
+          "score": 5.028748042444962
+        },
+        {
+          "function_id": "function:706a8a5c64f2",
+          "function_name": "antimicrobial",
+          "score": 5.0071642017221665
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::34413",
+      "held_out_function_id": "function:9051f68a7c0f",
+      "held_out_function_name": "immunomodulatory",
+      "raw_ranks": {
+        "popularity": 2,
+        "meta_path_centroid": 3,
+        "meta_path_knn": 1,
+        "meta_path_knn_freq_adjusted_disease_prior": 1,
+        "meta_path_knn_disease_conditioned_vote": 1,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 1
+      },
+      "filtered_ranks": {
+        "popularity": 1,
+        "meta_path_centroid": 3,
+        "meta_path_knn": 1,
+        "meta_path_knn_freq_adjusted_disease_prior": 1,
+        "meta_path_knn_disease_conditioned_vote": 1,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 1
+      },
+      "top5_predictions": [
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 28.36759678973588
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 27.11985100109469
+        },
+        {
+          "function_id": "function:bfe4cb549d72",
+          "function_name": "antitumor",
+          "score": 27.10441115450804
+        },
+        {
+          "function_id": "function:b40bc13fec00",
+          "function_name": "antidiabetic",
+          "score": 14.038043228013773
+        },
+        {
+          "function_id": "function:9610014d9c08",
+          "function_name": "antiviral",
+          "score": 5.008392377938224
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::33304",
+      "held_out_function_id": "function:9051f68a7c0f",
+      "held_out_function_name": "immunomodulatory",
+      "raw_ranks": {
+        "popularity": 2,
+        "meta_path_centroid": 3,
+        "meta_path_knn": 1,
+        "meta_path_knn_freq_adjusted_disease_prior": 1,
+        "meta_path_knn_disease_conditioned_vote": 1,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 1
+      },
+      "filtered_ranks": {
+        "popularity": 2,
+        "meta_path_centroid": 3,
+        "meta_path_knn": 1,
+        "meta_path_knn_freq_adjusted_disease_prior": 1,
+        "meta_path_knn_disease_conditioned_vote": 1,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 1
+      },
+      "top5_predictions": [
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 42.23684527590365
+        },
+        {
+          "function_id": "function:bfe4cb549d72",
+          "function_name": "antitumor",
+          "score": 29.204579599344193
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 23.111961506417234
+        },
+        {
+          "function_id": "function:b40bc13fec00",
+          "function_name": "antidiabetic",
+          "score": 5.041414470424227
+        },
+        {
+          "function_id": "function:3db4379442dc",
+          "function_name": "antiinflammatory",
+          "score": 5.021227172421231
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::32755",
+      "held_out_function_id": "function:9051f68a7c0f",
+      "held_out_function_name": "immunomodulatory",
+      "raw_ranks": {
+        "popularity": 2,
+        "meta_path_centroid": 10,
+        "meta_path_knn": 1,
+        "meta_path_knn_freq_adjusted_disease_prior": 1,
+        "meta_path_knn_disease_conditioned_vote": 1,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 1
+      },
+      "filtered_ranks": {
+        "popularity": 1,
+        "meta_path_centroid": 10,
+        "meta_path_knn": 1,
+        "meta_path_knn_freq_adjusted_disease_prior": 1,
+        "meta_path_knn_disease_conditioned_vote": 1,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 1
+      },
+      "top5_predictions": [
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 50.366756543058486
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 11.120140202831141
+        },
+        {
+          "function_id": "function:8bc4ac4251bf",
+          "function_name": "microbiota_regulation",
+          "score": 1.0047558918971942
+        },
+        {
+          "function_id": "function:3db4379442dc",
+          "function_name": "antiinflammatory",
+          "score": 0.021020039484589772
+        },
+        {
+          "function_id": "function:0410fe6bc330",
+          "function_name": "anticoagulant",
+          "score": 0.010923026989239257
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::33166",
+      "held_out_function_id": "function:ae0df7018a7f",
+      "held_out_function_name": "antioxidant",
+      "raw_ranks": {
+        "popularity": 1,
+        "meta_path_centroid": 18,
+        "meta_path_knn": 2,
+        "meta_path_knn_freq_adjusted_disease_prior": 2,
+        "meta_path_knn_disease_conditioned_vote": 2,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 2
+      },
+      "filtered_ranks": {
+        "popularity": 1,
+        "meta_path_centroid": 16,
+        "meta_path_knn": 1,
+        "meta_path_knn_freq_adjusted_disease_prior": 1,
+        "meta_path_knn_disease_conditioned_vote": 1,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 1
+      },
+      "top5_predictions": [
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 50.125274722802345
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 19.07455778740211
+        },
+        {
+          "function_id": "function:c59e879f61be",
+          "function_name": "antiaging",
+          "score": 6.0109995702066366
+        },
+        {
+          "function_id": "function:706a8a5c64f2",
+          "function_name": "antimicrobial",
+          "score": 4.016911938205955
+        },
+        {
+          "function_id": "function:3db4379442dc",
+          "function_name": "antiinflammatory",
+          "score": 4.015763195215131
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::35649",
+      "held_out_function_id": "function:c1b2b81cb31d",
+      "held_out_function_name": "antihypoxic",
+      "raw_ranks": {
+        "popularity": 23,
+        "meta_path_centroid": 33,
+        "meta_path_knn": 4,
+        "meta_path_knn_freq_adjusted_disease_prior": 4,
+        "meta_path_knn_disease_conditioned_vote": 57,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 57
+      },
+      "filtered_ranks": {
+        "popularity": 22,
+        "meta_path_centroid": 33,
+        "meta_path_knn": 4,
+        "meta_path_knn_freq_adjusted_disease_prior": 4,
+        "meta_path_knn_disease_conditioned_vote": 56,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 56
+      },
+      "top5_predictions": [
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 33.99998390674591
+        },
+        {
+          "function_id": "function:50d8b4a941c2",
+          "function_name": "unknown",
+          "score": 9.999995350837708
+        },
+        {
+          "function_id": "function:2ffd10814851",
+          "function_name": "emulsifying",
+          "score": 2.9999985694885254
+        },
+        {
+          "function_id": "function:c1b2b81cb31d",
+          "function_name": "antihypoxic",
+          "score": 1.9999989867210388
+        },
+        {
+          "function_id": "function:655ea0a4da8a",
+          "function_name": "antiproliferative",
+          "score": 0.9999996423721313
+        }
+      ]
+    },
+    {
+      "poly_id": "dolphin::35665",
+      "held_out_function_id": "function:c59e879f61be",
+      "held_out_function_name": "antiaging",
+      "raw_ranks": {
+        "popularity": 11,
+        "meta_path_centroid": 11,
+        "meta_path_knn": 8,
+        "meta_path_knn_freq_adjusted_disease_prior": 7,
+        "meta_path_knn_disease_conditioned_vote": 6,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 5
+      },
+      "filtered_ranks": {
+        "popularity": 10,
+        "meta_path_centroid": 10,
+        "meta_path_knn": 6,
+        "meta_path_knn_freq_adjusted_disease_prior": 6,
+        "meta_path_knn_disease_conditioned_vote": 4,
+        "meta_path_knn_disease_conditioned_vote_freq_prior": 4
+      },
+      "top5_predictions": [
+        {
+          "function_id": "function:bfe4cb549d72",
+          "function_name": "antitumor",
+          "score": 31.06376359331873
+        },
+        {
+          "function_id": "function:9051f68a7c0f",
+          "function_name": "immunomodulatory",
+          "score": 17.072270336458747
+        },
+        {
+          "function_id": "function:ae0df7018a7f",
+          "function_name": "antioxidant",
+          "score": 15.101539497318518
+        },
+        {
+          "function_id": "function:b40bc13fec00",
+          "function_name": "antidiabetic",
+          "score": 12.050150166260988
+        },
+        {
+          "function_id": "function:89a4e8b2603e",
+          "function_name": "organ_protective",
+          "score": 6.010749345448449
+        }
+      ]
+    }
+  ],
+  "note": "Each evaluation hides one known poly-function edge and ranks the held-out function among all function nodes. Filtered ranking removes the held-out polysaccharide's other true functions from the candidate list. Stratified evaluation reports tracked baseline performance by label support."
+}

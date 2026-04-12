@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+pytest-cache-files-*/
+.ruff_cache/
+.mypy_cache/
+
+# Local environments and caches
+.venv/
+.venv39/
+uv_cache/
+.pycache_tmp/
+.omx/
+.git_broken_acl_backup/
+.git2/
+gitmeta/
+
+# LaTeX build intermediates
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Keep compiled deliverables, ignore transient lock/cache files
+~$*
+*.tmp
+*.lock
+
+# Generated PyTorch payloads are reproducible from CSV exports and schemas.
+# Keep JSON summaries / feature schemas, but do not commit large .pt blobs.
+data/processed/pyg/*.pt
+paper/slides/tmp/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

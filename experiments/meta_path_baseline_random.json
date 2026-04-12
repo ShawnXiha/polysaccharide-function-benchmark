@@ -1,0 +1,12 @@
+{
+  "dataset_jsonl": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\dataset_dolphin_only.jsonl",
+  "split_json": "D:\\projects\\paper_writing\\polysaccharidesdb\\data_processed\\splits_dolphin_only\\random_split.json",
+  "kg_dir": "D:\\projects\\paper_writing\\polysaccharidesgraph\\data\\processed\\neo4j",
+  "train_size": 3046,
+  "test_size": 1016,
+  "num_labels": 66,
+  "macro_f1": 0.3045856711062168,
+  "exact_match_ratio": 0.41437007874015747,
+  "include_disease_features": false,
+  "note": "Features are graph-derived relation incidences plus 2-hop shared-polys counts."
+}

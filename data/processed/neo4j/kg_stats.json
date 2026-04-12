@@ -1,0 +1,19 @@
+{
+  "nodes": {
+    "polysaccharide": 5078,
+    "organism": 1487,
+    "monosaccharide": 23,
+    "glycosidic_bond": 323,
+    "function": 66,
+    "disease": 14,
+    "publication": 2386
+  },
+  "edges": {
+    "poly_organism": 5075,
+    "poly_monosaccharide": 17448,
+    "poly_bond": 2313,
+    "poly_function": 7408,
+    "poly_disease": 3633,
+    "poly_publication": 5071
+  }
+}

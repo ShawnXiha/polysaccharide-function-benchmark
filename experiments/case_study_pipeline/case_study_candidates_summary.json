@@ -1,0 +1,10 @@
+{
+  "csv": "D:\\projects\\paper_writing\\polysaccharidesgraph\\experiments\\case_study_pipeline\\case_study_candidates.csv",
+  "markdown": "D:\\projects\\paper_writing\\polysaccharidesgraph\\experiments\\case_study_pipeline\\case_study_candidates.md",
+  "counts": {
+    "ontology_rescue": 1,
+    "clean_success": 743,
+    "ontology_failure": 46,
+    "clean_failure": 172
+  }
+}

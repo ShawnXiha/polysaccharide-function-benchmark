@@ -1,0 +1,13 @@
+{
+  "pyg_path": "D:\\projects\\paper_writing\\polysaccharidesgraph\\data\\processed\\pyg\\dolphin_kg_v0.pt",
+  "hidden_dim": 64,
+  "epochs": 60,
+  "lr": 0.01,
+  "seed": 42,
+  "num_labels": 66,
+  "train_size": 3046,
+  "test_size": 1016,
+  "macro_f1": 0.04774016084383863,
+  "exact_match_ratio": 0.19881889763779528,
+  "note": "Hetero GraphSAGE baseline over non-function relations; labels are on polysaccharide nodes."
+}

@@ -1,0 +1,60 @@
+{
+  "nodes": {
+    "polysaccharide": {
+      "rows": 5078,
+      "unique_ids": 5078
+    },
+    "organism": {
+      "rows": 1487,
+      "unique_ids": 1487
+    },
+    "monosaccharide": {
+      "rows": 23,
+      "unique_ids": 23
+    },
+    "glycosidic_bond": {
+      "rows": 323,
+      "unique_ids": 323
+    },
+    "function": {
+      "rows": 66,
+      "unique_ids": 66
+    },
+    "disease": {
+      "rows": 14,
+      "unique_ids": 14
+    },
+    "publication": {
+      "rows": 2386,
+      "unique_ids": 2386
+    }
+  },
+  "edges": {
+    "poly_organism": {
+      "rows": 5075,
+      "broken_refs": 0
+    },
+    "poly_monosaccharide": {
+      "rows": 17448,
+      "broken_refs": 0
+    },
+    "poly_bond": {
+      "rows": 2313,
+      "broken_refs": 0
+    },
+    "poly_function": {
+      "rows": 7408,
+      "broken_refs": 0
+    },
+    "poly_disease": {
+      "rows": 3633,
+      "broken_refs": 0
+    },
+    "poly_publication": {
+      "rows": 5071,
+      "broken_refs": 0
+    }
+  },
+  "errors": [],
+  "ok": true
+}

@@ -1,0 +1,23 @@
+{
+  "pyg_path": "data\\processed\\pyg\\dolphin_kg_v0_hybrid.pt",
+  "hidden_dim": 128,
+  "epochs_requested": 120,
+  "best_epoch": 10,
+  "lr": 0.005,
+  "weight_decay": 0.0001,
+  "dropout": 0.3,
+  "patience": 20,
+  "seed": 42,
+  "model_variant": "poly_mlp",
+  "num_labels": 66,
+  "train_size": 3046,
+  "valid_size": 1016,
+  "test_size": 1016,
+  "valid_macro_f1": 0.08287105817854218,
+  "valid_exact_match_ratio": 0.012795275590551181,
+  "test_macro_f1": 0.044037985823402896,
+  "test_exact_match_ratio": 0.008858267716535433,
+  "include_disease_edges": false,
+  "poly_feature_dim": 4582,
+  "note": "Unified node classification runner with early stopping on valid macro-F1 and per-label threshold tuning."
+}

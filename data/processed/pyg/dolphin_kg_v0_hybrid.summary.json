@@ -1,0 +1,6 @@
+{
+  "hybrid_pyg_path": "D:\\projects\\paper_writing\\polysaccharidesgraph\\data\\processed\\pyg\\dolphin_kg_v0_hybrid.pt",
+  "meta_path_feature_dim": 4227,
+  "include_disease_features": false,
+  "poly_feature_dim_after_concat": 4582
+}
